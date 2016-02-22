@@ -1,0 +1,916 @@
+@{
+Layout = null;
+}
+<html>
+<head>
+    <link rel="stylesheet" href="~/css/bootstrap2.css" />
+        <link rel="stylesheet" href="~/font-awesome/css/font-awesome2.css" />
+        <link rel="stylesheet" href="~/lineicons/style2.css" />
+        <link rel="stylesheet" href="~/css/style2.css" />
+        <!--<link rel="stylesheet" href="~/css/style-responsive2.css" />-->
+</head>
+<body>
+    <section id="container" >
+    <!-- **********************************************************************************************************************************************************
+      TOP BAR CONTENT & NOTIFICATIONS
+      *********************************************************************************************************************************************************** -->
+      <!--header start-->
+      <header class="header black-bg">
+              <div class="sidebar-toggle-box">
+                  <div class="fa fa-bars tooltips" data-placement="right" data-original-title="Toggle Navigation"></div>
+              </div>
+            <!--logo start-->
+            <a href="index.html" class="logo"><b>HRIS </b></a>
+            <!--logo end-->
+            <div class="top-menu">
+            	<ul class="nav pull-right top-menu">
+                    <li><a class="logout" href="login.html">Logout</a></li>
+            	</ul>
+            </div>
+        </header>
+      <!--header end-->
+      <!-- **********************************************************************************************************************************************************
+      MAIN SIDEBAR MENU
+      *********************************************************************************************************************************************************** -->
+      <!--sidebar start-->
+      <aside>
+          <div id="sidebar"  class="nav-collapse ">
+              <!-- sidebar menu start-->
+              <ul class="sidebar-menu" id="nav-accordion">
+              
+              	  
+              	  	
+                  <li class="mt">
+                      <a class="active" href="MainMenu">
+                          <i class="fa fa-dashboard"></i>
+                          <span>Dashboard</span>
+                      </a>
+                  </li>
+
+                  <li class="sub-menu">
+                      <a href="javascript:;" >
+                          <i class="fa fa-cogs"></i>
+                          <span>Setup</span>
+                      </a>
+                      <ul class="sub">
+                          <li><a  href="Employee">Employee</a></li>
+                          <li><a  href="ShiftCode">Shift Code</a></li>
+                          <li><a  href="Company">Company</a></li>
+                          <li><a  href="DayType#">Day Type</a></li>
+                          <li><a  href="MandatoryTaxTables#">Mandatory & Tax Tables</a></li>
+                          <li><a  href="OtherIncome#">Other Income</a></li>
+                          <li><a  href="SystemTables#">System Tables</a></li>
+                          <li><a  href="OtherDeduction#">Other Deduction</a></li>
+                          <li><a  href="Users#">Users</a></li>
+                          <li><a  href="ChangeShiftCode#">Change Shift Code</a></li>
+                          <li><a  href="Settings#">Settings</a></li>
+                      </ul>
+                  </li>
+
+                  <li class="sub-menu">
+                      <a href="javascript:;" >
+                          <i class="fa fa-desktop"></i>
+                          <span>Activities</span>
+                      </a>
+                      <ul class="sub">
+                          <li><a  href="DTR#">DTR</a></li>
+                          <li><a  href="PayrollOtherIncome#">Payroll Other Income</a></li>
+                          <li><a  href="PayrollOtherDeduction#">Payroll Other Deduction</a></li>
+                          <li><a  href="LeaveApplication#">Leave Application</a></li>
+                          <li><a  href="LastWithholdingTax#">Last Withholding Tax</a></li>
+                          <li><a  href="OvertimeApplication#">Overtime Application</a></li>
+                          <li><a  href="Loans#">Loans</a></li>
+                          <li><a  href="Payroll#">Payroll</a></li>
+                         
+                      </ul>
+                  </li>
+                  <li class="sub-menu">
+                      <a href="javascript:;" >
+                          <i class="fa fa-book"></i>
+                          <span>Reports</span>
+                      </a>
+                      <ul class="sub">
+                          <li><a  href="DTRReports#">DTR Reports</a></li>
+                          <li><a  href="LeaveReports#">Leave Reports</a></li>
+                          <li><a  href="PayrollReports#">Payroll Reports</a></li>
+                          <li><a  href="LoanReports#">Loan Reports</a></li>
+                          <li><a  href="MandatoryReports#">Mandatory Reports</a></li>
+                          <li><a  href="AccountingReports#">Accounting Reports</a></li>
+                          <li><a  href="WithholdingTaxReports#">Withholding Tax Reports</a></li>
+                          <li><a  href="ATMBank#">ATM/Bank</a></li>
+                          <li><a  href="Demographics#">Demographics</a></li>
+                          
+                      </ul>
+                  </li>
+                  
+                  
+                  
+
+              </ul>
+              <!-- sidebar menu end-->
+          </div>
+      </aside>
+      <!--sidebar end-->
+      
+      <!-- **********************************************************************************************************************************************************
+      MAIN CONTENT
+      *********************************************************************************************************************************************************** -->
+      <!--main content start-->
+      <section id="main-content">
+          <section class="wrapper">
+              <div class="row" style="margin-top: 60px;">
+                  <div class="col-lg-12 main-chart">
+                      <!--First Row-->
+                      <div class="row mtbox">
+                  		<div class="col-md-2 col-sm-2 col-md-offset-1">
+						  			<div class="panel-group">
+					    				<div class="panel panel-primary"style="box-shadow: 0 0 30px black;">
+					    				
+					    				<a href="Employee">
+					      					
+					      					<div class="panel-body" style="background-color:#dfdbe7;">
+					      						
+					      						<div class="row">
+											        <div class="col-xs-6">
+											            <div class="xbtn"><strong><p>Employee</p> </strong>
+							      						</div>
+											        </div>
+											        <div class="col-xs-6">
+											        		<img src="/images/resources/Employee2.png" class="ximg"  style="height:110%;width:80%;">
+											        </div>
+											    </div>
+					      					</div>
+					      					
+					      						<div class="panel-footer">
+					        						<span class="pull-left">View Details</span>
+					        						<span class="pull-right"><span class="glyphicon glyphicon-circle-arrow-right"></span></span>
+					        						<div class="clearfix"></div>			
+					      						</div>
+					      					</a>
+					    				</div>
+					  				</div>
+                  		</div>
+                  		<div class="col-md-2 col-sm-2">
+					  			<div class="panel-group">
+					    				<div class="panel panel-primary"style="box-shadow: 0 0 30px black;">
+					    				<a href="ShiftCode">
+					      					<!-- <div class="panel-heading">Panel Header</div> -->
+					      					<div class="panel-body" style="background-color:#dfdbe7;">
+						      					<div class="row">
+												        <div class="col-xs-6">
+												            <div class="xbtn"><strong><p>Shift Code</p> </strong>
+								      						</div>
+												        </div>
+												        <div class="col-xs-6">
+												           <!--  <img src="assets/images/resources/settings.png"> -->
+												          <img src="/images/resources/Shiftcode.png" class="ximg"  style="height:110%;width:80%;">
+												        </div>
+												    </div>
+					      					
+					      					
+					      					</div>
+					      					
+					      						<div class="panel-footer">
+					        						<span class="pull-left">View Details</span>
+					        						<span class="pull-right"><span class="glyphicon glyphicon-circle-arrow-right"></span></span>
+					        						<div class="clearfix"></div>			
+					      						</div>
+					      					</a>
+					    				</div>
+					  				</div>
+                  		</div>
+                  		<div class="col-md-2 col-sm-2 ">
+					  			<div class="panel-group">
+					    				<div class="panel panel-primary"style="box-shadow: 0 0 30px black;">
+					    				<a href="DTR#">
+					      					<!-- <div class="panel-heading">Panel Header</div> -->
+					      					<div class="panel-body" style="background-color:#dfdbe7;">
+					      						<div class="row">
+											        <div class="col-xs-6">
+											            <div class="xbtn"><strong><p>DTR</p> </strong>
+							      						</div>
+											        </div>
+											        <div class="col-xs-6">
+											           <!--  <img src="assets/images/resources/settings.png"> -->
+											          <img src="/images/resources/FingerPrint.png" class="ximg"  style="height:110%;width:80%;">
+											        </div>
+											    </div>
+					      					</div>
+					      					
+					      						<div class="panel-footer">
+					        						<span class="pull-left">View Details</span>
+					        						<span class="pull-right"><span class="glyphicon glyphicon-circle-arrow-right"></span></span>
+					        						<div class="clearfix"></div>			
+					      						</div>
+					      					</a>
+					    				</div>
+					  				</div>
+                  		</div>
+                  		<div class="col-md-2 col-sm-2 ">
+					  			<div class="panel-group">
+					    				<div class="panel panel-primary"style="box-shadow: 0 0 30px black;">
+					    				<a href="PayrollOtherIncome#">
+					      					<!-- <div class="panel-heading">Panel Header</div> -->
+					      					<div class="panel-body" style="background-color:#dfdbe7;">
+					      						<div class="row">
+											        <div class="col-xs-6">
+											            <div class="xbtn"><strong><p>Payroll Other Income</p> </strong>
+							      						</div>
+											        </div>
+											        <div class="col-xs-6">
+											           <!--  <img src="assets/images/resources/settings.png"> -->
+											          <img src="/images/resources/Payrollincome.png" class="ximg"  style="height:110%;width:80%;">
+											        </div>
+											    </div>
+					      					</div>
+					      					
+					      						<div class="panel-footer">
+					        						<span class="pull-left">View Details</span>
+					        						<span class="pull-right"><span class="glyphicon glyphicon-circle-arrow-right"></span></span>
+					        						<div class="clearfix"></div>			
+					      						</div>
+					      					</a>
+					    				</div>
+					  				</div>
+                  		</div>
+                  		<div class="col-md-2 col-sm-2 ">
+					  			<div class="panel-group">
+					    				<div class="panel panel-primary"style="box-shadow: 0 0 30px black;">
+					    				<a href="PayrollOtherDeduction#">
+					      					<!-- <div class="panel-heading">Panel Header</div> -->
+					      					<div class="panel-body" style="background-color:#dfdbe7;">
+					      						<div class="row">
+											        <div class="col-xs-6">
+											            <div class="xbtn"><strong><p>Payroll Other Deduction</p> </strong>
+							      						</div>
+											        </div>
+											        <div class="col-xs-6">
+											           <!--  <img src="assets/images/resources/settings.png"> -->
+											          <img src="/images/resources/Payrolldeduction.png" class="ximg"  style="height:110%;width:80%;">
+											        </div>
+											    </div>
+					      					</div>
+					      						<div class="panel-footer">
+					        						<span class="pull-left">View Details</span>
+					        						<span class="pull-right"><span class="glyphicon glyphicon-circle-arrow-right"></span></span>
+					        						<div class="clearfix"></div>			
+					      						</div>
+					      					</a>
+					    				</div>
+					  				</div>
+                  		</div>
+                  	</div><!-- /row mt -->
+                    <!--End of First Row-->
+                    <!--Secondrow-->
+                    <div class="row mtbox">
+                  		<div class="col-md-2 col-sm-2 col-md-offset-1">
+						  			<div class="panel-group">
+					    				<div class="panel panel-primary"style="box-shadow: 0 0 30px black;">
+					    				<a href="Company#">
+					      					<!-- <div class="panel-heading">Panel Header</div> -->
+					      					<div class="panel-body" style="background-color:#dfdbe7;">
+					      						<div class="row">
+											        <div class="col-xs-6">
+											            <div class="xbtn"><strong><p>Company</p> </strong>
+							      						</div>
+											        </div>
+											        <div class="col-xs-6">
+											           <!--  <img src="assets/images/resources/settings.png"> -->
+											          <img src="/images/resources/Company.png" class="ximg"  style="height:110%;width:80%;">
+											        </div>
+											    </div>
+					      					</div>
+					      						<div class="panel-footer">
+					        						<span class="pull-left">View Details</span>
+					        						<span class="pull-right"><span class="glyphicon glyphicon-circle-arrow-right"></span></span>
+					        						<div class="clearfix"></div>			
+					      						</div>
+					      					</a>
+					    				</div>
+					  				</div>
+                  		</div>
+                  		<div class="col-md-2 col-sm-2">
+					  			<div class="panel-group">
+					    				<div class="panel panel-primary"style="box-shadow: 0 0 30px black;">
+					    				<a href="DayType#">
+					      					<!-- <div class="panel-heading">Panel Header</div> -->
+					      					<div class="panel-body" style="background-color:#dfdbe7;">
+					      						<div class="row">
+											        <div class="col-xs-6">
+											            <div class="xbtn"><strong><p>Day Type</p> </strong>
+							      						</div>
+											        </div>
+											        <div class="col-xs-6">
+											           <!--  <img src="assets/images/resources/settings.png"> -->
+											          <img src="/images/resources/Daytime.png" class="ximg"  style="height:110%;width:80%;">
+											        </div>
+											    </div>
+					      					</div>
+					      						<div class="panel-footer">
+					        						<span class="pull-left">View Details</span>
+					        						<span class="pull-right"><span class="glyphicon glyphicon-circle-arrow-right"></span></span>
+					        						<div class="clearfix"></div>			
+					      						</div>
+					      					</a>
+					    				</div>
+					  				</div>
+                  		</div>
+                  		<div class="col-md-2 col-sm-2 ">
+					  			<div class="panel-group">
+					    				<div class="panel panel-primary"style="box-shadow: 0 0 30px black;">
+					    				<a href="MandatoryTaxTables#">
+					      					<!-- <div class="panel-heading">Panel Header</div> -->
+					      					<div class="panel-body" style="background-color:#dfdbe7;">
+					      						<div class="row">
+											        <div class="col-xs-6">
+											            <div class="xbtn"><strong><p>Mandatory & Tax Tables</p> </strong>
+							      						</div>
+											        </div>
+											        <div class="col-xs-6">
+											           <!--  <img src="assets/images/resources/settings.png"> -->
+											          <img src="/images/resources/MandatoryTaxTables.png" class="ximg"  style="height:110%;width:80%;">
+											        </div>
+											    </div>
+					      					</div>
+					      						<div class="panel-footer">
+					        						<span class="pull-left">View Details</span>
+					        						<span class="pull-right"><span class="glyphicon glyphicon-circle-arrow-right"></span></span>
+					        						<div class="clearfix"></div>			
+					      						</div>
+					      					</a>
+					    				</div>
+					  				</div>
+                  		</div>
+                  		<div class="col-md-2 col-sm-2 ">
+					  			<div class="panel-group">
+					    				<div class="panel panel-primary"style="box-shadow: 0 0 30px black;">
+					    				<a href="OtherIncome#">
+					      					<!-- <div class="panel-heading">Panel Header</div> -->
+					      					<div class="panel-body" style="background-color:#dfdbe7;">
+					      						<div class="row">
+											        <div class="col-xs-6">
+											            <div class="xbtn"><strong><p>Other Income</p> </strong>
+							      						</div>
+											        </div>
+											        <div class="col-xs-6">
+											           <!--  <img src="assets/images/resources/settings.png"> -->
+											          <img src="/images/resources/Otherincome.png" class="ximg"  style="height:110%;width:80%;">
+											        </div>
+											    </div>
+					      					</div>
+					      						<div class="panel-footer">
+					        						<span class="pull-left">View Details</span>
+					        						<span class="pull-right"><span class="glyphicon glyphicon-circle-arrow-right"></span></span>
+					        						<div class="clearfix"></div>			
+					      						</div>
+					      					</a>
+					    				</div>
+					  				</div>
+                  		</div>
+                  		<div class="col-md-2 col-sm-2 ">
+					  			<div class="panel-group">
+					    				<div class="panel panel-primary"style="box-shadow: 0 0 30px black;">
+					    				<a href="OtherDeduction#">
+					      					<!-- <div class="panel-heading">Panel Header</div> -->
+					      					<div class="panel-body" style="background-color:#dfdbe7;">
+					      					<div class="row">
+											        <div class="col-xs-6">
+											            <div class="xbtn"><strong><p>Other Deduction</p> </strong>
+							      						</div>
+											        </div>
+											        <div class="col-xs-6">
+											           <!--  <img src="assets/images/resources/settings.png"> -->
+											          <img src="/images/resources/Otherdeduction.png" class="ximg"  style="height:110%;width:80%;">
+											        </div>
+											    </div>
+					      					</div>
+					      						<div class="panel-footer">
+					        						<span class="pull-left">View Details</span>
+					        						<span class="pull-right"><span class="glyphicon glyphicon-circle-arrow-right"></span></span>
+					        						<div class="clearfix"></div>			
+					      						</div>
+					      					</a>
+					    				</div>
+					  				</div>
+                  		</div>
+                  	</div><!-- /row mt -->
+                  	<!-- End ofSECOND ROW -->
+                    <!-- Third row -->
+                    <div class="row mtbox">
+                  		<div class="col-md-2 col-sm-2 col-md-offset-1">
+						  			<div class="panel-group">
+					    				<div class="panel panel-primary"style="box-shadow: 0 0 30px black;">
+					    				<a href="LeaveApplication#">
+					      					<!-- <div class="panel-heading">Panel Header</div> -->
+					      					<div class="panel-body" style="background-color:#dfdbe7;">
+					      						<div class="row">
+											        <div class="col-xs-6">
+											            <div class="xbtn"><strong><p>Leave Application</p> </strong>
+							      						</div>
+											        </div>
+											        <div class="col-xs-6">
+											           <!--  <img src="assets/images/resources/settings.png"> -->
+											          <img src="/images/resources/LeaveApplication.png" class="ximg"  style="height:110%;width:80%;">
+											        </div>
+											    </div>
+					      					</div>
+					      						<div class="panel-footer">
+					        						<span class="pull-left">View Details</span>
+					        						<span class="pull-right"><span class="glyphicon glyphicon-circle-arrow-right"></span></span>
+					        						<div class="clearfix"></div>			
+					      						</div>
+					      					</a>
+					    				</div>
+					  				</div>
+                  		</div>
+                  		<div class="col-md-2 col-sm-2">
+					  			<div class="panel-group">
+					    				<div class="panel panel-primary"style="box-shadow: 0 0 30px black;">
+					    				<a href="LastWithholdingTax#">
+					      					<!-- <div class="panel-heading">Panel Header</div> -->
+					      					<div class="panel-body" style="background-color:#dfdbe7;">
+					      						<div class="row">
+											        <div class="col-xs-6">
+											            <div class="xbtn"><strong><p>Last Withholding Tax</p> </strong>
+							      						</div>
+											        </div>
+											        <div class="col-xs-6">
+											           <!--  <img src="assets/images/resources/settings.png"> -->
+											          <img src="/images/resources/LastWithholdingTax.png" class="ximg"  style="height:110%;width:80%;">
+											        </div>
+											    </div>
+					      					</div>
+					      						<div class="panel-footer">
+					        						<span class="pull-left">View Details</span>
+					        						<span class="pull-right"><span class="glyphicon glyphicon-circle-arrow-right"></span></span>
+					        						<div class="clearfix"></div>			
+					      						</div>
+					      					</a>
+					    				</div>
+					  				</div>
+                  		</div>
+                  		<div class="col-md-2 col-sm-2 ">
+					  			<div class="panel-group">
+					    				<div class="panel panel-primary"style="box-shadow: 0 0 30px black;">
+					    				<a href="SystemTables#">
+					      					<!-- <div class="panel-heading">Panel Header</div> -->
+					      					<div class="panel-body" style="background-color:#dfdbe7;">
+					      						<div class="row">
+											        <div class="col-xs-6">
+											            <div class="xbtn"><strong><p>System Tables</p> </strong>
+							      						</div>
+											        </div>
+											        <div class="col-xs-6">
+											           <!--  <img src="assets/images/resources/settings.png"> -->
+											          <img src="/images/resources/SystemTables.png" class="ximg"  style="height:110%;width:80%;">
+											        </div>
+											    </div>
+					      					</div>
+					      					
+					      						<div class="panel-footer">
+					        						<span class="pull-left">View Details</span>
+					        						<span class="pull-right"><span class="glyphicon glyphicon-circle-arrow-right"></span></span>
+					        						<div class="clearfix"></div>			
+					      						</div>
+					      					</a>
+					    				</div>
+					  				</div>
+                  		</div>
+                  		<div class="col-md-2 col-sm-2 ">
+					  			<div class="panel-group">
+					    				<div class="panel panel-primary"style="box-shadow: 0 0 30px black;">
+					    				<a href="OvertimeApplication#">
+					      					<!-- <div class="panel-heading">Panel Header</div> -->
+					      					<div class="panel-body" style="background-color:#dfdbe7;">
+					      						<div class="row">
+											        <div class="col-xs-6">
+											            <div class="xbtn"><strong><p>Overtime Application</p> </strong>
+							      						</div>
+											        </div>
+											        <div class="col-xs-6">
+											           <!--  <img src="assets/images/resources/settings.png"> -->
+											          <img src="/images/resources/OvertimeApplication.png" class="ximg"  style="height:110%;width:80%;">
+											        </div>
+											    </div>
+					      					</div>
+					      						<div class="panel-footer">
+					        						<span class="pull-left">View Details</span>
+					        						<span class="pull-right"><span class="glyphicon glyphicon-circle-arrow-right"></span></span>
+					        						<div class="clearfix"></div>			
+					      						</div>
+					      					</a>
+					    				</div>
+					  				</div>
+                  		</div>
+                  		<div class="col-md-2 col-sm-2 ">
+					  			<div class="panel-group">
+					    				<div class="panel panel-primary"style="box-shadow: 0 0 30px black;">
+					    				<a href="Payroll#">
+					      					<!-- <div class="panel-heading">Panel Header</div> -->
+					      					<div class="panel-body" style="background-color:#dfdbe7;">
+						      					<div class="row">
+												        <div class="col-xs-6">
+												            <div class="xbtn"><strong><p>Payroll</p> </strong>
+								      						</div>
+												        </div>
+												        <div class="col-xs-6">
+												           <!--  <img src="assets/images/resources/settings.png"> -->
+												          <img src="/images/resources/Payroll.png" class="ximg"  style="height:110%;width:80%;">
+												        </div>
+												    </div>
+					      					</div>
+					      						<div class="panel-footer">
+					        						<span class="pull-left">View Details</span>
+					        						<span class="pull-right"><span class="glyphicon glyphicon-circle-arrow-right"></span></span>
+					        						<div class="clearfix"></div>			
+					      						</div>
+					      					</a>
+					    				</div>
+					  				</div>
+                  		</div>
+                  	
+                  	</div><!-- /row mt -->
+                    <!-- End of Third row -->
+                    <!-- Fourth row -->
+                    <div class="row mtbox">
+                  		<div class="col-md-2 col-sm-2 col-md-offset-1">
+						  			<div class="panel-group">
+					    				<div class="panel panel-primary"style="box-shadow: 0 0 30px black;">
+					    				<a href="Users#">
+					      					<!-- <div class="panel-heading">Panel Header</div> -->
+					      					<div class="panel-body" style="background-color:#dfdbe7;">
+					      						<div class="row">
+											        <div class="col-xs-6">
+											            <div class="xbtn"><strong><p>Users</p> </strong>
+							      						</div>
+											        </div>
+											        <div class="col-xs-6">
+											           <!--  <img src="assets/images/resources/settings.png"> -->
+											          <img src="/images/resources/Users.png" class="ximg"  style="height:110%;width:80%;">
+											        </div>
+											    </div>
+					      					</div>
+					      						<div class="panel-footer">
+					        						<span class="pull-left">View Details</span>
+					        						<span class="pull-right"><span class="glyphicon glyphicon-circle-arrow-right"></span></span>
+					        						<div class="clearfix"></div>			
+					      						</div>
+					      					</a>
+					    				</div>
+					  				</div>
+                  		</div>
+                  		<div class="col-md-2 col-sm-2">
+					  			<div class="panel-group">
+					    				<div class="panel panel-primary"style="box-shadow: 0 0 30px black;">
+					    				<a href="ChangeShiftCode#">
+					      					<!-- <div class="panel-heading">Panel Header</div> -->
+					      					<div class="panel-body" style="background-color:#dfdbe7;">
+					      						<div class="row">
+											        <div class="col-xs-6">
+											            <div class="xbtn"><strong><p>Change Shift Code</p> </strong>
+							      						</div>
+											        </div>
+											        <div class="col-xs-6">
+											           <!--  <img src="assets/images/resources/settings.png"> -->
+											          <img src="/images/resources/ChangeShiftCode.png" class="ximg"  style="height:110%;width:80%;">
+											        </div>
+											    </div>
+					      					</div>
+					      						<div class="panel-footer">
+					        						<span class="pull-left">View Details</span>
+					        						<span class="pull-right"><span class="glyphicon glyphicon-circle-arrow-right"></span></span>
+					        						<div class="clearfix"></div>			
+					      						</div>
+					      					</a>
+					    				</div>
+					  				</div>
+                  		</div>
+                  		<div class="col-md-2 col-sm-2 ">
+					  			<div class="panel-group">
+					    				<div class="panel panel-primary"style="box-shadow: 0 0 30px black;">
+					    				<a href="Loans#">
+					      					<!-- <div class="panel-heading">Panel Header</div> -->
+					      					<div class="panel-body" style="background-color:#dfdbe7;">
+					      						<div class="row">
+											        <div class="col-xs-6">
+											            <div class="xbtn"><strong><p>Loans</p> </strong>
+							      						</div>
+											        </div>
+											        <div class="col-xs-6">
+											           <!--  <img src="assets/images/resources/settings.png"> -->
+											          <img src="/images/resources/Loans.png" class="ximg"  style="height:110%;width:80%;">
+											        </div>
+											    </div>
+					      					</div>
+					      					
+					      						<div class="panel-footer">
+					        						<span class="pull-left">View Details</span>
+					        						<span class="pull-right"><span class="glyphicon glyphicon-circle-arrow-right"></span></span>
+					        						<div class="clearfix"></div>			
+					      						</div>
+					      					</a>
+					    				</div>
+					  				</div>
+                  		</div>
+                  		<div class="col-md-2 col-sm-2 ">
+					  			<div class="panel-group">
+					    				<div class="panel panel-primary"style="box-shadow: 0 0 30px black;">
+					    				<a href="Demographics#">
+					      					<!-- <div class="panel-heading">Panel Header</div> -->
+					      					<div class="panel-body" style="background-color:#dfdbe7;">
+					      						<div class="row">
+											        <div class="col-xs-6">
+											            <div class="xbtn"><strong><p>Demographics</p> </strong>
+							      						</div>
+											        </div>
+											        <div class="col-xs-6">
+											           <!--  <img src="assets/images/resources/settings.png"> -->
+											          <img src="/images/resources/Demographics.png" class="ximg"  style="height:110%;width:80%;">
+											        </div>
+											    </div>
+					      					</div>
+					      					
+					      						<div class="panel-footer">
+					        						<span class="pull-left">View Details</span>
+					        						<span class="pull-right"><span class="glyphicon glyphicon-circle-arrow-right"></span></span>
+					        						<div class="clearfix"></div>			
+					      						</div>
+					      					</a>
+					    				</div>
+					  				</div>
+                  		</div>
+                  		<div class="col-md-2 col-sm-2 ">
+					  			<div class="panel-group">
+					    				<div class="panel panel-primary"style="box-shadow: 0 0 30px black;">
+					    				<a href="ATMBank#">
+					      					<!-- <div class="panel-heading">Panel Header</div> -->
+					      					<div class="panel-body" style="background-color:#dfdbe7;">
+					      						<div class="row">
+											        <div class="col-xs-6">
+											            <div class="xbtn"><strong><p>ATM/Bank</p> </strong>
+							      						</div>
+											        </div>
+											        <div class="col-xs-6">
+											           <!--  <img src="assets/images/resources/settings.png"> -->
+											          <img src="/images/resources/Atm.png" class="ximg"  style="height:110%;width:80%;">
+											        </div>
+											    </div>
+					      					</div>
+					      					
+					      						<div class="panel-footer">
+					        						<span class="pull-left">View Details</span>
+					        						<span class="pull-right"><span class="glyphicon glyphicon-circle-arrow-right"></span></span>
+					        						<div class="clearfix"></div>			
+					      						</div>
+					      					</a>
+					    				</div>
+					  				</div>
+                  		</div>
+                  	
+                  	</div><!-- /row mt -->
+                    <!-- End of Fourth row -->
+                    <!-- Fifth row -->
+                    <div class="row mtbox">
+                  		<div class="col-md-2 col-sm-2 col-md-offset-1">
+						  			<div class="panel-group">
+					    				<div class="panel panel-primary"style="box-shadow: 0 0 30px black;">
+					    				<a href="Settings#">
+					      					<!-- <div class="panel-heading">Panel Header</div> -->
+					      					<div class="panel-body" style="background-color:#dfdbe7;">
+					      						<div class="row">
+											        <div class="col-xs-6">
+											            <div class="xbtn"><strong><p>Settings</p> </strong>
+							      						</div>
+											        </div>
+											        <div class="col-xs-6">
+											           <!--  <img src="assets/images/resources/settings.png"> -->
+											          <img src="/images/resources/Settings.png" class="ximg"  style="height:110%;width:80%;">
+											        </div>
+											    </div>
+					      					</div>
+					      					
+					      						<div class="panel-footer">
+					        						<span class="pull-left">View Details</span>
+					        						<span class="pull-right"><span class="glyphicon glyphicon-circle-arrow-right"></span></span>
+					        						<div class="clearfix"></div>			
+					      						</div>
+					      					</a>
+					    				</div>
+					  				</div>
+                  		</div>
+                  		<div class="col-md-2 col-sm-2">
+					  			<div class="panel-group">
+					    				<div class="panel panel-primary"style="box-shadow: 0 0 30px black;">
+					    				<a href="DTRReports#">
+					      					<!-- <div class="panel-heading">Panel Header</div> -->
+					      					<div class="panel-body" style="background-color:#dfdbe7;">
+					      						<div class="row">
+											        <div class="col-xs-6">
+											            <div class="xbtn"><strong><p>DTR Reports</p> </strong>
+							      						</div>
+											        </div>
+											        <div class="col-xs-6">
+											          <img src="/images/resources/DTRReport.png" class="ximg"  style="height:110%;width:80%;">
+											        </div>
+											    </div>
+					      					</div>
+					      					
+					      						<div class="panel-footer">
+					        						<span class="pull-left">View Details</span>
+					        						<span class="pull-right"><span class="glyphicon glyphicon-circle-arrow-right"></span></span>
+					        						<div class="clearfix"></div>			
+					      						</div>
+					      					</a>
+					    				</div>
+					  				</div>
+                  		</div>
+                  		<div class="col-md-2 col-sm-2 ">
+					  			<div class="panel-group">
+					    				<div class="panel panel-primary"style="box-shadow: 0 0 30px black;">
+					    				<a href="LeaveReports#">
+					      					<!-- <div class="panel-heading">Panel Header</div> -->
+					      					<div class="panel-body" style="background-color:#dfdbe7;">
+					      						<div class="row">
+											        <div class="col-xs-6">
+											            <div class="xbtn"><strong><p>Leave Reports</p> </strong>
+							      						</div>
+											        </div>
+											        <div class="col-xs-6">
+											          <img src="/images/resources/leavereport.png" class="ximg"  style="height:110%;width:80%;">
+											        </div>
+											    </div>
+					      					</div>
+					      						<div class="panel-footer">
+					        						<span class="pull-left">View Details</span>
+					        						<span class="pull-right"><span class="glyphicon glyphicon-circle-arrow-right"></span></span>
+					        						<div class="clearfix"></div>			
+					      						</div>
+					      					</a>
+					    				</div>
+					  				</div>
+                  		</div>
+                  		<div class="col-md-2 col-sm-2 ">
+					  			<div class="panel-group">
+					    				<div class="panel panel-primary"style="box-shadow: 0 0 30px black;">
+					    				<a href="PayrollReports#">
+					      					<!-- <div class="panel-heading">Panel Header</div> -->
+					      					<div class="panel-body" style="background-color:#dfdbe7;">
+					      						<div class="row">
+											        <div class="col-xs-6">
+											            <div class="xbtn"><strong><p>Payroll Reports</p> </strong>
+							      						</div>
+											        </div>
+											        <div class="col-xs-6">
+											           <!--  <img src="assets/images/resources/settings.png"> -->
+											          <img src="/images/resources/PayrollReport.png" class="ximg"  style="height:110%;width:80%;">
+											        </div>
+											    </div>
+					      					</div>
+					      						<div class="panel-footer">
+					        						<span class="pull-left">View Details</span>
+					        						<span class="pull-right"><span class="glyphicon glyphicon-circle-arrow-right"></span></span>
+					        						<div class="clearfix"></div>			
+					      						</div>
+					      					</a>
+					    				</div>
+					  				</div>
+                  		</div>
+                  		<div class="col-md-2 col-sm-2 ">
+					  			<div class="panel-group">
+					    				<div class="panel panel-primary"style="box-shadow: 0 0 30px black;">
+					    				<a href="LoanReports#">
+					      					<!-- <div class="panel-heading">Panel Header</div> -->
+					      					<div class="panel-body" style="background-color:#dfdbe7;">
+					      						<div class="row">
+											        <div class="col-xs-6">
+											            <div class="xbtn"><strong><p>Loan Reports</p> </strong>
+							      						</div>
+											        </div>
+											        <div class="col-xs-6">
+											          <img src="/images/resources/LoanReport.png" class="ximg"  style="height:110%;width:80%;">
+											        </div>
+											    </div>
+					      					</div>
+					      						<div class="panel-footer">
+					        						<span class="pull-left">View Details</span>
+					        						<span class="pull-right"><span class="glyphicon glyphicon-circle-arrow-right"></span></span>
+					        						<div class="clearfix"></div>			
+					      						</div>
+					      					</a>
+					    				</div>
+					  				</div>
+                  		</div>
+                  	</div><!-- /row mt -->
+                    <!-- End of Fifth row -->
+                    <!-- LAST ROW -->
+                    <div class="row mtbox">
+                  		<div class="col-md-2 col-sm-2 col-md-offset-1">
+						  			<div class="panel-group">
+					    				<div class="panel panel-primary"style="box-shadow: 0 0 30px black;">
+					    				<a href="MandatoryReports#">
+					      					<!-- <div class="panel-heading">Panel Header</div> -->
+					      					<div class="panel-body" style="background-color:#dfdbe7;">
+					      						<div class="row">
+											        <div class="col-xs-6">
+											            <div class="xbtn"><strong><p>Mandatory Reports</p> </strong>
+							      						</div>
+											        </div>
+											        <div class="col-xs-6">
+											          <img src="/images/resources/MandatoryReport.png" class="ximg"  style="height:110%;width:80%;">
+											        </div>
+											    </div>
+					      					</div>
+					      						<div class="panel-footer">
+					        						<span class="pull-left">View Details</span>
+					        						<span class="pull-right"><span class="glyphicon glyphicon-circle-arrow-right"></span></span>
+					        						<div class="clearfix"></div>			
+					      						</div>
+					      					</a>
+					    				</div>
+					  				</div>
+                  		</div>
+                  		<div class="col-md-2 col-sm-2">
+					  			<div class="panel-group">
+					    				<div class="panel panel-primary"style="box-shadow: 0 0 30px black;">
+					    				<a href="AccountingReports#">
+					      					<!-- <div class="panel-heading">Panel Header</div> -->
+					      					<div class="panel-body" style="background-color:#dfdbe7;">
+					      						<div class="row">
+											        <div class="col-xs-6">
+											            <div class="xbtn"><strong><p>Accounting Reports</p> </strong>
+							      						</div>
+											        </div>
+											        <div class="col-xs-6">
+											          <img src="/images/resources/AccountingReport.png" class="ximg"  style="height:110%;width:80%;">
+											        </div>
+											    </div>
+					      					</div>
+					      						<div class="panel-footer">
+					        						<span class="pull-left">View Details</span>
+					        						<span class="pull-right"><span class="glyphicon glyphicon-circle-arrow-right"></span></span>
+					        						<div class="clearfix"></div>			
+					      						</div>
+					      					</a>
+					    				</div>
+					  				</div>
+                  		</div>
+                  		<div class="col-md-2 col-sm-2 ">
+					  			<div class="panel-group">
+					    				<div class="panel panel-primary"style="box-shadow: 0 0 30px black;">
+					    				<a href="WithholdingTaxReports#">
+					      					<!-- <div class="panel-heading">Panel Header</div> -->
+					      					<div class="panel-body" style="background-color:#dfdbe7;">
+					      						<div class="row">
+											        <div class="col-xs-6">
+											            <div class="xbtn"><strong><p>Withholding Tax Reports</p> </strong>
+							      						</div>
+											        </div>
+											        <div class="col-xs-6">
+											          <img src="/images/resources/WithholdingTaxReport.png" class="ximg"  style="height:110%;width:80%;">
+											        </div>
+											    </div>
+					      					</div>
+					      						<div class="panel-footer">
+					        						<span class="pull-left">View Details</span>
+					        						<span class="pull-right"><span class="glyphicon glyphicon-circle-arrow-right"></span></span>
+					        						<div class="clearfix"></div>			
+					      						</div>
+					      					</a>
+					    				</div>
+					  				</div>
+                  		</div>
+                  	</div><!-- /row mt -->
+                    <!-- LAST ROW-->
+
+                  
+              
+                  </div>
+              </div>
+          </section>
+      </section>
+      
+      <!--main content end-->
+      <!--footer start-->
+      <footer class="site-footer">
+          <div class="text-center">
+              2016 - Hris Innosoft Solution Inc. 
+              <a href="index.html#" class="go-top">
+                  <i class="fa fa-angle-up"></i>
+              </a>
+          </div>
+      </footer>
+      <!--footer end-->
+
+</section>
+    <script src="http://code.jquery.com/jquery-1.9.0.js"></script> 
+    <script class="include" type="text/javascript" src="~/js/jquery.dcjqaccordion.2.72.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.2/jquery.scrollTo.min.js"></script>
+	<!--<script src="//cdnjs.cloudflare.com/ajax/libs/jquery.nicescroll/3.5.1/jquery.nicescroll.min.js"></script>-->
+    
+
+    <!-- common script for all pages -->
+    <script src="~/js/common-scripts2.js"></script>
+</body>
+
+</html>    
+    
