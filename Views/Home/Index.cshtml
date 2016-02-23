@@ -29,10 +29,10 @@
                 </ul>
                  <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a class="page-scroll" data-toggle="modal" data-target="#Register" href="">Register</a>
+                        <a class="page-scroll" href="../Account/Register#" >Register</a>
                     </li>
                      <li>
-                        <a class="page-scroll" data-toggle="modal" data-target="#SignIn" href=""><span class="glyphicon glyphicon-user"></span> Sign In</a>
+                        <a class="page-scroll" href="../Account/Login" ><span class="glyphicon glyphicon-user"></span> Sign In</a>
                     </li>
                 </ul>
             </div>
@@ -49,7 +49,7 @@
                 <div class="row" style="margin-top:17%">
                     <hr>
                     <div class="intro-lead-in">Human Resource Information System</div>
-                    <a href="Account/Login" class="btn btn-xl" style="margin-top:2%">Launch Software</a>
+                    <a href="../Account/Login" class="btn btn-xl" style="margin-top:2%">Launch Software</a>
                     <hr>
                 </div>
             </div>
@@ -180,7 +180,7 @@
             </div>
         </div>
     </section>
-    <footer>
+    <footer class="footer-index">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
@@ -189,88 +189,4 @@
             </div>
         </div>
     </footer>
-    <!--Sign In Modal -->
-    <div class="modal fade" id="SignIn" role="dialog">
-	   <div class="modal-dialog">
-	      <!-- Modal content-->
-	      <div class="modal-content">
-	      	<div class="modal-header">
-	          <!--<button type="button" class="close" data-dismiss="modal">&times;</button>-->
-	          <h4 class="modal-title"><span class="glyphicon glyphicon-lock"></span> Sign In</h4>
-	        </div>
-	        <div class="modal-body">
-	        	<table height="130px" align ="center" cellspacing="10" cellpadding="10" border="0">
-				    <tbody>
-				      <tr padding-bottom="300px">
-				        <td><label for="exampleInputEmail1" > Username :</label></td>
-			    		<td style="width: 300px;"><input type="text" class="form-control" id="Student_Id" placeholder="Username"></td>
-				      </tr>
-				      <tr>
-				      	<td width = "100px"><label for="exampleInputPassword1">Password :</label></td>
-			    		<td><input type="Password" class="form-control" id="Student_Name" placeholder="Password"></td>
-				      </tr>
-                      <tr>
-                          <td></td>
-                          <td>   
-                            <label class="checkbox-inline">
-                                <input type="checkbox" value="">Remember me
-                            </label>
-                        </td>  
-                      </tr>  
-				    </tbody>
-				</table>
-	        </div>
-	        <div class="modal-footer">
-	        	<button type="submit" class="btn btn-success">
-	        		<span class="glyphicon glyphicon-user"></span> Log In
-	        	</button>
-	        	<button type="button" class="btn btn-danger" data-dismiss="modal">
-	        		<span class="glyphicon glyphicon-remove"></span> Cancel
-	        	</button>
-	        </div>
-	      </div>
-	    </div>
-    </div> 
-    <!--Register Modal -->
-    <div class="modal fade" id="Register" role="dialog">
-	   <div class="modal-dialog">
-	      <!-- Modal content-->
-	      <div class="modal-content">
-	      	<div class="modal-header">
-	          <h4 class="modal-title"><span class="glyphicon glyphicon-lock"></span> Register</h4>
-	        </div>
-	        <div class="modal-body" >
-	        	<table height="300px" align ="center" cellspacing="10" cellpadding="10" border="0">
-				    <tbody>
-                      <tr>
-				      	<td width = "100px"><label for="exampleInputPassword1">Name :</label></td>
-			    		<td style="width: 400px;"><input type="text" class="form-control" id="Student_Name" placeholder="Name"></td>
-				      </tr>
-                      <tr>
-				      	<td width = "100px"><label for="exampleInputPassword1">Address :</label></td>
-			    		<td style="width: 400px;"><input type="text" class="form-control" id="Student_Name" placeholder="Address"></td>
-				      </tr>
-				      <tr>
-				        <td><label for="exampleInputEmail1" > Username :</label></td>
-			    		<td><input type="text" class="form-control" id="Student_Id" placeholder="Username"></td>
-				      </tr>
-				      <tr>
-				      	<td width = "100px"><label for="exampleInputPassword1">Password :</label></td>
-			    		<td><input type="Password" class="form-control" id="Student_Name" placeholder="Password"></td>
-				      </tr>
-                      <tr>
-				      	<td width = "150px"><label for="exampleInputPassword1">Confirm Password :</label></td>
-			    		<td><input type="Password" class="form-control" id="Student_Name" placeholder="Confirm Password"></td>
-				      </tr>                                       
-				    </tbody>
-				</table>
-	        </div>	    
-	        <div class="modal-footer">
-	        	<button type="submit" class="btn btn-success"><span class="glyphicon glyphicon-user"></span> Register</button>
-	        	<button type="button" class="btn btn-danger" data-dismiss="modal">
-	        		<span class="glyphicon glyphicon-remove"></span> Cancel
-	        	</button>
-	        </div>
-	      </div>
-	    </div>
-    </div>               
+   

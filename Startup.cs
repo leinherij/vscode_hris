@@ -32,7 +32,7 @@ namespace HRISVSC
 
             builder.AddEnvironmentVariables();
             Configuration = builder.Build();
-            Configuration["Data:DefaultConnection:ConnectionString"] = $@"Data Source=10.211.55.3;Initial Catalog=hris;Persist Security Info=True;User ID=sa;Password=innosoft";
+            Configuration["Data:DefaultConnection:ConnectionString"] = $@"Data Source=Noah-pc;Initial Catalog=hris_atlantic;Persist Security Info=True;User ID=sa;Password=innosoft";
 
         }
 
