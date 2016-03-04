@@ -1,15 +1,7 @@
 @{
-Layout = null;
+
 }
-<html>
-<head>
-    <link rel="stylesheet" href="~/css/bootstrap2.css" />
-        <link rel="stylesheet" href="~/font-awesome/css/font-awesome2.css" />
-        <link rel="stylesheet" href="~/lineicons/style2.css" />
-        <link rel="stylesheet" href="~/css/style2.css" />
-        <link rel="stylesheet" href="~/css/style-responsive2.css" />
-</head>
-<body>
+
     <section id="container" >
     <!-- **********************************************************************************************************************************************************
       TOP BAR CONTENT & NOTIFICATIONS
@@ -118,100 +110,246 @@ Layout = null;
       MAIN CONTENT
       *********************************************************************************************************************************************************** -->
       <!--main content start-->
+      
       <section id="main-content">
           <section class="wrapper">
               <h3><i class="fa fa-angle-right"></i> Employee Lists</h3>
-				
+              <!--///////////////////////////////////////////////////////////////////////////////////////////////////////////
+              ////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+              <select><option selected="Select"></option><option>Sample</option></select>
+              <select id='theComboSelect'><option>Austria</option><option>Belgium</option><option selected>Sample</option><option>Denmark</option><option>Egypt</option></select>
+              <!-- Content Header (Page header) -->
+                    <section id="container">
+                        <!--<h1 class="fa fa-table">
+                            Item List
+                            
+                        </h1>-->
+                        <!--<ol class="breadcrumb">
+                            <li><a href="../Software/Dashboard"><i class="fa fa-table"></i> Home</a></li>
+                            <li class="active">Item</li>
+                        </ol>-->
+                    </section>
+                    <section class="content">
+                        <div class="row">
+                            <div class="col-xs-12">
 
-              <div class="row mt" style="padding-top:0%;">
-                  <div class="col-md-12">
-                      <div class="content-panel">
-                          <table class="table table-striped table-advance table-hover">
-	                  	  	  <h4><i class="fa fa-angle-right"></i> Employee Table</h4>
-	                  	  	  <hr>
-                              <thead>
-                              <tr>
-                                  <th><i class="fa fa-bullhorn"></i> ID NO.</th>
-                                  <th class="hidden-phone"><i class="fa fa-question-circle"></i> Name</th>
-                                  <th><i class="fa fa-bookmark"></i> Position</th>
-                                  <th><i class=" fa fa-edit"></i> Status</th>
-                                  <th></th>
-                              </tr>
-                              </thead>
-                              <tbody>
-                              <tr>
-                                  <td><a href="basic_table.html#">Company Ltd</a></td>
-                                  <td class="hidden-phone">Lorem Ipsum dolor</td>
-                                  <td>12000.00$ </td>
-                                  <td><span class="label label-info label-mini">Due</span></td>
-                                  <td>
-                                      <button class="btn btn-success btn-xs"><i class="fa fa-check"></i></button>
-                                      <button class="btn btn-primary btn-xs"><i class="fa fa-pencil"></i></button>
-                                      <button class="btn btn-danger btn-xs"><i class="fa fa-trash-o "></i></button>
-                                  </td>
-                              </tr>
-                              <tr>
-                                  <td>
-                                      <a href="basic_table.html#">
-                                          Dashgum co
-                                      </a>
-                                  </td>
-                                  <td class="hidden-phone">Lorem Ipsum dolor</td>
-                                  <td>17900.00$ </td>
-                                  <td><span class="label label-warning label-mini">Due</span></td>
-                                  <td>
-                                      <button class="btn btn-success btn-xs"><i class="fa fa-check"></i></button>
-                                      <button class="btn btn-primary btn-xs"><i class="fa fa-pencil"></i></button>
-                                      <button class="btn btn-danger btn-xs"><i class="fa fa-trash-o "></i></button>
-                                  </td>
-                              </tr>
-                              <tr>
-                                  <td>
-                                      <a href="basic_table.html#">
-                                          Another Co
-                                      </a>
-                                  </td>
-                                  <td class="hidden-phone">Lorem Ipsum dolor</td>
-                                  <td>14400.00$ </td>
-                                  <td><span class="label label-success label-mini">Paid</span></td>
-                                  <td>
-                                      <button class="btn btn-success btn-xs"><i class="fa fa-check"></i></button>
-                                      <button class="btn btn-primary btn-xs"><i class="fa fa-pencil"></i></button>
-                                      <button class="btn btn-danger btn-xs"><i class="fa fa-trash-o "></i></button>
-                                  </td>
-                              </tr>
-                              <tr>
-                                  <td>
-                                      <a href="basic_table.html#">
-                                          Dashgum ext
-                                      </a>
-                                  </td>
-                                  <td class="hidden-phone">Lorem Ipsum dolor</td>
-                                  <td>22000.50$ </td>
-                                  <td><span class="label label-success label-mini">Paid</span></td>
-                                  <td>
-                                      <button class="btn btn-success btn-xs"><i class="fa fa-check"></i></button>
-                                      <button class="btn btn-primary btn-xs"><i class="fa fa-pencil"></i></button>
-                                      <button class="btn btn-danger btn-xs"><i class="fa fa-trash-o "></i></button>
-                                  </td>
-                              </tr>
-                              <tr>
-                                  <td><a href="basic_table.html#">Total Ltd</a></td>
-                                  <td class="hidden-phone">Lorem Ipsum dolor</td>
-                                  <td>12120.00$ </td>
-                                  <td><span class="label label-warning label-mini">Due</span></td>
-                                  <td>
-                                      <button class="btn btn-success btn-xs"><i class="fa fa-check"></i></button>
-                                      <button class="btn btn-primary btn-xs"><i class="fa fa-pencil"></i></button>
-                                      <button class="btn btn-danger btn-xs"><i class="fa fa-trash-o "></i></button>
-                                  </td>
-                              </tr>
-                              </tbody>
-                          </table>
-                      </div><!-- /content-panel -->
-                  </div><!-- /col-md-12 -->
-              </div><!-- /row -->
+                                <!--table container-->
+                                <div class="box">
+
+                                    <div class="row">
+
+                                        <div class="box-header">
+                                            <div class="col-md-6">
+                                                <!--search box-->
+                                                <!--<div class="box-tools">
+                                                    <div class="input-group" style="width: 150px;">
+                                                        <input type="text" class="form-control input-sm" id="InputFilter" placeholder="Search">
+                                                        <div class="input-group-btn">
+                                                            <button class="btn btn-sm btn-default"><i class="fa fa-search"></i></button>
+                                                        </div>
+                                                    </div>
+                                                </div>-->
+                                            </div>
+                                            <div class="btn-group-horizontal btn-sm pull-right">
+                                                <a href="~/Software/AddItem" class="btn btn-info"><i class="fa fa-plus"></i> Add</a>
+                                                <a href="~/Software/Dashboard" class="btn btn-danger "><i class="fa fa-close"></i> Close</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--table-->
+                                    <table id="itemCollectionGrid" class="grid border-custom"></table>
+
+                                </div>
+                            </div>
+                        </div>
+                        <!--navigation buttons-->
+                        <div class="btn-group pull-right" id="navigationPageGrid">
+                            <button type="button" class="btn btn-default border-custom" id="btnMoveToFirstPageGrid">
+                                <span class="glyphicon glyphicon-fast-backward"></span>
+                            </button>
+                            <button type="button" class="btn btn-default border-custom" id="btnMoveToPreviousPageGrid">
+                                <span class="glyphicon glyphicon-step-backward"></span>
+                            </button>
+                            <button type="button" class="btn btn-default border-custom" disabled style="width: 100px" id="btnCurrentPageGrid"></button>
+                            <button type="button" class="btn btn-default border-custom" id="btnMoveToNextPageGrid">
+                                <span class="glyphicon glyphicon-step-forward"></span>
+                            </button>
+                            <button type="button" class="btn btn-default border-custom" id="btnMoveToLastPageGrid">
+                                <span class="glyphicon glyphicon-fast-forward"></span>
+                            </button>
+                        </div>
+                        </section>
+                        <div class="modal fade" id="deleteItemConfirm" role="dialog">
+                        <div class="modal-dialog modal-sm">
+                            <!-- Modal content-->
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    <h4 class="modal-title">Delete Item? <i class="fa fa-trash"></i></h4>
+                                </div>
+
+                                <div class="modal-footer">
+                                    <button class="btn btn-danger btn-sm" id="cmdConfirmDeleteItem" onclick="cmdItemConfirmDeleteButton_OnClick()">Delete</button>
+                                    <button id="cmdConfirmDeleteCloseButton" class="btn btn-primary btn-sm" data-dismiss="modal">Cancel</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Loading Modal -->
+                    <div class="modal fade" id="loadingModal" tabindex="-1" role="dialog" aria-labelledby="Loading..." aria-hidden="true" data-backdrop="static" data-keyboard="false">
+                        <div class=" modal-dialog modal-sm">
+                            Modal content
+                            <div class="modal-content">
+                                <div class="modal-body">
+                                    <h4 style="text-align:center">Loading ...</h4>
+                                </div>
+                                <div class="modal-footer">
+                                    <img class="img-thumbnail img-responsive center-block img-custom" src='~/images/loading/progress_bar.gif'>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <script type="text/javascript">
+
+                //================
+                // Global variables
+                // ================
+                var itemCollections;
+                var itemGrid;
+                var editItem;
+
+                var lastCount = 0;
+                var btnFirstPageGrid;
+                var btnPreviousPageGrid;
+                var btnNextPageGrid;
+                var btnLastPageGrid;
+                var btnCurrentPageGrid;
+
+                // =============================
+                // Get ItemMasterList Data
+                // =============================
+                function getItemMasterList() {
+                   
+                    var ItemList = new wijmo.collections.ObservableArray();
+                        for (i = 0; i < 25; i++) {
+                            ItemList.push({
+                                Id: i,
+                                Name: i,
+                                Position: "",
+                                L: "<label><input type='checkbox' id='blankCheckbox' value='option1' aria-label='...'></label>",
+               
+                                EditId: "<button class='btn btn-success btn-xs'><i class='fa fa-check'></i></button>"+"<button class='btn btn-primary btn-xs'><i class='fa fa-pencil'></i></button>"+"<button class='btn btn-danger btn-xs'><i class='fa fa-trash-o '></i></button>",
+
+                            });
+                                lastCount++;
+                       }
+                       
+                       itemCollections = new wijmo.collections.CollectionView(ItemList);
+                       btnCurrentPageGrid.innerHTML = (itemCollections.pageIndex + 1) + ' / ' + itemCollections.pageCount;
+                       itemCollections.canFilter = true;
+                       itemCollections.pageSize = 9;
+                       
+                       itemGrid = new wijmo.grid.FlexGrid('#itemCollectionGrid');
+                       //Flex Grid
+                       itemGrid.initialize({
+                           columns: [
+                               
+                               {
+                                   
+                                   "header": "Id No",
+                                   "binding": "Id",
+                                   "align": "center",
+                                   "allowSorting": true,
+                                   "isContentHtml": true,
+                                   "width": "1*"
+                               },
+                               {
+                                   "header": "Name",
+                                   "binding": "Name",
+                                   "align": "center",
+                                   "allowSorting": true,
+                                   "width": "1*"
+                               },
+                               {
+                                   "header": "Position",
+                                   "binding": "Position",
+                                   "align": "center",
+                                   "allowSorting": true,
+                                   "isContentHtml": true,
               
+                                   "width": "1*"
+                               },
+                               {
+                                   "header": "L",
+                                   "binding": "L",
+                                   "align": "center",
+                                   "allowSorting": true,
+                                   "isContentHtml": true,
+                                   "width": ".25*"
+                               },
+                               
+                               {
+                                   
+                                   "header": "Edit",
+                                   "binding": "EditId",
+                                   "align": "center",
+                                   "allowSorting": true,
+                                   "isContentHtml": true,
+                                   "width": "1*"
+                               }
+                               
+                                    
+                       ],
+                           autoGenerateColumns: false,
+                           itemsSource: itemCollections,
+                           isReadOnly: true,
+                           autoSizeMode: wijmo.grid.AutoSizeMode.Both,
+                           allowDragging: wijmo.grid.AllowDragging.None,
+                           selectionMode: wijmo.grid.SelectionMode.Row
+                       });
+
+                                itemGrid.trackChanges = true;
+
+                                updateNavigateButtonsCollection();
+
+                                btnFirstPageGrid.addEventListener('click', function () {
+                                    itemCollections.moveToFirstPage();
+                                    updateNavigateButtonsCollection();
+                                });
+                                btnPreviousPageGrid.addEventListener('click', function () {
+                                    itemCollections.moveToPreviousPage();
+                                    updateNavigateButtonsCollection();
+                                });
+                                btnNextPageGrid.addEventListener('click', function () {
+                                    itemCollections.moveToNextPage();
+                                    updateNavigateButtonsCollection();
+                                });
+                                btnLastPageGrid.addEventListener('click', function () {
+                                    itemCollections.moveToLastPage();
+                                    updateNavigateButtonsCollection();
+                                });
+
+                }
+
+                //===========================
+                // On Page Load
+                // ==========================
+                $(document).ready(function () {
+                    //Collection View
+                      btnCurrentPageGrid = document.getElementById('btnCurrentPageGrid');
+                      getItemMasterList();
+                                // alert("No data."); 
+                                    // create (and populate) ComboBox from <select> element
+                                   
+                      var cbs = new wijmo.input.ComboBox('#theComboSelect');
+                      
+                });
+    
+            </script>
+              
+              <!--////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+              ////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
           </section>
       </section>
       
@@ -226,17 +364,11 @@ Layout = null;
           </div>
       </footer>
       <!--footer end-->
+      
+      
 
 </section>
-    <script src="http://code.jquery.com/jquery-1.9.0.js"></script> 
-    <script class="include" type="text/javascript" src="~/js/jquery.dcjqaccordion.2.72.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.2/jquery.scrollTo.min.js"></script>
-	<!--<script src="//cdnjs.cloudflare.com/ajax/libs/jquery.nicescroll/3.5.1/jquery.nicescroll.min.js"></script>-->
-    
 
-    <!-- common script for all pages -->
-    <script src="~/js/common-scripts2.js"></script>
-</body>
 
-</html>    
-    
+                    
+        

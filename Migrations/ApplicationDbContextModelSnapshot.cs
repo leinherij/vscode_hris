@@ -177,6 +177,8 @@ namespace HRISVSC.Migrations
                         .WithMany()
                         .HasForeignKey("UserId");
                 });
+                
+                
         }
     }
 }
