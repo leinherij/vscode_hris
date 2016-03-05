@@ -11,6 +11,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using HRISVSC.Models;
+using HRISVSC.Repository;
 
 
 namespace HRISVSC
@@ -32,7 +33,9 @@ namespace HRISVSC
 
             builder.AddEnvironmentVariables();
             Configuration = builder.Build();
-            Configuration["Data:DefaultConnection:ConnectionString"] = $@"Data Source=Noah-pc;Initial Catalog=hris_atlantic;Persist Security Info=True;User ID=sa;Password=innosoft";
+            Configuration["Data:DefaultConnection:ConnectionString"] = 
+                // $@"Data Source=Noah-pc;Initial Catalog=hris_atlantic;Persist Security Info=True;User ID=sa;Password=innosoft";
+                $@"Data Source=SimeoNoeme-PC;Initial Catalog=hris_atlantic;Persist Security Info=True;User ID=sa;Password=SimeoNoeme";
 
         }
 
@@ -41,15 +44,11 @@ namespace HRISVSC
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            // Add framework services.
-            // services.AddEntityFramework()
-            //     .AddSqlite()
-            //     .AddDbContext<ApplicationDbContext>(options =>
-            //         options.UseSqlite(Configuration["Data:DefaultConnection:ConnectionString"]));
+            var conn = Configuration["Data:DefaultConnection:ConnectionString"];
             services.AddEntityFramework()
             .AddSqlServer()
-            .AddDbContext<ApplicationDbContext>(options =>
-                 options.UseSqlServer(Configuration["Data:DefaultConnection:ConnectionString"]));
+            .AddDbContext<SoftwareDbContext>(options => options.UseSqlServer(conn))
+            .AddDbContext<ApplicationDbContext>(options => options.UseSqlServer(conn));
 
             services.AddIdentity<ApplicationUser, IdentityRole>()
                 .AddEntityFrameworkStores<ApplicationDbContext>()
@@ -57,6 +56,8 @@ namespace HRISVSC
 
             services.AddMvc();
 
+            services.AddScoped<MstEmployeeIFRepository, MstEmployeeRepository>();
+            services.AddScoped<MstAccountIFRepository, MstAccountRepository>();
             // Add application services.
            // services.AddTransient<IEmailSender, AuthMessageSender>();
            

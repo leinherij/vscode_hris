@@ -1,7 +1,9 @@
-
 using Microsoft.AspNet.Identity.EntityFramework;
 using Microsoft.Data.Entity;
+<<<<<<< HEAD
 using System;
+=======
+>>>>>>> cc76c7c9e166eeaeaa17c8c34d6e8c7557942b14
 namespace HRISVSC.Models
 {
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
@@ -9,12 +11,11 @@ namespace HRISVSC.Models
         protected override void OnModelCreating(ModelBuilder builder)
         {
             base.OnModelCreating(builder);
-            // Customize the ASP.NET Identity model and override the defaults if needed.
-            // For example, you can rename the ASP.NET Identity table names and more.
-            // Add your customizations after calling base.OnModelCreating(builder);
-            
         }
+<<<<<<< HEAD
 
         
+=======
+>>>>>>> cc76c7c9e166eeaeaa17c8c34d6e8c7557942b14
     }
 }
