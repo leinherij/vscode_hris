@@ -1,9 +1,11 @@
+using System;
+
 namespace HRISVSC.Models
 {
     public class MstAccount
     {
-        public int id { get; set; }
-        public string accountcode { get; set; }
-        public string account { get; set; }
+        public Int32 id { get; set; }
+        public String accountcode { get; set; }
+        public String account { get; set; }
     }
 }
