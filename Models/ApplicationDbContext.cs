@@ -1,9 +1,5 @@
 using Microsoft.AspNet.Identity.EntityFramework;
 using Microsoft.Data.Entity;
-<<<<<<< HEAD
-using System;
-=======
->>>>>>> bad49eba9806d8a5b89f6324e6061c9746c5889c
 
 namespace HRISVSC.Models
 {

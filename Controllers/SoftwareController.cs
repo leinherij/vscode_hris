@@ -148,17 +148,10 @@ namespace HRISVSC.Controllers
         {
             return View();
         }
-<<<<<<< HEAD
         public IActionResult AddEmployee()
         {
             return View();
         }
-        public IActionResult EmployeeSample()
-        {
-            return View();
-        }
-=======
-        
->>>>>>> bad49eba9806d8a5b89f6324e6061c9746c5889c
+
     }
 }
