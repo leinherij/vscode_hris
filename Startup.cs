@@ -34,8 +34,8 @@ namespace HRISVSC
             builder.AddEnvironmentVariables();
             Configuration = builder.Build();
             Configuration["Data:DefaultConnection:ConnectionString"] = 
-                // $@"Data Source=Noah-pc;Initial Catalog=hris_atlantic;Persist Security Info=True;User ID=sa;Password=innosoft";
-                $@"Data Source=SimeoNoeme-PC;Initial Catalog=hris_atlantic;Persist Security Info=True;User ID=sa;Password=SimeoNoeme";
+                 $@"Data Source=Noah-pc;Initial Catalog=hris_atlantic;Persist Security Info=True;User ID=sa;Password=innosoft";
+                //$@"Data Source=SimeoNoeme-PC;Initial Catalog=hris_atlantic;Persist Security Info=True;User ID=sa;Password=SimeoNoeme";
 
         }
 

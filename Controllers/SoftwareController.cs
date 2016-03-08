@@ -161,5 +161,13 @@ namespace HRISVSC.Controllers
             
             return View();
         }
+        public IActionResult AddEmployee()
+        {
+            return View();
+        }
+        public IActionResult EmployeeSample()
+        {
+            return View();
+        }
     }
 }
