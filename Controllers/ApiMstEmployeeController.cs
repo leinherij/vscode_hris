@@ -1,32 +1,33 @@
+using System;
 using System.Collections.Generic;
 using HRISVSC.Models;
 using HRISVSC.Repository;
 using Microsoft.AspNet.Mvc;
 
 namespace HRISVSC.Controllers
-{
-     
+{    
     public class ApiMstEmployeeController : Controller
     {
-        private readonly MstEmployeeIFRepository _mstemployeeRepository;
+        private readonly MstEmployeeRI _mstemployeeR;
  
-        public ApiMstEmployeeController(MstEmployeeIFRepository mstemployeeRepository)
+        public ApiMstEmployeeController(MstEmployeeRI mstemployeeR)
         {
-            _mstemployeeRepository = mstemployeeRepository;
+            _mstemployeeR = mstemployeeR;
         }
+        
         [Route("api/employee/list")]
-        [HttpGet]
         public IEnumerable<MstEmployee> GetAll()
         {
-            return _mstemployeeRepository.GetAll();          
+            return _mstemployeeR.GetAll();          
         }
-        [HttpGet("{id}")]
-        public MstEmployee Get(int id)
+        
+        [Route("api/employee/list/{id}")]
+        public IEnumerable<MstEmployee> Get(Int32 id)
         {
-            return _mstemployeeRepository.Get(id);
-        }           
+            return _mstemployeeR.Get(id);
+        }   
+                 
         [Route("api/employee/add")]  
-        [HttpPost]
         public void Post([FromBody]MstEmployee value)
         {
         //    MstEmployee user = new MstEmployee()
@@ -37,12 +38,12 @@ namespace HRISVSC.Controllers
         //         age = value.age
         //     };
         //     value = user;           
-             _mstemployeeRepository.Post(value);
+             _mstemployeeR.Post(value);
   
         }
+        
         [Route("api/employee/update/{id}")]
-        [HttpPut("{id}")]
-        public void Put(int id, [FromBody]MstEmployee t)
+        public void Put(Int32 id, [FromBody]MstEmployee t)
         {
             // MstEmployee user = new MstEmployee()
             // {
@@ -52,14 +53,14 @@ namespace HRISVSC.Controllers
             //     age = t.age
             // };
             // t = user;           
-            _mstemployeeRepository.Put(id, t);
+            _mstemployeeR.Put(id, t);
         }
         
         [Route("api/employee/delete/{id}")]  
-        [HttpDelete("{id}")]
-        public void Delete(int id)
+        public void Delete(Int32 id)
         {
-            _mstemployeeRepository.Delete(id);
+            _mstemployeeR.Delete(id);
         }
+        
     }
 }

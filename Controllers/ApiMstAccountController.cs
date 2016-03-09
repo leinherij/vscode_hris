@@ -1,32 +1,33 @@
+using System;
 using System.Collections.Generic;
 using HRISVSC.Models;
 using HRISVSC.Repository;
 using Microsoft.AspNet.Mvc;
 
 namespace HRISVSC.Controllers
-{
-     
+{     
     public class ApiMstAccountController : Controller
     {
-        private readonly MstAccountIFRepository _mstaccountRepository;
+        private readonly MstAccountRI _mstaccountR;
  
-        public ApiMstAccountController(MstAccountIFRepository mstaccountRepository)
+        public ApiMstAccountController(MstAccountRI mstaccountR)
         {
-            _mstaccountRepository = mstaccountRepository;
+            _mstaccountR = mstaccountR;
         }
+        
         [Route("api/account/list")]
-        [HttpGet]
         public IEnumerable<MstAccount> GetAll()
         {
-            return _mstaccountRepository.GetAll();          
+            return _mstaccountR.GetAll();          
         }
-        [HttpGet("{id}")]
-        public MstAccount Get(int id)
+        
+        [Route("api/account/list/{id}")]
+        public IEnumerable<MstAccount> Get(Int32 id)
         {
-            return _mstaccountRepository.Get(id);
-        }           
+            return _mstaccountR.Get(id);
+        }    
+          
         [Route("api/account/add")]  
-        [HttpPost]
         public void Post([FromBody]MstAccount value)
         {
         //    MstEmployee user = new MstEmployee()
@@ -37,12 +38,12 @@ namespace HRISVSC.Controllers
         //         age = value.age
         //     };
         //     value = user;           
-             _mstaccountRepository.Post(value);
+             _mstaccountR.Post(value);
   
         }
+        
         [Route("api/account/update/{id}")]
-        [HttpPut("{id}")]
-        public void Put(int id, [FromBody]MstAccount t)
+        public void Put(Int32 id, [FromBody]MstAccount t)
         {
             // MstEmployee user = new MstEmployee()
             // {
@@ -52,14 +53,14 @@ namespace HRISVSC.Controllers
             //     age = t.age
             // };
             // t = user;           
-            _mstaccountRepository.Put(id, t);
+            _mstaccountR.Put(id, t);
         }
         
         [Route("api/account/delete/{id}")]  
-        [HttpDelete("{id}")]
-        public void Delete(int id)
+        public void Delete(Int32 id)
         {
-            _mstaccountRepository.Delete(id);
+            _mstaccountR.Delete(id);
         }
+        
     }
 }
