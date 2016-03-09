@@ -1,6 +1,13 @@
 using Microsoft.AspNet.Identity.EntityFramework;
 using Microsoft.Data.Entity;
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+using System;
+=======
+>>>>>>> cc76c7c9e166eeaeaa17c8c34d6e8c7557942b14
+>>>>>>> 02e37b1cf57e6ffaa015359be3427b4e3c1a9c76
 namespace HRISVSC.Models
 {
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
@@ -119,5 +126,10 @@ namespace HRISVSC.Models
             builder.Entity<TrnPayrollOtherIncomeLine>().HasKey(m => m.id);
             base.OnModelCreating(builder);
         }
+<<<<<<< HEAD
+
+        
+=======
+>>>>>>> cc76c7c9e166eeaeaa17c8c34d6e8c7557942b14
     }
 }

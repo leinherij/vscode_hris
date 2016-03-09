@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+
+>>>>>>> 02e37b1cf57e6ffaa015359be3427b4e3c1a9c76
 using Microsoft.AspNet.Mvc;
 
 namespace HRISVSC.Controllers

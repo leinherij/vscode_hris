@@ -45,6 +45,7 @@ namespace HRISVSC
                 .AddDefaultTokenProviders();
 
             services.AddMvc();
+<<<<<<< HEAD
             
             services.AddScoped<MstAccountRI, MstAccountR>();
             services.AddScoped<MstBranchRI, MstBranchR>();
@@ -101,6 +102,16 @@ namespace HRISVSC
             services.AddScoped<TrnPayrollOtherDeductionLineRI, TrnPayrollOtherDeductionLineR>();
             services.AddScoped<TrnPayrollOtherIncomeRI, TrnPayrollOtherIncomeR>();
             services.AddScoped<TrnPayrollOtherIncomeLineRI, TrnPayrollOtherIncomeLineR>();
+=======
+
+            services.AddScoped<MstEmployeeIFRepository, MstEmployeeRepository>();
+            services.AddScoped<MstAccountIFRepository, MstAccountRepository>();
+            // Add application services.
+           // services.AddTransient<IEmailSender, AuthMessageSender>();
+           
+           // services.AddTransient<ISmsSender, AuthMessageSender>();
+           
+>>>>>>> 02e37b1cf57e6ffaa015359be3427b4e3c1a9c76
         }
 
         public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory)
