@@ -25,10 +25,10 @@ namespace HRISVSC.Repository
             return _context.MstEmployees.ToList();
         }
         
-        public IEnumerable<MstEmployee> Get(Int32 id)
+        public IEnumerable<MstEmployee> Get(Int32 payrollGroupId)
         {
             var list = from m in _context.MstEmployees select m;
-            list = list.Where(t => t.id == id);
+            list = list.Where(t => t.payrollGroupId == payrollGroupId);
             return (IEnumerable<MstEmployee>)list;
         }
         
