@@ -28,32 +28,15 @@ namespace HRISVSC.Controllers
         }    
           
         [Route("api/daytype/add")]  
-        public void Post([FromBody]MstDayType value)
-        {
-        //    MstEmployee user = new MstEmployee()
-        //     {
-        //         name = value.name,
-        //         address = value.address,
-        //         gender = value.gender,
-        //         age = value.age
-        //     };
-        //     value = user;           
-             _mstdaytypeR.Post(value);
-  
+        public void Post([FromBody]MstDayType mstdaytypeadd)
+        {            
+            _mstdaytypeR.Post(mstdaytypeadd);
         }
         
         [Route("api/daytype/update/{id}")]
-        public void Put(Int32 id, [FromBody]MstDayType t)
-        {
-            // MstEmployee user = new MstEmployee()
-            // {
-            //     name = t.name,
-            //     address = t.address,
-            //     gender = t.gender,
-            //     age = t.age
-            // };
-            // t = user;           
-            _mstdaytypeR.Put(id, t);
+        public void Put(Int32 id, [FromBody]MstDayType mstdaytypeupdate)
+        {       
+            _mstdaytypeR.Put(id, mstdaytypeupdate);
         }
         
         [Route("api/daytype/delete/{id}")]  

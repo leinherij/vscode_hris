@@ -28,32 +28,15 @@ namespace HRISVSC.Controllers
         }    
           
         [Route("api/branch/add")]  
-        public void Post([FromBody]MstBranch value)
-        {
-        //    MstEmployee user = new MstEmployee()
-        //     {
-        //         name = value.name,
-        //         address = value.address,
-        //         gender = value.gender,
-        //         age = value.age
-        //     };
-        //     value = user;           
-             _mstbranchR.Post(value);
-  
+        public void Post([FromBody]MstBranch mstbranchadd)
+        {     
+            _mstbranchR.Post(mstbranchadd);
         }
         
         [Route("api/branch/update/{id}")]
-        public void Put(Int32 id, [FromBody]MstBranch t)
-        {
-            // MstEmployee user = new MstEmployee()
-            // {
-            //     name = t.name,
-            //     address = t.address,
-            //     gender = t.gender,
-            //     age = t.age
-            // };
-            // t = user;           
-            _mstbranchR.Put(id, t);
+        public void Put(Int32 id, [FromBody]MstBranch mstbranchupdate)
+        {            
+            _mstbranchR.Put(id, mstbranchupdate);
         }
         
         [Route("api/branch/delete/{id}")]  

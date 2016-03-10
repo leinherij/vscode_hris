@@ -28,32 +28,15 @@ namespace HRISVSC.Controllers
         }   
                  
         [Route("api/trnovertimeline/add")]  
-        public void Post([FromBody]TrnOverTimeLine value)
-        {
-        //    MstEmployee user = new MstEmployee()
-        //     {
-        //         name = value.name,
-        //         address = value.address,
-        //         gender = value.gender,
-        //         age = value.age
-        //     };
-        //     value = user;           
-             _trnovertimelineR.Post(value);
-  
+        public void Post([FromBody]TrnOverTimeLine trnovertimelineadd)
+        {         
+             _trnovertimelineR.Post(trnovertimelineadd);
         }
         
         [Route("api/trnovertimeline/update/{id}")]
-        public void Put(Int32 id, [FromBody]TrnOverTimeLine t)
-        {
-            // MstEmployee user = new MstEmployee()
-            // {
-            //     name = t.name,
-            //     address = t.address,
-            //     gender = t.gender,
-            //     age = t.age
-            // };
-            // t = user;           
-            _trnovertimelineR.Put(id, t);
+        public void Put(Int32 id, [FromBody]TrnOverTimeLine trnovertimelineupdate)
+        {        
+            _trnovertimelineR.Put(id, trnovertimelineupdate);
         }
         
         [Route("api/trnovertimeline/delete/{id}")]  

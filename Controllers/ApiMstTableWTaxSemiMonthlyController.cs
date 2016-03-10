@@ -28,32 +28,15 @@ namespace HRISVSC.Controllers
         }   
                  
         [Route("api/tablewtaxsemimonthly/add")]  
-        public void Post([FromBody]MstTableWTaxSemiMonthly value)
-        {
-        //    MstEmployee user = new MstEmployee()
-        //     {
-        //         name = value.name,
-        //         address = value.address,
-        //         gender = value.gender,
-        //         age = value.age
-        //     };
-        //     value = user;           
-             _msttablewtaxsemimonthlyR.Post(value);
-  
+        public void Post([FromBody]MstTableWTaxSemiMonthly msttablewtaxsemimonthlyadd)
+        {      
+            _msttablewtaxsemimonthlyR.Post(msttablewtaxsemimonthlyadd);
         }
         
         [Route("api/tablewtaxsemimonthly/update/{id}")]
-        public void Put(Int32 id, [FromBody]MstTableWTaxSemiMonthly t)
-        {
-            // MstEmployee user = new MstEmployee()
-            // {
-            //     name = t.name,
-            //     address = t.address,
-            //     gender = t.gender,
-            //     age = t.age
-            // };
-            // t = user;           
-            _msttablewtaxsemimonthlyR.Put(id, t);
+        public void Put(Int32 id, [FromBody]MstTableWTaxSemiMonthly msttablewtaxsemimonthlyupdate)
+        {       
+            _msttablewtaxsemimonthlyR.Put(id, msttablewtaxsemimonthlyupdate);
         }
         
         [Route("api/tablewtaxsemimonthly/delete/{id}")]  

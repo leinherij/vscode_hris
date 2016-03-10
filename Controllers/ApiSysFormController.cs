@@ -28,32 +28,15 @@ namespace HRISVSC.Controllers
         }   
                  
         [Route("api/sysform/add")]  
-        public void Post([FromBody]SysForm value)
-        {
-        //    MstEmployee user = new MstEmployee()
-        //     {
-        //         name = value.name,
-        //         address = value.address,
-        //         gender = value.gender,
-        //         age = value.age
-        //     };
-        //     value = user;           
-             _sysformR.Post(value);
-  
+        public void Post([FromBody]SysForm sysformadd)
+        {      
+            _sysformR.Post(sysformadd);
         }
         
         [Route("api/sysform/update/{id}")]
-        public void Put(Int32 id, [FromBody]SysForm t)
-        {
-            // MstEmployee user = new MstEmployee()
-            // {
-            //     name = t.name,
-            //     address = t.address,
-            //     gender = t.gender,
-            //     age = t.age
-            // };
-            // t = user;           
-            _sysformR.Put(id, t);
+        public void Put(Int32 id, [FromBody]SysForm sysformupdate)
+        {        
+            _sysformR.Put(id, sysformupdate);
         }
         
         [Route("api/sysform/delete/{id}")]  

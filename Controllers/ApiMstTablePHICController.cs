@@ -28,32 +28,15 @@ namespace HRISVSC.Controllers
         }   
                  
         [Route("api/tablephic/add")]  
-        public void Post([FromBody]MstTablePHIC value)
-        {
-        //    MstEmployee user = new MstEmployee()
-        //     {
-        //         name = value.name,
-        //         address = value.address,
-        //         gender = value.gender,
-        //         age = value.age
-        //     };
-        //     value = user;           
-             _msttablephicR.Post(value);
-  
+        public void Post([FromBody]MstTablePHIC msttablephicadd)
+        {         
+            _msttablephicR.Post(msttablephicadd);
         }
         
         [Route("api/tablephic/update/{id}")]
-        public void Put(Int32 id, [FromBody]MstTablePHIC t)
-        {
-            // MstEmployee user = new MstEmployee()
-            // {
-            //     name = t.name,
-            //     address = t.address,
-            //     gender = t.gender,
-            //     age = t.age
-            // };
-            // t = user;           
-            _msttablephicR.Put(id, t);
+        public void Put(Int32 id, [FromBody]MstTablePHIC msttablephicupdate)
+        {     
+            _msttablephicR.Put(id, msttablephicupdate);
         }
         
         [Route("api/tablephic/delete/{id}")]  

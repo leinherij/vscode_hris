@@ -28,32 +28,15 @@ namespace HRISVSC.Controllers
         }   
                  
         [Route("api/trnleaveledger/add")]  
-        public void Post([FromBody]TrnLeaveLedger value)
-        {
-        //    MstEmployee user = new MstEmployee()
-        //     {
-        //         name = value.name,
-        //         address = value.address,
-        //         gender = value.gender,
-        //         age = value.age
-        //     };
-        //     value = user;           
-             _trnleaveledgerR.Post(value);
-  
+        public void Post([FromBody]TrnLeaveLedger trnleaveledgeradd)
+        {        
+            _trnleaveledgerR.Post(trnleaveledgeradd);
         }
         
         [Route("api/trnleaveledger/update/{id}")]
-        public void Put(Int32 id, [FromBody]TrnLeaveLedger t)
-        {
-            // MstEmployee user = new MstEmployee()
-            // {
-            //     name = t.name,
-            //     address = t.address,
-            //     gender = t.gender,
-            //     age = t.age
-            // };
-            // t = user;           
-            _trnleaveledgerR.Put(id, t);
+        public void Put(Int32 id, [FromBody]TrnLeaveLedger trnleaveledgerupdate)
+        {       
+            _trnleaveledgerR.Put(id, trnleaveledgerupdate);
         }
         
         [Route("api/trnleaveledger/delete/{id}")]  

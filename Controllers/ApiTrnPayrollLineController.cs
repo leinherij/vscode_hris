@@ -28,32 +28,15 @@ namespace HRISVSC.Controllers
         }   
                  
         [Route("api/trnpayrollline/add")]  
-        public void Post([FromBody]TrnPayrollLine value)
-        {
-        //    MstEmployee user = new MstEmployee()
-        //     {
-        //         name = value.name,
-        //         address = value.address,
-        //         gender = value.gender,
-        //         age = value.age
-        //     };
-        //     value = user;           
-             _trnpayrolllineR.Post(value);
-  
+        public void Post([FromBody]TrnPayrollLine trnpayrolllineadd)
+        {         
+            _trnpayrolllineR.Post(trnpayrolllineadd);
         }
         
         [Route("api/trnpayrollline/update/{id}")]
-        public void Put(Int32 id, [FromBody]TrnPayrollLine t)
-        {
-            // MstEmployee user = new MstEmployee()
-            // {
-            //     name = t.name,
-            //     address = t.address,
-            //     gender = t.gender,
-            //     age = t.age
-            // };
-            // t = user;           
-            _trnpayrolllineR.Put(id, t);
+        public void Put(Int32 id, [FromBody]TrnPayrollLine trnpayrolllineupdate)
+        {    
+            _trnpayrolllineR.Put(id, trnpayrolllineupdate);
         }
         
         [Route("api/trnpayrollline/delete/{id}")]  

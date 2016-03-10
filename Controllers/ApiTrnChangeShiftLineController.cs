@@ -28,32 +28,15 @@ namespace HRISVSC.Controllers
         }   
                  
         [Route("api/trnchangeshiftline/add")]  
-        public void Post([FromBody]TrnChangeShiftLine value)
-        {
-        //    MstEmployee user = new MstEmployee()
-        //     {
-        //         name = value.name,
-        //         address = value.address,
-        //         gender = value.gender,
-        //         age = value.age
-        //     };
-        //     value = user;           
-             _trnchangeshiftlineR.Post(value);
-  
+        public void Post([FromBody]TrnChangeShiftLine trnchangeshiftlineadd)
+        {         
+            _trnchangeshiftlineR.Post(trnchangeshiftlineadd);
         }
         
         [Route("api/trnchangeshiftline/update/{id}")]
-        public void Put(Int32 id, [FromBody]TrnChangeShiftLine t)
-        {
-            // MstEmployee user = new MstEmployee()
-            // {
-            //     name = t.name,
-            //     address = t.address,
-            //     gender = t.gender,
-            //     age = t.age
-            // };
-            // t = user;           
-            _trnchangeshiftlineR.Put(id, t);
+        public void Put(Int32 id, [FromBody]TrnChangeShiftLine trnchangeshiftlineupdate)
+        {        
+            _trnchangeshiftlineR.Put(id, trnchangeshiftlineupdate);
         }
         
         [Route("api/trnchangeshiftline/delete/{id}")]  

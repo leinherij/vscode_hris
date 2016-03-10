@@ -28,32 +28,15 @@ namespace HRISVSC.Controllers
         }   
                  
         [Route("api/otherdeduction/add")]  
-        public void Post([FromBody]MstOtherDeduction value)
-        {
-        //    MstEmployee user = new MstEmployee()
-        //     {
-        //         name = value.name,
-        //         address = value.address,
-        //         gender = value.gender,
-        //         age = value.age
-        //     };
-        //     value = user;           
-             _mstotherdeductionR.Post(value);
-  
+        public void Post([FromBody]MstOtherDeduction mstotherdeductionadd)
+        {     
+            _mstotherdeductionR.Post(mstotherdeductionadd);
         }
         
         [Route("api/otherdeduction/update/{id}")]
-        public void Put(Int32 id, [FromBody]MstOtherDeduction t)
-        {
-            // MstEmployee user = new MstEmployee()
-            // {
-            //     name = t.name,
-            //     address = t.address,
-            //     gender = t.gender,
-            //     age = t.age
-            // };
-            // t = user;           
-            _mstotherdeductionR.Put(id, t);
+        public void Put(Int32 id, [FromBody]MstOtherDeduction mstotherdeductionupdate)
+        {             
+            _mstotherdeductionR.Put(id, mstotherdeductionupdate);
         }
         
         [Route("api/otherdeduction/delete/{id}")]  

@@ -28,32 +28,15 @@ namespace HRISVSC.Controllers
         }   
                  
         [Route("api/otherincome/add")]  
-        public void Post([FromBody]MstOtherIncome value)
-        {
-        //    MstEmployee user = new MstEmployee()
-        //     {
-        //         name = value.name,
-        //         address = value.address,
-        //         gender = value.gender,
-        //         age = value.age
-        //     };
-        //     value = user;           
-             _mstotherincomeR.Post(value);
-  
+        public void Post([FromBody]MstOtherIncome mstotherincomeadd)
+        {     
+            _mstotherincomeR.Post(mstotherincomeadd);
         }
         
         [Route("api/otherincome/update/{id}")]
-        public void Put(Int32 id, [FromBody]MstOtherIncome t)
-        {
-            // MstEmployee user = new MstEmployee()
-            // {
-            //     name = t.name,
-            //     address = t.address,
-            //     gender = t.gender,
-            //     age = t.age
-            // };
-            // t = user;           
-            _mstotherincomeR.Put(id, t);
+        public void Put(Int32 id, [FromBody]MstOtherIncome mstotherincomeupdate)
+        {      
+            _mstotherincomeR.Put(id, mstotherincomeupdate);
         }
         
         [Route("api/otherincome/delete/{id}")]  

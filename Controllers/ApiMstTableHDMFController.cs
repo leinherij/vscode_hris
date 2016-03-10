@@ -28,32 +28,15 @@ namespace HRISVSC.Controllers
         }   
                  
         [Route("api/tablehdmf/add")]  
-        public void Post([FromBody]MstTableHDMF value)
+        public void Post([FromBody]MstTableHDMF msttablehdmfadd)
         {
-        //    MstEmployee user = new MstEmployee()
-        //     {
-        //         name = value.name,
-        //         address = value.address,
-        //         gender = value.gender,
-        //         age = value.age
-        //     };
-        //     value = user;           
-             _msttablehdmfR.Post(value);
-  
+            _msttablehdmfR.Post(msttablehdmfadd); 
         }
         
         [Route("api/tablehdmf/update/{id}")]
-        public void Put(Int32 id, [FromBody]MstTableHDMF t)
-        {
-            // MstEmployee user = new MstEmployee()
-            // {
-            //     name = t.name,
-            //     address = t.address,
-            //     gender = t.gender,
-            //     age = t.age
-            // };
-            // t = user;           
-            _msttablehdmfR.Put(id, t);
+        public void Put(Int32 id, [FromBody]MstTableHDMF msttablehdmfupdate)
+        {         
+            _msttablehdmfR.Put(id, msttablehdmfupdate);
         }
         
         [Route("api/tablehdmf/delete/{id}")]  

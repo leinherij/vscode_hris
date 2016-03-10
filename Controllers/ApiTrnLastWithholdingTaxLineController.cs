@@ -28,32 +28,15 @@ namespace HRISVSC.Controllers
         }   
                  
         [Route("api/trnlastwithholdingtaxline/add")]  
-        public void Post([FromBody]TrnLastWithholdingTaxLine value)
-        {
-        //    MstEmployee user = new MstEmployee()
-        //     {
-        //         name = value.name,
-        //         address = value.address,
-        //         gender = value.gender,
-        //         age = value.age
-        //     };
-        //     value = user;           
-             _trnlastwithholdingtaxlineR.Post(value);
-  
+        public void Post([FromBody]TrnLastWithholdingTaxLine trnlastwithholdingtaxlineadd)
+        {     
+             _trnlastwithholdingtaxlineR.Post(trnlastwithholdingtaxlineadd);
         }
         
         [Route("api/trnlastwithholdingtaxline/update/{id}")]
-        public void Put(Int32 id, [FromBody]TrnLastWithholdingTaxLine t)
-        {
-            // MstEmployee user = new MstEmployee()
-            // {
-            //     name = t.name,
-            //     address = t.address,
-            //     gender = t.gender,
-            //     age = t.age
-            // };
-            // t = user;           
-            _trnlastwithholdingtaxlineR.Put(id, t);
+        public void Put(Int32 id, [FromBody]TrnLastWithholdingTaxLine trnlastwithholdingtaxlineupdate)
+        {          
+            _trnlastwithholdingtaxlineR.Put(id, trnlastwithholdingtaxlineupdate);
         }
         
         [Route("api/trnlastwithholdingtaxline/delete/{id}")]  

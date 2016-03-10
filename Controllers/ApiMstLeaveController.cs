@@ -28,32 +28,15 @@ namespace HRISVSC.Controllers
         }   
                  
         [Route("api/leave/add")]  
-        public void Post([FromBody]MstLeave value)
-        {
-        //    MstEmployee user = new MstEmployee()
-        //     {
-        //         name = value.name,
-        //         address = value.address,
-        //         gender = value.gender,
-        //         age = value.age
-        //     };
-        //     value = user;           
-             _mstleaveR.Post(value);
-  
+        public void Post([FromBody]MstLeave mstleaveadd)
+        {       
+            _mstleaveR.Post(mstleaveadd);
         }
         
         [Route("api/leave/update/{id}")]
-        public void Put(Int32 id, [FromBody]MstLeave t)
+        public void Put(Int32 id, [FromBody]MstLeave mstleaveupdate)
         {
-            // MstEmployee user = new MstEmployee()
-            // {
-            //     name = t.name,
-            //     address = t.address,
-            //     gender = t.gender,
-            //     age = t.age
-            // };
-            // t = user;           
-            _mstleaveR.Put(id, t);
+            _mstleaveR.Put(id, mstleaveupdate);
         }
         
         [Route("api/leave/delete/{id}")]  

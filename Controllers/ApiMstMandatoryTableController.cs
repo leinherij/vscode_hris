@@ -28,32 +28,15 @@ namespace HRISVSC.Controllers
         }   
                  
         [Route("api/mandatorytable/add")]  
-        public void Post([FromBody]MstMandatoryTable value)
+        public void Post([FromBody]MstMandatoryTable mstmandatoryadd)
         {
-        //    MstEmployee user = new MstEmployee()
-        //     {
-        //         name = value.name,
-        //         address = value.address,
-        //         gender = value.gender,
-        //         age = value.age
-        //     };
-        //     value = user;           
-             _mstmandatoryR.Post(value);
-  
+            _mstmandatoryR.Post(mstmandatoryadd);  
         }
         
         [Route("api/mandatorytable/update/{id}")]
-        public void Put(Int32 id, [FromBody]MstMandatoryTable t)
-        {
-            // MstEmployee user = new MstEmployee()
-            // {
-            //     name = t.name,
-            //     address = t.address,
-            //     gender = t.gender,
-            //     age = t.age
-            // };
-            // t = user;           
-            _mstmandatoryR.Put(id, t);
+        public void Put(Int32 id, [FromBody]MstMandatoryTable mstmandatoryupdate)
+        {   
+            _mstmandatoryR.Put(id, mstmandatoryupdate);
         }
         
         [Route("api/mandatorytable/delete/{id}")]  

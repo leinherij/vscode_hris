@@ -28,32 +28,15 @@ namespace HRISVSC.Controllers
         }   
                  
         [Route("api/shiftcodeday/add")]  
-        public void Post([FromBody]MstShiftCodeDay value)
-        {
-        //    MstEmployee user = new MstEmployee()
-        //     {
-        //         name = value.name,
-        //         address = value.address,
-        //         gender = value.gender,
-        //         age = value.age
-        //     };
-        //     value = user;           
-             _mstshiftcodedayR.Post(value);
-  
+        public void Post([FromBody]MstShiftCodeDay mstshiftcodedayadd)
+        {     
+            _mstshiftcodedayR.Post(mstshiftcodedayadd);
         }
         
         [Route("api/shiftcodeday/update/{id}")]
-        public void Put(Int32 id, [FromBody]MstShiftCodeDay t)
-        {
-            // MstEmployee user = new MstEmployee()
-            // {
-            //     name = t.name,
-            //     address = t.address,
-            //     gender = t.gender,
-            //     age = t.age
-            // };
-            // t = user;           
-            _mstshiftcodedayR.Put(id, t);
+        public void Put(Int32 id, [FromBody]MstShiftCodeDay mstshiftcodedayupdate)
+        {         
+            _mstshiftcodedayR.Put(id, mstshiftcodedayupdate);
         }
         
         [Route("api/shiftcodeday/delete/{id}")]  

@@ -28,32 +28,15 @@ namespace HRISVSC.Controllers
         }   
                  
         [Route("api/taxcode/add")]  
-        public void Post([FromBody]MstTaxCode value)
-        {
-        //    MstEmployee user = new MstEmployee()
-        //     {
-        //         name = value.name,
-        //         address = value.address,
-        //         gender = value.gender,
-        //         age = value.age
-        //     };
-        //     value = user;           
-             _msttaxcodeR.Post(value);
-  
+        public void Post([FromBody]MstTaxCode msttaxcodeadd)
+        {    
+            _msttaxcodeR.Post(msttaxcodeadd);
         }
         
         [Route("api/taxcode/update/{id}")]
-        public void Put(Int32 id, [FromBody]MstTaxCode t)
-        {
-            // MstEmployee user = new MstEmployee()
-            // {
-            //     name = t.name,
-            //     address = t.address,
-            //     gender = t.gender,
-            //     age = t.age
-            // };
-            // t = user;           
-            _msttaxcodeR.Put(id, t);
+        public void Put(Int32 id, [FromBody]MstTaxCode msttaxcodeupdate)
+        {        
+            _msttaxcodeR.Put(id, msttaxcodeupdate);
         }
         
         [Route("api/taxcode/delete/{id}")]  

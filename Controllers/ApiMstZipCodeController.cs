@@ -28,32 +28,15 @@ namespace HRISVSC.Controllers
         }   
                  
         [Route("api/zipcode/add")]  
-        public void Post([FromBody]MstZipCode value)
-        {
-        //    MstEmployee user = new MstEmployee()
-        //     {
-        //         name = value.name,
-        //         address = value.address,
-        //         gender = value.gender,
-        //         age = value.age
-        //     };
-        //     value = user;           
-             _mstzipcodeR.Post(value);
-  
+        public void Post([FromBody]MstZipCode mstzipcodeadd)
+        {        
+            _mstzipcodeR.Post(mstzipcodeadd);
         }
         
         [Route("api/zipcode/update/{id}")]
-        public void Put(Int32 id, [FromBody]MstZipCode t)
-        {
-            // MstEmployee user = new MstEmployee()
-            // {
-            //     name = t.name,
-            //     address = t.address,
-            //     gender = t.gender,
-            //     age = t.age
-            // };
-            // t = user;           
-            _mstzipcodeR.Put(id, t);
+        public void Put(Int32 id, [FromBody]MstZipCode mstzipcodeupdate)
+        {         
+            _mstzipcodeR.Put(id, mstzipcodeupdate);
         }
         
         [Route("api/zipcode/delete/{id}")]  

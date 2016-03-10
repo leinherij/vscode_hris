@@ -28,32 +28,15 @@ namespace HRISVSC.Controllers
         }   
                  
         [Route("api/employeeshiftcode/add")]  
-        public void Post([FromBody]MstEmployeeShiftCode value)
+        public void Post([FromBody]MstEmployeeShiftCode mstemployeeshiftcodeadd)
         {
-        //    MstEmployee user = new MstEmployee()
-        //     {
-        //         name = value.name,
-        //         address = value.address,
-        //         gender = value.gender,
-        //         age = value.age
-        //     };
-        //     value = user;           
-             _mstemployeeshiftcodeR.Post(value);
-  
+            _mstemployeeshiftcodeR.Post(mstemployeeshiftcodeadd);
         }
         
         [Route("api/employeeshiftcode/update/{id}")]
-        public void Put(Int32 id, [FromBody]MstEmployeeShiftCode t)
-        {
-            // MstEmployee user = new MstEmployee()
-            // {
-            //     name = t.name,
-            //     address = t.address,
-            //     gender = t.gender,
-            //     age = t.age
-            // };
-            // t = user;           
-            _mstemployeeshiftcodeR.Put(id, t);
+        public void Put(Int32 id, [FromBody]MstEmployeeShiftCode mstemployeeshiftcodeupdate)
+        {           
+            _mstemployeeshiftcodeR.Put(id, mstemployeeshiftcodeupdate);
         }
         
         [Route("api/employeeshiftcode/delete/{id}")]  

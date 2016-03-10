@@ -28,32 +28,15 @@ namespace HRISVSC.Controllers
         }    
           
         [Route("api/department/add")]  
-        public void Post([FromBody]MstDepartment value)
+        public void Post([FromBody]MstDepartment mstdepartmentadd)
         {
-        //    MstEmployee user = new MstEmployee()
-        //     {
-        //         name = value.name,
-        //         address = value.address,
-        //         gender = value.gender,
-        //         age = value.age
-        //     };
-        //     value = user;           
-             _mstdepartmentR.Post(value);
-  
+            _mstdepartmentR.Post(mstdepartmentadd);            
         }
         
         [Route("api/department/update/{id}")]
-        public void Put(Int32 id, [FromBody]MstDepartment t)
-        {
-            // MstEmployee user = new MstEmployee()
-            // {
-            //     name = t.name,
-            //     address = t.address,
-            //     gender = t.gender,
-            //     age = t.age
-            // };
-            // t = user;           
-            _mstdepartmentR.Put(id, t);
+        public void Put(Int32 id, [FromBody]MstDepartment mstdepartmentupdate)
+        {               
+            _mstdepartmentR.Put(id, mstdepartmentupdate);
         }
         
         [Route("api/department/delete/{id}")]  
