@@ -16,7 +16,7 @@
             <!--logo end-->
             <div class="top-menu">
             	<ul class="nav pull-right top-menu">
-                    <li><button class="btn btn-danger" style="margin-top:13px;margin-right:10px;"  href="login.html">Logout</button></li>
+                    <!--<li><button class="btn btn-danger" style="margin-top:13px;margin-right:10px;"  href="login.html">Logout</button></li>-->
             	</ul>
             </div>
         </header>
@@ -108,102 +108,1539 @@
       MAIN CONTENT
       *********************************************************************************************************************************************************** -->
       <!--main content start-->
-      <section id="main-content">
-          <section class="wrapper">
-              <h3><i class="fa fa-angle-right"></i> System Tables Lists</h3>
-				
+    <section id="main-content">
+        <section class="wrapper">
+            <!-- Content Header (Page header) -->
+            <div class="row" style="padding:10px 50px 30px 50px;">
+                <div class="page-header">
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading">System Tables</div>
+                <div class="panel-body"style="height:inherit;">
+                    <section class="content">
+                        <div class="row">
+                        <div class="col-xs-12">
+                            <!--table container-->
+                            <div class="box">
+                                <div class="row">
+                                    <div class="col-xs-6 col-sm-1"style="width:120px;">
+                                    </div>
+                                    <div class="col-xs-6 col-sm-2">
+                                        <div id="theAutoComplete" class="pull-left" ></div>
+                                    </div>
+                                    <div class="col-xs-6 col-sm-3">
+                                        <div class="input-group" >
+                                        <span class='btn-group'style="padding-bottom:2%;">
+                                        <input type="text" class="form-control input-sm" id="filter" placeholder="Search"style="width:200px; height:inherit;">
+                                        <button class="btn btn-sm btn-default" style="padding: 5px 10px;"><i class="fa fa-search"></i></button>
+                                        </span>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-6 col-sm-5" style="width:40%; float:right;">
+                                        <div class="input-group btn-sm pull-right" >
+                                        <div class="btn-group-horizontal ">
+                                        <a href="~/Software/SystemTables#" class="btn btn-primary"style="font-size: 15px;width:160px;background-color:#443557;border-color:#443557;" onclick=""><i class="fa fa-plus"></i> Locked</a>
+                                        <a href="~/Software/SystemTables#" class="btn btn-primary"style="font-size: 15px;width:160px;background-color:#443557;border-color:#443557;"><i class="fa fa-plus"></i> Unlocked</a>
+                                        <a href="~/Software/MainMenu" class="btn btn-danger "style="font-size: 15px;width:160px;background-color:#443557;border-color:#443557;"><i class="fa fa-close"></i> Close</a>
+                                        </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            <div class="row">
+                            </div>
+                            <!--table-->
+                            <section class="content">
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <!--table container-->
+                                    <div class="box">
+                                    <!--Tab Section-->
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                        <div class="panel with-nav-tabs panel-default" style="margin-top:5px;">
+                                            <div class="panel-heading">
+                                                <ul class="nav nav-tabs">
+                                                    <li class="active"><a href="#tab1default" data-toggle="tab">Payroll Group</a></li>
+                                                    <li><a href="#tab2default" data-toggle="tab">Payroll Type</a></li>
+                                                    <li><a href="#tab3default" data-toggle="tab">Department</a></li>
+                                                    <li><a href="#tab4default" data-toggle="tab">Position</a></li>
+                                                    <li><a href="#tab5default" data-toggle="tab">Chart of Accounts</a></li>
+                                                    <li><a href="#tab6default" data-toggle="tab">Religion</a></li>
+                                                    <li><a href="#tab7default" data-toggle="tab">Citizenship</a></li>
+                                                    <li><a href="#tab8default" data-toggle="tab">Zip Code</a></li>
+                                                    <li><a href="#tab9default" data-toggle="tab">Division</a></li>
+                                                    <!--<button id="" class="btn btn-primary btn-md pull-right">Update Rates</button>-->
+                                                </ul>
+                                            </div>
+                                            <div class="panel-body" style="height:inherit;">
+                                            <div class="tab-content" >
+                                            <div class="tab-pane fade in active" id="tab1default">
+                                                <div class="row">
+                                                    <div class="col-xs-12">
+                                                        <!--table container-->
+                                                        <div class="box">
+                                                            <div class="row">
+                                                                <div class="col-md-6">
+                                                                <!--<h5 style="width:100px;">Payroll Group</h5>-->
+                                                                </div>
+                                                                <div class="col-md-6">
+                                                                    <div class="btn-group-horizontal btn-sm pull-right">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <!--table-->
+                                                            <div class="row">
+                                                                <div class="col-md-8 col-md-offset-2">
+                                                                <table id="PayrollGroupGrid" class="grid border-custom"></table>
+                                                                <a class="btn btn-danger pull-right"style="font-size: 15px;width:160px;background-color:#443557;border-color:#443557;"data-toggle="modal" data-target="#PayrollGroupModal"><i class="fa fa-close"></i> Add New</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--///////////
+                                            ///////TAB 2
+                                            ///////////////-->
+                                            <div class="tab-pane fade" id="tab2default">
+                                                <div class="row">
+                                                    <div class="col-xs-12">
+                                                        <!--table container-->
+                                                        <div class="box">
+                                                            <div class="row">
+                                                                <div class="col-md-6">
+                                                                <!--<h5 style="width:100px;">Payroll Group</h5>-->
+                                                                </div>
+                                                                <div class="col-md-6">
+                                                                    <div class="btn-group-horizontal btn-sm pull-right">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <!--table-->
+                                                            <div class="row">
+                                                                <div class="col-md-8 col-md-offset-2">
+                                                                <table id="PayrollTypeGrid" class="grid border-custom"></table>
+                                                                <a class="btn btn-danger pull-right"style="font-size: 15px;width:160px;background-color:#443557;border-color:#443557;"data-toggle="modal" data-target="#PayrollTypeModal"><i class="fa fa-close"></i> Add New</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane fade" id="tab3default">
+                                                <div class="row">
+                                                    <div class="col-xs-12">
+                                                        <!--table container-->
+                                                        <div class="box">
+                                                            <div class="row">
+                                                                <div class="col-md-6">
+                                                                <!--<h5 style="width:100px;">Payroll Group</h5>-->
+                                                                </div>
+                                                                <div class="col-md-6">
+                                                                    <div class="btn-group-horizontal btn-sm pull-right">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <!--table-->
+                                                            <div class="row">
+                                                                <div class="col-md-8 col-md-offset-2">
+                                                                <table id="DepartmentGrid" class="grid border-custom"></table>
+                                                                <a class="btn btn-danger pull-right"style="font-size: 15px;width:160px;background-color:#443557;border-color:#443557;"data-toggle="modal" data-target="#DepartmentModal"><i class="fa fa-close"></i> Add New</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--POSITION-->
+                                            <div class="tab-pane fade" id="tab4default">
+                                                <div class="row">
+                                                    <div class="col-xs-12">
+                                                        <!--table container-->
+                                                        <div class="box">
+                                                            <div class="row">
+                                                                <div class="col-md-6">
+                                                                <!--<h5 style="width:100px;">Payroll Group</h5>-->
+                                                                </div>
+                                                                <div class="col-md-6">
+                                                                    <div class="btn-group-horizontal btn-sm pull-right">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <!--table-->
+                                                            <div class="row">
+                                                                <div class="col-md-8 col-md-offset-2">
+                                                                <table id="PositionGrid" class="grid border-custom"></table>
+                                                                <a class="btn btn-danger pull-right"style="font-size: 15px;width:160px;background-color:#443557;border-color:#443557;"data-toggle="modal" data-target="#PositionModal"><i class="fa fa-close"></i> Add New</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--CHART OF ACCOUNTS-->
+                                            <div class="tab-pane fade" id="tab5default">
+                                               <div class="row">
+                                                    <div class="col-xs-12">
+                                                        <!--table container-->
+                                                        <div class="box">
+                                                            <div class="row">
+                                                                <div class="col-md-6">
+                                                                <!--<h5 style="width:100px;">Payroll Group</h5>-->
+                                                                </div>
+                                                                <div class="col-md-6">
+                                                                    <div class="btn-group-horizontal btn-sm pull-right">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <!--table-->
+                                                            <div class="row">
+                                                                <div class="col-md-8 col-md-offset-2">
+                                                                <table id="AccountGrid" class="grid border-custom"></table>
+                                                                <a class="btn btn-danger pull-right"style="font-size: 15px;width:160px;background-color:#443557;border-color:#443557;"data-toggle="modal" data-target="#AccountModal"><i class="fa fa-close"></i> Add New</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--Religion-->
+                                            <div class="tab-pane fade" id="tab6default">
+                                                <div class="row">
+                                                    <div class="col-xs-12">
+                                                        <!--table container-->
+                                                        <div class="box">
+                                                            <div class="row">
+                                                                <div class="col-md-6">
+                                                                <!--<h5 style="width:100px;">Payroll Group</h5>-->
+                                                                </div>
+                                                                <div class="col-md-6">
+                                                                    <div class="btn-group-horizontal btn-sm pull-right">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <!--table-->
+                                                            <div class="row">
+                                                                <div class="col-md-8 col-md-offset-2">
+                                                                <table id="ReligionGrid" class="grid border-custom"></table>
+                                                                <a class="btn btn-danger pull-right"style="font-size: 15px;width:160px;background-color:#443557;border-color:#443557;"data-toggle="modal" data-target="#ReligionModal"><i class="fa fa-close"></i> Add New</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--Citizenship-->
+                                            <div class="tab-pane fade" id="tab7default">
+                                                <div class="row">
+                                                    <div class="col-xs-12">
+                                                        <!--table container-->
+                                                        <div class="box">
+                                                            <div class="row">
+                                                                <div class="col-md-6">
+                                                                <!--<h5 style="width:100px;">Payroll Group</h5>-->
+                                                                </div>
+                                                                <div class="col-md-6">
+                                                                    <div class="btn-group-horizontal btn-sm pull-right">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <!--table-->
+                                                            <div class="row">
+                                                                <div class="col-md-8 col-md-offset-2">
+                                                                <table id="CitizenshipGrid" class="grid border-custom"></table>
+                                                                <a class="btn btn-danger pull-right"style="font-size: 15px;width:160px;background-color:#443557;border-color:#443557;"data-toggle="modal" data-target="#CitizenshipModal"><i class="fa fa-close"></i> Add New</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                
+                                            </div>
+                                            <!--ZIP CODE-->
+                                            <div class="tab-pane fade" id="tab8default">
+                                                <div class="row">
+                                                    <div class="col-xs-12">
+                                                        <!--table container-->
+                                                        <div class="box">
+                                                            <div class="row">
+                                                                <div class="col-md-6">
+                                                                <!--<h5 style="width:100px;">Payroll Group</h5>-->
+                                                                </div>
+                                                                <div class="col-md-6">
+                                                                    <div class="btn-group-horizontal btn-sm pull-right">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <!--table-->
+                                                            <div class="row">
+                                                                <div class="col-md-8 col-md-offset-2">
+                                                                <table id="ZipCodeGrid" class="grid border-custom"></table>
+                                                                <a class="btn btn-danger pull-right"style="font-size: 15px;width:160px;background-color:#443557;border-color:#443557;"data-toggle="modal" data-target="#ZipCodeModal"><i class="fa fa-close"></i> Add New</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--DIVISION-->
+                                            <div class="tab-pane fade" id="tab9default">
+                                                <div class="row">
+                                                    <div class="col-xs-12">
+                                                        <!--table container-->
+                                                        <div class="box">
+                                                            <div class="row">
+                                                                <div class="col-md-6">
+                                                                <!--<h5 style="width:100px;">Payroll Group</h5>-->
+                                                                </div>
+                                                                <div class="col-md-6">
+                                                                    <div class="btn-group-horizontal btn-sm pull-right">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <!--table-->
+                                                            <div class="row">
+                                                                <div class="col-md-8 col-md-offset-2">
+                                                                <table id="DivisionGrid" class="grid border-custom"></table>
+                                                                <a class="btn btn-danger pull-right"style="font-size: 15px;width:160px;background-color:#443557;border-color:#443557;"data-toggle="modal" data-target="#DivisionModal"><i class="fa fa-close"></i> Add New</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            </div>
+                                            </div>
+                                        </div>
+                                        </div>
+                                    </div>
+                                    <!--end of main content-->
+                                    </div>
+                                </div>
+                            </div>
+                            </section>
+                            </div>
+                        </div>
+                        </div>
+                    <!--navigation buttons-->
+                    <div class="btn-group pull-right" id="navigationPageGrid">
+                    <button type="button" class="btn btn-default border-custom" id="btnMoveToFirstPageGrid">
+                    <span class="glyphicon glyphicon-fast-backward"></span>
+                    </button>
+                    <button type="button" class="btn btn-default border-custom" id="btnMoveToPreviousPageGrid">
+                    <span class="glyphicon glyphicon-step-backward"></span>
+                    </button>
+                    <button type="button" class="btn btn-default border-custom" disabled style="width: 100px" id="btnCurrentPageGrid"></button>
+                    <button type="button" class="btn btn-default border-custom" id="btnMoveToNextPageGrid">
+                    <span class="glyphicon glyphicon-step-forward"></span>
+                    </button>
+                    <button type="button" class="btn btn-default border-custom" id="btnMoveToLastPageGrid">
+                    <span class="glyphicon glyphicon-fast-forward"></span>
+                    </button>
+                    </div>
+                    </section>
+                </div>
+            </div>
 
-              <div class="row mt" style="padding-top:0%;">
-                  <div class="col-md-12">
-                      <div class="content-panel">
-                          <table class="table table-striped table-advance table-hover">
-	                  	  	  <h4><i class="fa fa-angle-right"></i>  System Tables Table</h4>
-	                  	  	  <hr>
-                              <thead>
-                              <tr>
-                                  <th><i class="fa fa-bullhorn"></i> ID NO.</th>
-                                  <th class="hidden-phone"><i class="fa fa-question-circle"></i> Name</th>
-                                  <th><i class="fa fa-bookmark"></i> Profit</th>
-                                  <th><i class=" fa fa-edit"></i> Status</th>
-                                  <th></th>
-                              </tr>
-                              </thead>
-                              <tbody>
-                              <tr>
-                                  <td><a href="basic_table.html#">Company Ltd</a></td>
-                                  <td class="hidden-phone">Lorem Ipsum dolor</td>
-                                  <td>12000.00$ </td>
-                                  <td><span class="label label-info label-mini">Due</span></td>
-                                  <td>
-                                      <button class="btn btn-success btn-xs"><i class="fa fa-check"></i></button>
-                                      <button class="btn btn-primary btn-xs"><i class="fa fa-pencil"></i></button>
-                                      <button class="btn btn-danger btn-xs"><i class="fa fa-trash-o "></i></button>
-                                  </td>
-                              </tr>
-                              <tr>
-                                  <td>
-                                      <a href="basic_table.html#">
-                                          Dashgum co
-                                      </a>
-                                  </td>
-                                  <td class="hidden-phone">Lorem Ipsum dolor</td>
-                                  <td>17900.00$ </td>
-                                  <td><span class="label label-warning label-mini">Due</span></td>
-                                  <td>
-                                      <button class="btn btn-success btn-xs"><i class="fa fa-check"></i></button>
-                                      <button class="btn btn-primary btn-xs"><i class="fa fa-pencil"></i></button>
-                                      <button class="btn btn-danger btn-xs"><i class="fa fa-trash-o "></i></button>
-                                  </td>
-                              </tr>
-                              <tr>
-                                  <td>
-                                      <a href="basic_table.html#">
-                                          Another Co
-                                      </a>
-                                  </td>
-                                  <td class="hidden-phone">Lorem Ipsum dolor</td>
-                                  <td>14400.00$ </td>
-                                  <td><span class="label label-success label-mini">Paid</span></td>
-                                  <td>
-                                      <button class="btn btn-success btn-xs"><i class="fa fa-check"></i></button>
-                                      <button class="btn btn-primary btn-xs"><i class="fa fa-pencil"></i></button>
-                                      <button class="btn btn-danger btn-xs"><i class="fa fa-trash-o "></i></button>
-                                  </td>
-                              </tr>
-                              <tr>
-                                  <td>
-                                      <a href="basic_table.html#">
-                                          Dashgum ext
-                                      </a>
-                                  </td>
-                                  <td class="hidden-phone">Lorem Ipsum dolor</td>
-                                  <td>22000.50$ </td>
-                                  <td><span class="label label-success label-mini">Paid</span></td>
-                                  <td>
-                                      <button class="btn btn-success btn-xs"><i class="fa fa-check"></i></button>
-                                      <button class="btn btn-primary btn-xs"><i class="fa fa-pencil"></i></button>
-                                      <button class="btn btn-danger btn-xs"><i class="fa fa-trash-o "></i></button>
-                                  </td>
-                              </tr>
-                              <tr>
-                                  <td><a href="basic_table.html#">Total Ltd</a></td>
-                                  <td class="hidden-phone">Lorem Ipsum dolor</td>
-                                  <td>12120.00$ </td>
-                                  <td><span class="label label-warning label-mini">Due</span></td>
-                                  <td>
-                                      <button class="btn btn-success btn-xs"><i class="fa fa-check"></i></button>
-                                      <button class="btn btn-primary btn-xs"><i class="fa fa-pencil"></i></button>
-                                      <button class="btn btn-danger btn-xs"><i class="fa fa-trash-o "></i></button>
-                                  </td>
-                              </tr>
-                              </tbody>
-                          </table>
-                      </div><!-- /content-panel -->
-                  </div><!-- /col-md-12 -->
-              </div><!-- /row -->
-              
-          </section>
-      </section>
+        </section>
+    </section>
+    <!-- Modal -->
+    <div class="modal fade" id="PayrollGroupModal" role="dialog">
+        <div class="modal-dialog modal-md">
+        <div class="modal-content">
+            <div class="modal-header">
+       
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">Add New Payroll Group</h4>
+            </div>
+            <div class="modal-body">
+                <div class="control-group">
+                <label for="firstname" class="control-label col-xs-4">Payroll Group</label>
+                    <div class="col-xs-8">
+                        <input id="first-name" name="firstname" type="text" autocomplete="first-name" placeholder="Id Number" class="form-control">
+                        <p class="help-block"></p>
+                    </div>
+                </div>
+            
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Add</button>
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+        </div>
+    </div>
+    <!-- Payroll Type Modal -->
+    <div class="modal fade" id="PayrollTypeModal" role="dialog">
+        <div class="modal-dialog modal-md">
+        <div class="modal-content">
+            <div class="modal-header">
+       
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">Add New Payroll Type</h4>
+            </div>
+            <div class="modal-body">
+                <div class="control-group">
+                <label for="firstname" class="control-label col-xs-4">Payroll Type</label>
+                    <div class="col-xs-8">
+                        <input id="first-name" name="firstname" type="text" autocomplete="first-name" placeholder="Id Number" class="form-control">
+                        <p class="help-block"></p>
+                    </div>
+                </div>
+            
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Add</button>
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+        </div>
+    </div>
+    <!-- Department Modal -->
+    <div class="modal fade" id="DepartmentModal" role="dialog">
+        <div class="modal-dialog modal-md">
+        <div class="modal-content">
+            <div class="modal-header">
+       
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">Add New Department</h4>
+            </div>
+            <div class="modal-body">
+                <div class="control-group">
+                <label for="firstname" class="control-label col-xs-4">Department</label>
+                    <div class="col-xs-8">
+                        <input id="first-name" name="firstname" type="text" autocomplete="first-name" placeholder="Id Number" class="form-control">
+                        <p class="help-block"></p>
+                    </div>
+                </div>
+            
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Add</button>
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+        </div>
+    </div>
+    <!-- Position Modal -->
+    <div class="modal fade" id="PositionModal" role="dialog">
+        <div class="modal-dialog modal-md">
+        <div class="modal-content">
+            <div class="modal-header">
+       
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">Add New Position</h4>
+            </div>
+            <div class="modal-body">
+                <div class="control-group">
+                <label for="firstname" class="control-label col-xs-4">Position</label>
+                    <div class="col-xs-8">
+                        <input id="first-name" name="firstname" type="text" autocomplete="first-name" placeholder="Id Number" class="form-control">
+                        <p class="help-block"></p>
+                    </div>
+                </div>
+            
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Add</button>
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+        </div>
+    </div>
+    <!-- Account Modal -->
+    <div class="modal fade" id="AccountModal" role="dialog">
+        <div class="modal-dialog modal-md">
+        <div class="modal-content">
+            <div class="modal-header">
+       
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">Add New Account</h4>
+            </div>
+            <div class="modal-body">
+                <div class="control-group">
+                <label for="firstname" class="control-label col-xs-4">Account</label>
+                    <div class="col-xs-8">
+                        <input id="first-name" name="firstname" type="text" autocomplete="first-name" placeholder="Id Number" class="form-control">
+                        <p class="help-block"></p>
+                    </div>
+                </div>
+            
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Add</button>
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+        </div>
+    </div>
+    <!-- Religion Modal -->
+    <div class="modal fade" id="ReligionModal" role="dialog">
+        <div class="modal-dialog modal-md">
+        <div class="modal-content">
+            <div class="modal-header">
+       
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">Add New Religion</h4>
+            </div>
+            <div class="modal-body">
+                <div class="control-group">
+                <label for="firstname" class="control-label col-xs-4">Religion</label>
+                    <div class="col-xs-8">
+                        <input id="first-name" name="firstname" type="text" autocomplete="first-name" placeholder="Id Number" class="form-control">
+                        <p class="help-block"></p>
+                    </div>
+                </div>
+            
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Add</button>
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+        </div>
+    </div>
+    <!-- Citizenship Modal -->
+    <div class="modal fade" id="CitizenshipModal" role="dialog">
+        <div class="modal-dialog modal-md">
+        <div class="modal-content">
+            <div class="modal-header">
+       
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">Add New Citizenship</h4>
+            </div>
+            <div class="modal-body">
+                <div class="control-group">
+                <label for="firstname" class="control-label col-xs-4">Citizenship</label>
+                    <div class="col-xs-8">
+                        <input id="first-name" name="firstname" type="text" autocomplete="first-name" placeholder="Id Number" class="form-control">
+                        <p class="help-block"></p>
+                    </div>
+                </div>
+            
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Add</button>
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+        </div>
+    </div>
+    <!-- Zip Code Modal -->
+    <div class="modal fade" id="ZipCodeModal" role="dialog">
+        <div class="modal-dialog modal-md">
+        <div class="modal-content">
+            <div class="modal-header">
+       
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">Add New Citizenship</h4>
+            </div>
+            <div class="modal-body">
+                <div class="control-group">
+                <label for="firstname" class="control-label col-xs-4">Citizenship</label>
+                    <div class="col-xs-8">
+                        <input id="first-name" name="firstname" type="text" autocomplete="first-name" placeholder="Id Number" class="form-control">
+                        <p class="help-block"></p>
+                    </div>
+                </div>
+            
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Add</button>
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+        </div>
+    </div>
+    <!-- Division Modal -->
+    <div class="modal fade" id="DivisionModal" role="dialog">
+        <div class="modal-dialog modal-md">
+        <div class="modal-content">
+            <div class="modal-header">
+       
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">Add New Division</h4>
+            </div>
+            <div class="modal-body">
+                <div class="control-group">
+                <label for="firstname" class="control-label col-xs-4">Division</label>
+                    <div class="col-xs-8">
+                        <input id="first-name" name="firstname" type="text" autocomplete="first-name" placeholder="Id Number" class="form-control">
+                        <p class="help-block"></p>
+                    </div>
+                </div>
+            
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Add</button>
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+        </div>
+    </div>
+      
+    <script type="text/javascript">
+
+    //================
+    // Global variables
+    // ================
+
+    var payrollGroupGrid;
+    var payrollTypeGrid;
+    var departmentGrid;
+    var positionGrid;
+    var accountGrid;
+    var religionGrid;
+    var citizenshipGrid;
+    var zipCodeGrid;
+    var divisionGrid;
+
+   
+    
+    var payrollGroupList;
+    var payrollTypeList;
+    var departmentList;
+    var positionList;
+    var accountList;
+    var religionList;
+    var citizenshipList;
+    var zipCodeList;
+    var divisionList;
+
+    
+
+    var btnFirstPageGrid;
+    var btnPreviousPageGrid;
+    var btnNextPageGrid;
+    var btnLastPageGrid;
+    var btnCurrentPageGrid;
+    
+    var payrollSelectedValue;
+    function Sample(){
+        
+        payrollGroupList = new wijmo.collections.ObservableArray();
+            $.ajax({
+                url: '/api/payrollgroup/list',
+                cache: false,
+                type: 'GET',
+                contentType: 'application/json; charset=utf-8',
+                data: {},
+                success: function (results) {
+                    if (results.length > 0) {
+                        for (i = 0; i < results.length; i++) {
+                            payrollGroupList.push({
+                                payrollType: results[i]["payrollType"],
+                                DeleteId: "<button class='btn btn-danger btn-xs btn-block' id='itemDeleteButton' onclick='cmdItemDeleteButton_OnClick()'><i class='fa fa-trash'></i> Delete</button>",
+                            });
+                        }
+                        payrollGroup = new wijmo.collections.CollectionView(payrollGroupList);
+                        btnCurrentPageGrid.innerHTML = (payrollGroup.pageIndex + 1) + ' / ' + payrollGroup.pageCount;
+                        payrollGroup.canFilter = true;
+                        payrollGroup.pageSize = 15;
+                        if(payrollGroupGrid){
+                            payrollGroupGrid.dispose();
+                        }   
+                        //Flex Grid
+                        payrollGroupGrid = new wijmo.grid.FlexGrid('#PayrollGroupGrid');
+ 
+                            
+                        
+                        payrollGroupGrid.initialize({
+                            
+                            columns: [
+                                {
+                                    "header": "payrollType",
+                                    "binding": "payrollType",
+                                    "align": "center",
+                                    "allowSorting": true,
+                                    "isContentHtml": true,
+                                    
+                                    "width": ".75*"
+                                },
+                                {
+                                    "header": "Delete",
+                                    "binding": "DeleteId",
+                                    "width": ".25*",
+                                    "align": "center",
+                                    "isContentHtml": true
+
+                                },
+                            ],
+                            
+                            autoGenerateColumns: false,
+                            itemsSource: payrollGroup,
+                            isReadOnly: true,
+                            autoSizeMode: wijmo.grid.AutoSizeMode.Both,
+                            allowDragging: wijmo.grid.AllowDragging.None,
+                            selectionMode: wijmo.grid.SelectionMode.Row
+                        });
+                                
+                        payrollGroupGrid.trackChanges = true;
+
+                        updateNavigateButtonsCollection();
+
+                        btnFirstPageGrid.addEventListener('click', function () {
+                            payrollGroup.moveToFirstPage();
+                            updateNavigateButtonsCollection();
+                        });
+                        btnPreviousPageGrid.addEventListener('click', function () {
+                            payrollGroup.moveToPreviousPage();
+                            updateNavigateButtonsCollection();
+                        });
+                        btnNextPageGrid.addEventListener('click', function () {
+                            payrollGroup.moveToNextPage();
+                            updateNavigateButtonsCollection();
+                        });
+                        btnLastPageGrid.addEventListener('click', function () {
+                            payrollGroup.moveToLastPage();
+                            updateNavigateButtonsCollection();
+                        });
+                        
+                    }
+                }
+            });  
+        
+        
+        //wijmo.Control.invalidateAll();
+    }
+
+    // =============================
+    // Get Payroll Group Data
+    // =============================
+    function getPayrollGroupList() {
+        payrollGroupList = new wijmo.collections.ObservableArray();
+            $.ajax({
+                url: '/api/payrollgroup/list',
+                cache: false,
+                type: 'GET',
+                contentType: 'application/json; charset=utf-8',
+                data: {},
+                success: function (results) {
+                    if (results.length > 0) {
+                        for (i = 0; i < results.length; i++) {
+                            payrollGroupList.push({
+                                payrollGroup: results[i]["payrollGroup"],
+                                DeleteId: "<button class='btn btn-danger btn-xs btn-block' id='itemDeleteButton' onclick='cmdItemDeleteButton_OnClick()'><i class='fa fa-trash'></i> Delete</button>",
+                            });
+                        }
+                        payrollGroup = new wijmo.collections.CollectionView(payrollGroupList);
+                        btnCurrentPageGrid.innerHTML = (payrollGroup.pageIndex + 1) + ' / ' + payrollGroup.pageCount;
+                        payrollGroup.canFilter = true;
+                        payrollGroup.pageSize = 15;
+                        if(payrollGroupGrid){
+                            payrollGroupGrid.dispose();
+                        }   
+                        //Flex Grid
+                        payrollGroupGrid = new wijmo.grid.FlexGrid('#PayrollGroupGrid');
+ 
+                            
+                        
+                        payrollGroupGrid.initialize({
+                            
+                            columns: [
+                                {
+                                    "header": "Payroll Group",
+                                    "binding": "payrollGroup",
+                                    "align": "center",
+                                    "allowSorting": true,
+                                    "isContentHtml": true,
+                                    
+                                    "width": ".75*"
+                                },
+                                {
+                                    "header": "Delete",
+                                    "binding": "DeleteId",
+                                    "width": ".25*",
+                                    "align": "center",
+                                    "isContentHtml": true
+
+                                },
+                            ],
+                            
+                            autoGenerateColumns: false,
+                            itemsSource: payrollGroup,
+                            isReadOnly: true,
+                            autoSizeMode: wijmo.grid.AutoSizeMode.Both,
+                            allowDragging: wijmo.grid.AllowDragging.None,
+                            selectionMode: wijmo.grid.SelectionMode.Row
+                        });
+                                
+                        payrollGroupGrid.trackChanges = true;
+
+                        updateNavigateButtonsCollection();
+
+                        btnFirstPageGrid.addEventListener('click', function () {
+                            payrollGroup.moveToFirstPage();
+                            updateNavigateButtonsCollection();
+                        });
+                        btnPreviousPageGrid.addEventListener('click', function () {
+                            payrollGroup.moveToPreviousPage();
+                            updateNavigateButtonsCollection();
+                        });
+                        btnNextPageGrid.addEventListener('click', function () {
+                            payrollGroup.moveToNextPage();
+                            updateNavigateButtonsCollection();
+                        });
+                        btnLastPageGrid.addEventListener('click', function () {
+                            payrollGroup.moveToLastPage();
+                            updateNavigateButtonsCollection();
+                        });
+                        
+                    }
+                }
+            });  
+    }
+    // =============================
+    // Get Payroll Type Data
+    // =============================
+    function getPayrollTypeList() {
+        payrollTypeList = new wijmo.collections.ObservableArray();
+            $.ajax({
+                url: '/api/payrolltype/list',
+                cache: false,
+                type: 'GET',
+                contentType: 'application/json; charset=utf-8',
+                data: {},
+                success: function (results) {
+                    if (results.length > 0) {
+                        for (i = 0; i < results.length; i++) {
+                            payrollTypeList.push({
+                                payrollType: results[i]["PayrollType"],
+                                DeleteId: "<button class='btn btn-danger btn-xs btn-block' id='itemDeleteButton' onclick='cmdItemDeleteButton_OnClick()'><i class='fa fa-trash'></i> Delete</button>",
+                            });
+                        }
+                        payrollType = new wijmo.collections.CollectionView(payrollTypeList);
+                        btnCurrentPageGrid.innerHTML = (payrollType.pageIndex + 1) + ' / ' + payrollType.pageCount;
+                        payrollType.canFilter = true;
+                        payrollType.pageSize = 15;
+                        if(payrollTypeGrid){
+                            payrollTypeGrid.dispose();
+                        }   
+                        //Flex Grid
+                        
+                        payrollTypeGrid = new wijmo.grid.FlexGrid('#PayrollTypeGrid');
+                        
+                        payrollTypeGrid.initialize({
+                            
+                            columns: [
+                                {
+                                    "header": "Payroll Type",
+                                    "binding": "payrollType",
+                                    "align": "center",
+                                    "allowSorting": true,
+                                    "isContentHtml": true,
+                                    
+                                    "width": ".75*"
+                                },
+                                {
+                                    "header": "Delete",
+                                    "binding": "DeleteId",
+                                    "width": ".25*",
+                                    "align": "center",
+                                    "isContentHtml": true
+
+                                },
+                            ],
+                            autoGenerateColumns: false,
+                            itemsSource: payrollType,
+                            isReadOnly: true,
+                            autoSizeMode: wijmo.grid.AutoSizeMode.Both,
+                            allowDragging: wijmo.grid.AllowDragging.None,
+                            selectionMode: wijmo.grid.SelectionMode.Row
+                        });
+                        
+                        
+                        payrollTypeGrid.trackChanges = true;
+
+                        updateNavigateButtonsCollection();
+
+                        btnFirstPageGrid.addEventListener('click', function () {
+                            payrollType.moveToFirstPage();
+                            updateNavigateButtonsCollection();
+                        });
+                        btnPreviousPageGrid.addEventListener('click', function () {
+                            payrollType.moveToPreviousPage();
+                            updateNavigateButtonsCollection();
+                        });
+                        btnNextPageGrid.addEventListener('click', function () {
+                            payrollType.moveToNextPage();
+                            updateNavigateButtonsCollection();
+                        });
+                        btnLastPageGrid.addEventListener('click', function () {
+                            payrollType.moveToLastPage();
+                            updateNavigateButtonsCollection();
+                        });
+                        
+                    }
+                }
+            });  
+    }
+    // =============================
+    // Get Department Data
+    // =============================
+    function getDepartmentList() {
+        DepartmentList = new wijmo.collections.ObservableArray();
+            $.ajax({
+                url: '/api/department/list',
+                cache: false,
+                type: 'GET',
+                contentType: 'application/json; charset=utf-8',
+                data: {},
+                success: function (results) {
+                    if (results.length > 0) {
+                        for (i = 0; i < results.length; i++) {
+                            DepartmentList.push({
+                                department: results[i]["department"],
+                                DeleteId: "<button class='btn btn-danger btn-xs btn-block' id='itemDeleteButton' onclick='cmdItemDeleteButton_OnClick()'><i class='fa fa-trash'></i> Delete</button>",
+                            });
+                        }
+                        department = new wijmo.collections.CollectionView(DepartmentList);
+                        btnCurrentPageGrid.innerHTML = (department.pageIndex + 1) + ' / ' + department.pageCount;
+                        department.canFilter = true;
+                        department.pageSize = 15;
+                        if(departmentGrid){
+                            DepartmentGrid.dispose();
+                        }   
+                        //Flex Grid
+                        departmentGrid = new wijmo.grid.FlexGrid('#DepartmentGrid');
+ 
+                            
+                        
+                        departmentGrid.initialize({
+                            
+                            columns: [
+                                {
+                                    "header": "Department",
+                                    "binding": "department",
+                                    "align": "center",
+                                    "allowSorting": true,
+                                    "isContentHtml": true,
+                                    
+                                    "width": ".75*"
+                                },
+                                {
+                                    "header": "Delete",
+                                    "binding": "DeleteId",
+                                    "width": ".25*",
+                                    "align": "center",
+                                    "isContentHtml": true
+
+                                },
+                            ],
+                            
+                            autoGenerateColumns: false,
+                            itemsSource: department,
+                            isReadOnly: true,
+                            autoSizeMode: wijmo.grid.AutoSizeMode.Both,
+                            allowDragging: wijmo.grid.AllowDragging.None,
+                            selectionMode: wijmo.grid.SelectionMode.Row
+                        });
+                                
+                        departmentGrid.trackChanges = true;
+
+                        updateNavigateButtonsCollection();
+
+                        btnFirstPageGrid.addEventListener('click', function () {
+                            department.moveToFirstPage();
+                            updateNavigateButtonsCollection();
+                        });
+                        btnPreviousPageGrid.addEventListener('click', function () {
+                            department.moveToPreviousPage();
+                            updateNavigateButtonsCollection();
+                        });
+                        btnNextPageGrid.addEventListener('click', function () {
+                            department.moveToNextPage();
+                            updateNavigateButtonsCollection();
+                        });
+                        btnLastPageGrid.addEventListener('click', function () {
+                            department.moveToLastPage();
+                            updateNavigateButtonsCollection();
+                        });
+                        
+                    }
+                }
+            });  
+    }
+    // =============================
+    // Get Payroll Group Data
+    // =============================
+    function getPositionList() {
+        positionList = new wijmo.collections.ObservableArray();
+            $.ajax({
+                url: '/api/position/list',
+                cache: false,
+                type: 'GET',
+                contentType: 'application/json; charset=utf-8',
+                data: {},
+                success: function (results) {
+                    if (results.length > 0) {
+                        for (i = 0; i < results.length; i++) {
+                            positionList.push({
+                                position: results[i]["position"],
+                                DeleteId: "<button class='btn btn-danger btn-xs btn-block' id='itemDeleteButton' onclick='cmdItemDeleteButton_OnClick()'><i class='fa fa-trash'></i> Delete</button>",
+                            });
+                        }
+                        position = new wijmo.collections.CollectionView(positionList);
+                        btnCurrentPageGrid.innerHTML = (position.pageIndex + 1) + ' / ' + position.pageCount;
+                        position.canFilter = true;
+                        position.pageSize = 15;
+                        if(positionGrid){
+                            positionGrid.dispose();
+                        }   
+                        //Flex Grid
+                        positionGrid = new wijmo.grid.FlexGrid('#PositionGrid');
+ 
+                            
+                        
+                        positionGrid.initialize({
+                            
+                            columns: [
+                                {
+                                    "header": "Position",
+                                    "binding": "position",
+                                    "align": "center",
+                                    "allowSorting": true,
+                                    "isContentHtml": true,
+                                    
+                                    "width": ".75*"
+                                },
+                                {
+                                    "header": "Delete",
+                                    "binding": "DeleteId",
+                                    "width": ".25*",
+                                    "align": "center",
+                                    "isContentHtml": true
+
+                                },
+                            ],
+                            
+                            autoGenerateColumns: false,
+                            itemsSource: position,
+                            isReadOnly: true,
+                            autoSizeMode: wijmo.grid.AutoSizeMode.Both,
+                            allowDragging: wijmo.grid.AllowDragging.None,
+                            selectionMode: wijmo.grid.SelectionMode.Row
+                        });
+                                
+                        positionGrid.trackChanges = true;
+
+                        updateNavigateButtonsCollection();
+
+                        btnFirstPageGrid.addEventListener('click', function () {
+                            position.moveToFirstPage();
+                            updateNavigateButtonsCollection();
+                        });
+                        btnPreviousPageGrid.addEventListener('click', function () {
+                            position.moveToPreviousPage();
+                            updateNavigateButtonsCollection();
+                        });
+                        btnNextPageGrid.addEventListener('click', function () {
+                            position.moveToNextPage();
+                            updateNavigateButtonsCollection();
+                        });
+                        btnLastPageGrid.addEventListener('click', function () {
+                            position.moveToLastPage();
+                            updateNavigateButtonsCollection();
+                        });
+                        
+                    }
+                }
+            });  
+    }
+    // =============================
+    // Get Account Data
+    // =============================
+    function getAccountList() {
+        accountList = new wijmo.collections.ObservableArray();
+            $.ajax({
+                url: '/api/account/list',
+                cache: false,
+                type: 'GET',
+                contentType: 'application/json; charset=utf-8',
+                data: {},
+                success: function (results) {
+                    if (results.length > 0) {
+                        for (i = 0; i < results.length; i++) {
+                            accountList.push({
+                                accountcode: results[i]["accountcode"],
+                                account: results[i]["account"],
+                                DeleteId: "<button class='btn btn-danger btn-xs btn-block' id='itemDeleteButton' onclick='cmdItemDeleteButton_OnClick()'><i class='fa fa-trash'></i> Delete</button>",
+                            });
+                        }
+                        account = new wijmo.collections.CollectionView(accountList);
+                        btnCurrentPageGrid.innerHTML = (account.pageIndex + 1) + ' / ' + account.pageCount;
+                        account.canFilter = true;
+                        account.pageSize = 15;
+                        if(accountGrid){
+                            accountGrid.dispose();
+                        }   
+                        //Flex Grid
+                        accountGrid = new wijmo.grid.FlexGrid('#AccountGrid');
+ 
+                            
+                        
+                        accountGrid.initialize({
+                            
+                            columns: [
+                                {
+                                    "header": "Code",
+                                    "binding": "accountcode",
+                                    "align": "center",
+                                    "allowSorting": true,
+                                    "isContentHtml": true,
+                                    "width": ".75*"
+                                },
+                                {
+                                    "header": "Chart of Accounts",
+                                    "binding": "account",
+                                    "align": "center",
+                                    "allowSorting": true,
+                                    "isContentHtml": true,
+                                    "width": ".75*"
+                                },
+                                {
+                                    "header": "Delete",
+                                    "binding": "DeleteId",
+                                    "width": ".25*",
+                                    "align": "center",
+                                    "isContentHtml": true
+
+                                },
+                            ],
+                            
+                            autoGenerateColumns: false,
+                            itemsSource: account,
+                            isReadOnly: true,
+                            autoSizeMode: wijmo.grid.AutoSizeMode.Both,
+                            allowDragging: wijmo.grid.AllowDragging.None,
+                            selectionMode: wijmo.grid.SelectionMode.Row
+                        });
+                                
+                        accountGrid.trackChanges = true;
+
+                        updateNavigateButtonsCollection();
+
+                        btnFirstPageGrid.addEventListener('click', function () {
+                            account.moveToFirstPage();
+                            updateNavigateButtonsCollection();
+                        });
+                        btnPreviousPageGrid.addEventListener('click', function () {
+                            account.moveToPreviousPage();
+                            updateNavigateButtonsCollection();
+                        });
+                        btnNextPageGrid.addEventListener('click', function () {
+                            account.moveToNextPage();
+                            updateNavigateButtonsCollection();
+                        });
+                        btnLastPageGrid.addEventListener('click', function () {
+                            account.moveToLastPage();
+                            updateNavigateButtonsCollection();
+                        });
+                        
+                    }
+                }
+            });  
+    }
+    // =============================
+    // Get Religion Data
+    // =============================
+    function getReligionList() {
+        religionList = new wijmo.collections.ObservableArray();
+            $.ajax({
+                url: '/api/religion/list',
+                cache: false,
+                type: 'GET',
+                contentType: 'application/json; charset=utf-8',
+                data: {},
+                success: function (results) {
+                    if (results.length > 0) {
+                        for (i = 0; i < results.length; i++) {
+                            religionList.push({
+                                religion: results[i]["religion"],
+                                DeleteId: "<button class='btn btn-danger btn-xs btn-block' id='itemDeleteButton' onclick='cmdItemDeleteButton_OnClick()'><i class='fa fa-trash'></i> Delete</button>",
+                            });
+                        }
+                        religion = new wijmo.collections.CollectionView(religionList);
+                        btnCurrentPageGrid.innerHTML = (religion.pageIndex + 1) + ' / ' + religion.pageCount;
+                        religion.canFilter = true;
+                        religion.pageSize = 15;
+                        if(religionGrid){
+                            religionGrid.dispose();
+                        }   
+                        //Flex Grid
+                        religionGrid = new wijmo.grid.FlexGrid('#ReligionGrid');
+ 
+                            
+                        
+                        religionGrid.initialize({
+                            
+                            columns: [
+                                {
+                                    "header": "Religion",
+                                    "binding": "religion",
+                                    "align": "center",
+                                    "allowSorting": true,
+                                    "isContentHtml": true,
+                                    
+                                    "width": ".75*"
+                                },
+                                {
+                                    "header": "Delete",
+                                    "binding": "DeleteId",
+                                    "width": ".25*",
+                                    "align": "center",
+                                    "isContentHtml": true
+
+                                },
+                            ],
+                            
+                            autoGenerateColumns: false,
+                            itemsSource: religion,
+                            isReadOnly: true,
+                            autoSizeMode: wijmo.grid.AutoSizeMode.Both,
+                            allowDragging: wijmo.grid.AllowDragging.None,
+                            selectionMode: wijmo.grid.SelectionMode.Row
+                        });
+                                
+                        religionGrid.trackChanges = true;
+
+                        updateNavigateButtonsCollection();
+
+                        btnFirstPageGrid.addEventListener('click', function () {
+                            religion.moveToFirstPage();
+                            updateNavigateButtonsCollection();
+                        });
+                        btnPreviousPageGrid.addEventListener('click', function () {
+                            religion.moveToPreviousPage();
+                            updateNavigateButtonsCollection();
+                        });
+                        btnNextPageGrid.addEventListener('click', function () {
+                            religion.moveToNextPage();
+                            updateNavigateButtonsCollection();
+                        });
+                        btnLastPageGrid.addEventListener('click', function () {
+                            religion.moveToLastPage();
+                            updateNavigateButtonsCollection();
+                        });
+                        
+                    }
+                }
+            });  
+    }
+    // =============================
+    // Get Citizenship Data
+    // =============================
+    function getCitizenshipList() {
+        citizenshipList = new wijmo.collections.ObservableArray();
+            $.ajax({
+                url: '/api/citizenship/list',
+                cache: false,
+                type: 'GET',
+                contentType: 'application/json; charset=utf-8',
+                data: {},
+                success: function (results) {
+                    if (results.length > 0) {
+                        for (i = 0; i < results.length; i++) {
+                            citizenshipList.push({
+                                citizenship: results[i]["citizenship"],
+                                DeleteId: "<button class='btn btn-danger btn-xs btn-block' id='itemDeleteButton' onclick='cmdItemDeleteButton_OnClick()'><i class='fa fa-trash'></i> Delete</button>",
+                            });
+                        }
+                        citizenship = new wijmo.collections.CollectionView(citizenshipList);
+                        btnCurrentPageGrid.innerHTML = (citizenship.pageIndex + 1) + ' / ' + citizenship.pageCount;
+                        citizenship.canFilter = true;
+                        citizenship.pageSize = 15;
+                        if(citizenshipGrid){
+                            citizenshipGrid.dispose();
+                        }   
+                        //Flex Grid
+                        citizenshipGrid = new wijmo.grid.FlexGrid('#CitizenshipGrid');
+ 
+                            
+                        
+                        citizenshipGrid.initialize({
+                            
+                            columns: [
+                                {
+                                    "header": "Citizenship",
+                                    "binding": "citizenship",
+                                    "align": "center",
+                                    "allowSorting": true,
+                                    "isContentHtml": true,
+                                    
+                                    "width": ".75*"
+                                },
+                                {
+                                    "header": "Delete",
+                                    "binding": "DeleteId",
+                                    "width": ".25*",
+                                    "align": "center",
+                                    "isContentHtml": true
+
+                                },
+                            ],
+                            
+                            autoGenerateColumns: false,
+                            itemsSource: citizenship,
+                            isReadOnly: true,
+                            autoSizeMode: wijmo.grid.AutoSizeMode.Both,
+                            allowDragging: wijmo.grid.AllowDragging.None,
+                            selectionMode: wijmo.grid.SelectionMode.Row
+                        });
+                                
+                        citizenshipGrid.trackChanges = true;
+
+                        updateNavigateButtonsCollection();
+
+                        btnFirstPageGrid.addEventListener('click', function () {
+                            citizenship.moveToFirstPage();
+                            updateNavigateButtonsCollection();
+                        });
+                        btnPreviousPageGrid.addEventListener('click', function () {
+                            citizenship.moveToPreviousPage();
+                            updateNavigateButtonsCollection();
+                        });
+                        btnNextPageGrid.addEventListener('click', function () {
+                            citizenship.moveToNextPage();
+                            updateNavigateButtonsCollection();
+                        });
+                        btnLastPageGrid.addEventListener('click', function () {
+                            citizenship.moveToLastPage();
+                            updateNavigateButtonsCollection();
+                        });
+                        
+                    }
+                }
+            });  
+    }
+    // =============================
+    // Get Zip Code Data
+    // =============================
+    function getZipCodeList() {
+        zipCodeList = new wijmo.collections.ObservableArray();
+            $.ajax({
+                url: '/api/zipCode/list',
+                cache: false,
+                type: 'GET',
+                contentType: 'application/json; charset=utf-8',
+                data: {},
+                success: function (results) {
+                    if (results.length > 0) {
+                        for (i = 0; i < results.length; i++) {
+                            zipCodeList.push({
+                                zipCode: results[i]["zipCode"],
+                                DeleteId: "<button class='btn btn-danger btn-xs btn-block' id='itemDeleteButton' onclick='cmdItemDeleteButton_OnClick()'><i class='fa fa-trash'></i> Delete</button>",
+                            });
+                        }
+                        zipCode = new wijmo.collections.CollectionView(zipCodeList);
+                        btnCurrentPageGrid.innerHTML = (zipCode.pageIndex + 1) + ' / ' + zipCode.pageCount;
+                        zipCode.canFilter = true;
+                        zipCode.pageSize = 15;
+                        if(zipCodeGrid){
+                            zipCodeGrid.dispose();
+                        }   
+                        //Flex Grid
+                        zipCodeGrid = new wijmo.grid.FlexGrid('#ZipCodeGrid');
+ 
+                            
+                        
+                        zipCodeGrid.initialize({
+                            
+                            columns: [
+                                {
+                                    "header": "Zip Code",
+                                    "binding": "zipCode",
+                                    "align": "center",
+                                    "allowSorting": true,
+                                    "isContentHtml": true,
+                                    
+                                    "width": ".75*"
+                                },
+                                {
+                                    "header": "Delete",
+                                    "binding": "DeleteId",
+                                    "width": ".25*",
+                                    "align": "center",
+                                    "isContentHtml": true
+
+                                },
+                            ],
+                            
+                            autoGenerateColumns: false,
+                            itemsSource: zipCode,
+                            isReadOnly: true,
+                            autoSizeMode: wijmo.grid.AutoSizeMode.Both,
+                            allowDragging: wijmo.grid.AllowDragging.None,
+                            selectionMode: wijmo.grid.SelectionMode.Row
+                        });
+                                
+                        zipCodeGrid.trackChanges = true;
+
+                        updateNavigateButtonsCollection();
+
+                        btnFirstPageGrid.addEventListener('click', function () {
+                            zipCode.moveToFirstPage();
+                            updateNavigateButtonsCollection();
+                        });
+                        btnPreviousPageGrid.addEventListener('click', function () {
+                            zipCode.moveToPreviousPage();
+                            updateNavigateButtonsCollection();
+                        });
+                        btnNextPageGrid.addEventListener('click', function () {
+                            zipCode.moveToNextPage();
+                            updateNavigateButtonsCollection();
+                        });
+                        btnLastPageGrid.addEventListener('click', function () {
+                            zipCode.moveToLastPage();
+                            updateNavigateButtonsCollection();
+                        });
+                        
+                    }
+                }
+            });  
+    }
+    
+    // =============================
+    // Get Zip Code Data
+    // =============================
+    function getDivisionList() {
+        divisionList = new wijmo.collections.ObservableArray();
+            $.ajax({
+                url: '/api/division/list',
+                cache: false,
+                type: 'GET',
+                contentType: 'application/json; charset=utf-8',
+                data: {},
+                success: function (results) {
+                    if (results.length > 0) {
+                        for (i = 0; i < results.length; i++) {
+                            divisionList.push({
+                                division: results[i]["division"],
+                                DeleteId: "<button class='btn btn-danger btn-xs btn-block' id='itemDeleteButton' onclick='cmdItemDeleteButton_OnClick()'><i class='fa fa-trash'></i> Delete</button>",
+                            });
+                        }
+                        division = new wijmo.collections.CollectionView(divisionList);
+                        btnCurrentPageGrid.innerHTML = (division.pageIndex + 1) + ' / ' + division.pageCount;
+                        division.canFilter = true;
+                        division.pageSize = 15;
+                        if(divisionGrid){
+                            divisionGrid.dispose();
+                        }   
+                        //Flex Grid
+                        divisionGrid = new wijmo.grid.FlexGrid('#DivisionGrid');
+ 
+                            
+                        
+                        divisionGrid.initialize({
+                            
+                            columns: [
+                                {
+                                    "header": "Division",
+                                    "binding": "division",
+                                    "align": "center",
+                                    "allowSorting": true,
+                                    "isContentHtml": true,
+                                    
+                                    "width": ".75*"
+                                },
+                                {
+                                    "header": "Delete",
+                                    "binding": "DeleteId",
+                                    "width": ".25*",
+                                    "align": "center",
+                                    "isContentHtml": true
+
+                                },
+                            ],
+                            
+                            autoGenerateColumns: false,
+                            itemsSource: division,
+                            isReadOnly: true,
+                            autoSizeMode: wijmo.grid.AutoSizeMode.Both,
+                            allowDragging: wijmo.grid.AllowDragging.None,
+                            selectionMode: wijmo.grid.SelectionMode.Row
+                        });
+                                
+                        divisionGrid.trackChanges = true;
+
+                        updateNavigateButtonsCollection();
+
+                        btnFirstPageGrid.addEventListener('click', function () {
+                            division.moveToFirstPage();
+                            updateNavigateButtonsCollection();
+                        });
+                        btnPreviousPageGrid.addEventListener('click', function () {
+                            division.moveToPreviousPage();
+                            updateNavigateButtonsCollection();
+                        });
+                        btnNextPageGrid.addEventListener('click', function () {
+                            division.moveToNextPage();
+                            updateNavigateButtonsCollection();
+                        });
+                        btnLastPageGrid.addEventListener('click', function () {
+                            division.moveToLastPage();
+                            updateNavigateButtonsCollection();
+                        });
+                        
+                    }
+                }
+            });  
+    }
+    
+    
+    
+    // ==================
+    // Navigation Buttons
+    // ==================
+    function updateNavigateButtonsCollection() {
+        if (payrollGroup.pageSize <= 0) {
+            document.getElementById('navigationPageGrid').style.display = 'none';
+            return;
+        }
+        document.getElementById('navigationPageGrid').style.display = 'block';
+        if (payrollGroup.pageIndex === 0) {
+            btnFirstPageGrid.setAttribute('disabled', 'disabled');
+            btnPreviousPageGrid.setAttribute('disabled', 'disabled');
+            btnNextPageGrid.removeAttribute('disabled');
+            btnLastPageGrid.removeAttribute('disabled');
+        } else if (payrollGroup.pageIndex === (payrollGroup.pageCount - 1)) {
+            btnFirstPageGrid.removeAttribute('disabled');
+            btnPreviousPageGrid.removeAttribute('disabled');
+            btnLastPageGrid.setAttribute('disabled', 'disabled');
+            btnNextPageGrid.setAttribute('disabled', 'disabled');
+        } else {
+            btnFirstPageGrid.removeAttribute('disabled');
+            btnPreviousPageGrid.removeAttribute('disabled');
+            btnNextPageGrid.removeAttribute('disabled');
+            btnLastPageGrid.removeAttribute('disabled');
+        }
+        btnCurrentPageGrid.innerHTML = (payrollGroup.pageIndex + 1) + ' / ' + payrollGroup.pageCount;
+
+    }
+    
+    //===========================
+    // On Page Load
+    // ==========================
+    
+    $(document).ready(function () {
+        // Navigation button
+        btnFirstPageGrid = document.getElementById('btnMoveToFirstPageGrid');
+        btnPreviousPageGrid = document.getElementById('btnMoveToPreviousPageGrid');
+        btnNextPageGrid = document.getElementById('btnMoveToNextPageGrid');
+        btnLastPageGrid = document.getElementById('btnMoveToLastPageGrid');
+        btnCurrentPageGrid = document.getElementById('btnCurrentPageGrid');
+        getPayrollGroupList();
+        getPayrollTypeList();
+        getDepartmentList();
+        getPositionList();
+        getAccountList();
+        getReligionList();
+        getCitizenshipList();
+        getZipCodeList();
+        getDivisionList();
+    });
+</script>
       
       <!--main content end-->
       <!--footer start-->
