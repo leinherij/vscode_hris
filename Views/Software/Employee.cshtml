@@ -419,6 +419,29 @@
         getPayrollGroup();
           
     });
+    $("#addemployee").click(function () {                 
+        var employee = {
+            payrolltype : $('#payrolltype').val(),            
+        }
+        var data = JSON.stringify(employee);
+        post('/api/employee/add', data);
+    });
+    $("#updateemployee").click(function () {                 
+        var employee = {
+            id : $('#id').val(),
+            payrolltype : $('#payrolltype').val(),            
+        }
+        var data = JSON.stringify(employee);
+        put('/api/employee/update/', data);
+    });
+    $("#deleteemployee").click(function () {                 
+        var employee = {
+            id : $('#id').val(),
+            payrolltype : $('#payrolltype').val(),            
+        }
+        var data = JSON.stringify(employee);
+        delete('/api/employee/delete/', data);
+    });
 </script>
               <!--////////////////////////////////////////////////////////////////////////////////////////////////////////////////
               ////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->

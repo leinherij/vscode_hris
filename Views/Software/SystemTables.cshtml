@@ -458,14 +458,14 @@
                 <div class="control-group">
                 <label for="firstname" class="control-label col-xs-4">Payroll Group</label>
                     <div class="col-xs-8">
-                        <input id="first-name" name="firstname" type="text" autocomplete="first-name" placeholder="Id Number" class="form-control">
+                        <input id="payrollgroup"  type="text" placeholder="Payroll Group" class="form-control">
                         <p class="help-block"></p>
                     </div>
                 </div>
             
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Add</button>
+                <button type="button" id = "addpayrollgroup" class="btn btn-default" data-dismiss="modal">Add</button>
             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
             </div>
         </div>
@@ -484,14 +484,14 @@
                 <div class="control-group">
                 <label for="firstname" class="control-label col-xs-4">Payroll Type</label>
                     <div class="col-xs-8">
-                        <input id="first-name" name="firstname" type="text" autocomplete="first-name" placeholder="Id Number" class="form-control">
+                        <input id="payrolltype" type="text" placeholder="Payroll Type" class="form-control">
                         <p class="help-block"></p>
                     </div>
                 </div>
             
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Add</button>
+                <button type="button" id = "addpayrolltype" class="btn btn-default" data-dismiss="modal">Add</button>
             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
             </div>
         </div>
@@ -510,14 +510,14 @@
                 <div class="control-group">
                 <label for="firstname" class="control-label col-xs-4">Department</label>
                     <div class="col-xs-8">
-                        <input id="first-name" name="firstname" type="text" autocomplete="first-name" placeholder="Id Number" class="form-control">
+                        <input id="department" type="text" placeholder="Department" class="form-control">
                         <p class="help-block"></p>
                     </div>
                 </div>
             
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Add</button>
+                <button type="button" id ="adddepartment" class="btn btn-default" data-dismiss="modal">Add</button>
             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
             </div>
         </div>
@@ -536,40 +536,46 @@
                 <div class="control-group">
                 <label for="firstname" class="control-label col-xs-4">Position</label>
                     <div class="col-xs-8">
-                        <input id="first-name" name="firstname" type="text" autocomplete="first-name" placeholder="Id Number" class="form-control">
+                        <input id="position" type="text" placeholder="Position" class="form-control">
                         <p class="help-block"></p>
                     </div>
                 </div>
             
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Add</button>
+                <button type="button" id ="addposition" class="btn btn-default" data-dismiss="modal">Add</button>
             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
             </div>
         </div>
         </div>
     </div>
-    <!-- Account Modal -->
+    <!-- Chart of Accounts Modal -->
     <div class="modal fade" id="AccountModal" role="dialog">
         <div class="modal-dialog modal-md">
         <div class="modal-content">
             <div class="modal-header">
        
             <button type="button" class="close" data-dismiss="modal">&times;</button>
-            <h4 class="modal-title">Add New Account</h4>
+            <h4 class="modal-title">Add New Chart of Accounts</h4>
             </div>
             <div class="modal-body">
                 <div class="control-group">
-                <label for="firstname" class="control-label col-xs-4">Account</label>
+                    <label for="firstname" class="control-label col-xs-4">Code</label>
                     <div class="col-xs-8">
-                        <input id="first-name" name="firstname" type="text" autocomplete="first-name" placeholder="Id Number" class="form-control">
+                        <input id="accountcode" type="text" placeholder="Code" class="form-control">
                         <p class="help-block"></p>
                     </div>
                 </div>
-            
+                <div class="control-group">
+                    <label for="firstname" class="control-label col-xs-4">Account</label>
+                    <div class="col-xs-8">
+                        <input id="account" type="text" placeholder="Account" class="form-control">
+                        <p class="help-block"></p>
+                    </div>
+                </div>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Add</button>
+                <button type="button" id = "addchartofaccount" class="btn btn-default" data-dismiss="modal">Add</button>
             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
             </div>
         </div>
@@ -588,14 +594,14 @@
                 <div class="control-group">
                 <label for="firstname" class="control-label col-xs-4">Religion</label>
                     <div class="col-xs-8">
-                        <input id="first-name" name="firstname" type="text" autocomplete="first-name" placeholder="Id Number" class="form-control">
+                        <input id="religion" type="text" placeholder="Religion" class="form-control">
                         <p class="help-block"></p>
                     </div>
                 </div>
             
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Add</button>
+                <button type="button" id="addreligion" class="btn btn-default" data-dismiss="modal">Add</button>
             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
             </div>
         </div>
@@ -614,14 +620,14 @@
                 <div class="control-group">
                 <label for="firstname" class="control-label col-xs-4">Citizenship</label>
                     <div class="col-xs-8">
-                        <input id="first-name" name="firstname" type="text" autocomplete="first-name" placeholder="Id Number" class="form-control">
+                        <input id="citizenship" type="text" placeholder="Citizenship" class="form-control">
                         <p class="help-block"></p>
                     </div>
                 </div>
             
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Add</button>
+                <button type="button" id = "addcitizenship" class="btn btn-default" data-dismiss="modal">Add</button>
             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
             </div>
         </div>
@@ -634,20 +640,33 @@
             <div class="modal-header">
        
             <button type="button" class="close" data-dismiss="modal">&times;</button>
-            <h4 class="modal-title">Add New Citizenship</h4>
+            <h4 class="modal-title">Add New Zip Code</h4>
             </div>
             <div class="modal-body">
                 <div class="control-group">
-                <label for="firstname" class="control-label col-xs-4">Citizenship</label>
+                <label for="firstname" class="control-label col-xs-4">Zip Code</label>
                     <div class="col-xs-8">
-                        <input id="first-name" name="firstname" type="text" autocomplete="first-name" placeholder="Id Number" class="form-control">
+                        <input id="zipcode" type="text" placeholder="Zip Code" class="form-control">
                         <p class="help-block"></p>
                     </div>
                 </div>
-            
+                <div class="control-group">
+                <label for="firstname" class="control-label col-xs-4">Location</label>
+                    <div class="col-xs-8">
+                        <input id="location" type="text" placeholder="Location" class="form-control">
+                        <p class="help-block"></p>
+                    </div>
+                </div>
+                <div class="control-group">
+                <label for="firstname" class="control-label col-xs-4">Area</label>
+                    <div class="col-xs-8">
+                        <input id="area" type="text" placeholder="Area" class="form-control">
+                        <p class="help-block"></p>
+                    </div>
+                </div>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Add</button>
+                <button type="button" id = "addzipcode" class="btn btn-default" data-dismiss="modal">Add</button>
             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
             </div>
         </div>
@@ -666,14 +685,14 @@
                 <div class="control-group">
                 <label for="firstname" class="control-label col-xs-4">Division</label>
                     <div class="col-xs-8">
-                        <input id="first-name" name="firstname" type="text" autocomplete="first-name" placeholder="Id Number" class="form-control">
+                        <input id="division" type="text" placeholder="Division" class="form-control">
                         <p class="help-block"></p>
                     </div>
                 </div>
             
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Add</button>
+                <button type="button" id = "adddivision" class="btn btn-default" data-dismiss="modal">Add</button>
             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
             </div>
         </div>
@@ -1640,6 +1659,340 @@
         getZipCodeList();
         getDivisionList();
     });
+    $(document).ready(function () {
+     
+        $("#addpayrollgroup").click(function () {                 
+            var payrollgroup = {
+                payrollgroup : $('#payrollgroup').val(),            
+            }
+            var data = JSON.stringify(payrollgroup);
+            post('/api/payrollgroup/add', data);
+        });
+        $("#updatepayrollgroup").click(function () {                 
+            var payrollgroup = {
+                id : $('#id').val(),
+                payrollgroup : $('#payrollgroup').val(),            
+            }
+            var data = JSON.stringify(payrollgroup);
+            put('/api/payrollgroup/update/', data);
+        });
+        $("#deletepayrollgroup").click(function () {                 
+            var payrollgroup = {
+                id : $('#id').val(),
+                payrollgroup : $('#payrollgroup').val(),            
+            }
+            var data = JSON.stringify(payrollgroup);
+            delete('/api/payrollgroup/delete/', data);
+        });
+        
+        
+        $("#addpayrolltype").click(function () {                 
+            var payrolltype = {
+                payrolltype : $('#payrolltype').val(),            
+            }
+            var data = JSON.stringify(payrolltype);
+            post('/api/payrolltype/add', data);
+        });
+        $("#updatepayrolltype").click(function () {                 
+            var payrolltype = {
+                id : $('#id').val(),
+                payrolltype : $('#payrolltype').val(),            
+            }
+            var data = JSON.stringify(payrolltype);
+            put('/api/payrolltype/update/', data);
+        });
+        $("#deletepayrolltype").click(function () {                 
+            var payrolltype = {
+                id : $('#id').val(),
+                payrolltype : $('#payrolltype').val(),            
+            }
+            var data = JSON.stringify(payrolltype);
+            delete('/api/payrolltype/delete/', data);
+        });
+        
+        
+        $("#adddepartment").click(function () {                 
+            var department = {
+                department : $('#department').val(),            
+            }
+            var data = JSON.stringify(department);
+            post('/api/department/add', data);
+        });
+        $("#updatedepartment").click(function () {                 
+            var department = {
+                id : $('#id').val(),
+                department : $('#department').val(),            
+            }
+            var data = JSON.stringify(department);
+            put('/api/department/update/', data);
+        });
+        $("#deletedepartment").click(function () {                 
+            var department = {
+                id : $('#id').val(),
+                department : $('#department').val(),            
+            }
+            var data = JSON.stringify(department);
+            delete('/api/department/delete/', data);
+        });
+        
+        
+        $("#addposition").click(function () {                 
+            var position = {
+                position : $('#position').val(),            
+            }
+            var data = JSON.stringify(position);
+            post('/api/position/add', data);
+        });
+        $("#updateposition").click(function () {                 
+            var position = {
+                id : $('#id').val(),
+                position : $('#position').val(),            
+            }
+            var data = JSON.stringify(position);
+            put('/api/position/update/', data);
+        });
+        $("#deleteposition").click(function () {                 
+            var position = {
+                id : $('#id').val(),
+                position : $('#position').val(),            
+            }
+            var data = JSON.stringify(position);
+            delete('/api/position/delete/', data);
+        });
+        
+        
+        $("#addchartofaccount").click(function () {                 
+            var chartofaccount = {
+                account : $('#account').val(),
+                accountcode : $('#accountcode').val(),            
+            }
+            var data = JSON.stringify(chartofaccount);
+            post('/api/account/add', data);
+        });
+        $("#updatechartofaccount").click(function () {                 
+            var chartofaccount = {
+                id : $('#id').val(),
+                account : $('#account').val(),
+                accountcode : $('#accountcode').val(),            
+            }
+            var data = JSON.stringify(chartofaccount);
+            put('/api/account/update/', data);
+        });
+        $("#deletechartofaccount").click(function () {                 
+            var chartofaccount = {
+                id : $('#id').val(),
+                account : $('#account').val(),
+                accountcode : $('#accountcode').val(),            
+            }
+            var data = JSON.stringify(chartofaccount);
+            delete('/api/account/delete/', data);
+        });
+        
+        
+        $("#addreligion").click(function () {                 
+            var religion = {
+                religion : $('#religion').val(),           
+            }
+            var data = JSON.stringify(religion);
+            post('/api/religion/add', data);
+        });
+        $("#updatereligion").click(function () {                 
+            var religion = {
+                id : $('#id').val(),
+                religion : $('#religion').val(),           
+            }
+            var data = JSON.stringify(religion);
+            put('/api/religion/update/', data);
+        });
+        $("#deletereligion").click(function () {                 
+            var religion = {
+                id : $('#id').val(),
+                religion : $('#religion').val(),           
+            }
+            var data = JSON.stringify(religion);
+            delete('/api/religion/delete/', data);
+        });
+        
+        
+        $("#addcitizenship").click(function () {                 
+            var citizenship = {
+                citizenship : $('#citizenship').val(),           
+            }
+            var data = JSON.stringify(citizenship);
+            post('/api/citizenship/add', data);
+        });
+        $("#updatecitizenship").click(function () {                 
+            var citizenship = {
+                id : $('#id').val(),
+                citizenship : $('#citizenship').val(),           
+            }
+            var data = JSON.stringify(citizenship);
+            put('/api/citizenship/update/', data);
+        });
+        $("#deletecitizenship").click(function () {                 
+            var citizenship = {
+                id : $('#id').val(),
+                citizenship : $('#citizenship').val(),           
+            }
+            var data = JSON.stringify(citizenship);
+            delete('/api/citizenship/delete/', data);
+        });
+        
+        
+        $("#addzipcode").click(function () {                 
+            var zipcode = {
+                zipcode : $('#zipcode').val(),
+                location : $('#location').val(),
+                area : $('#area').val(),           
+            }
+            var data = JSON.stringify(zipcode);
+            post('/api/zipcode/add', data);
+        });
+        $("#updatezipcode").click(function () {                 
+            var zipcode = {
+                id : $('#id').val(),
+                zipcode : $('#zipcode').val(),
+                location : $('#location').val(),
+                area : $('#area').val(),           
+            }
+            var data = JSON.stringify(zipcode);
+            put('/api/zipcode/update/', data);
+        });
+        $("#deletezipcode").click(function () {                 
+            var zipcode = {
+                id : $('#id').val(),
+                zipcode : $('#zipcode').val(),
+                location : $('#location').val(),
+                area : $('#area').val(),           
+            }
+            var data = JSON.stringify(zipcode);
+            delete('/api/zipcode/delete/', data);
+        });
+        
+        
+        $("#adddivision").click(function () {                 
+             var division = {
+                 division : $('#division').val(),           
+            }
+            var data = JSON.stringify(division);
+            post('/api/division/add', data);
+        });
+        $("#updatedivision").click(function () {                 
+             var division = {
+                 id : $('#id').val(),
+                 division : $('#division').val(),           
+            }
+            var data = JSON.stringify(division);
+            put('/api/division/update/', data);
+        });
+        $("#deletedivision").click(function () {                 
+             var division = {
+                 id : $('#id').val(),
+                 division : $('#division').val(),           
+            }
+            var data = JSON.stringify(division);
+            delete('/api/division/delete/', data);
+        });
+        
+        
+        function post(url, data){
+             $.ajax({
+                url: url,
+                type: 'POST',
+                data: data,
+                dataType: 'json',
+                contentType: 'application/json; charset=utf-8',
+                statusCode : {
+                    200 : function(data) {
+                        console.log(data);
+                        alert("Record Save");
+                        //$('#saveContactForm')[0].reset();
+                    },
+                    404 : function(data) {
+                        console.log(data);
+                        alert("Not Found");
+                    },
+                    400 : function(data) {
+                        console.log(data);
+                        alert("Internal Server Error");
+                    },
+                    415 : function(data){
+                        console.log(data);
+                        alert("Unsupported Data type");
+                    },
+                    500 : function(data){
+                        console.log(data);
+                        alert("BAD REQUEST");
+                    }
+                }
+            });
+        }
+        function put(url, data){
+            $.ajax({
+                url: url + id,
+                type: 'PUT',
+                data: data,
+                dataType: 'json',
+                contentType: 'application/json; charset=utf-8',
+                statusCode : {
+                    200 : function(data) {
+                        console.log(data);
+                        alert("Record Updated");
+                        //$('#saveContactForm')[0].reset();
+                    },
+                    404 : function(data) {
+                        console.log(data);
+                        alert("Not Found");
+                    },
+                    400 : function(data) {
+                        console.log(data);
+                        alert("Internal Server Error");
+                    },
+                    415 : function(data){
+                        console.log(data);
+                        alert("Unsupported Data type");
+                    },
+                    500 : function(data){
+                        console.log(data);
+                        alert("BAD REQUEST");
+                    }
+                }
+            });
+        }
+        function delete(url, data){
+            $.ajax({
+                url: url + id,
+                type: 'DELETE',
+                data: data,
+                dataType: 'json',
+                contentType: 'application/json; charset=utf-8',
+                statusCode : {
+                    200 : function(data) {
+                        console.log(data);
+                        alert("Record Deleted");
+                        //$('#saveContactForm')[0].reset();
+                    },
+                    404 : function(data) {
+                        console.log(data);
+                        alert("Not Found");
+                    },
+                    400 : function(data) {
+                        console.log(data);
+                        alert("Internal Server Error");
+                    },
+                    415 : function(data){
+                        console.log(data);
+                        alert("Unsupported Data type");
+                    },
+                    500 : function(data){
+                        console.log(data);
+                        alert("BAD REQUEST");
+                    }
+                }
+            });
+        }
+    });
+        
 </script>
       
       <!--main content end-->
