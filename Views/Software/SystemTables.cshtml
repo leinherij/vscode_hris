@@ -466,6 +466,7 @@
             </div>
             <div class="modal-footer">
                 <button type="button" id = "addpayrollgroup" class="btn btn-default" data-dismiss="modal">Add</button>
+                <button type="button" id = "deletepayrollgroup" class="btn btn-default" data-dismiss="modal">delete</button>
             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
             </div>
         </div>
@@ -1658,8 +1659,7 @@
         getCitizenshipList();
         getZipCodeList();
         getDivisionList();
-    });
-    $(document).ready(function () {
+ 
      
         $("#addpayrollgroup").click(function () {                 
             var payrollgroup = {
@@ -1668,22 +1668,21 @@
             var data = JSON.stringify(payrollgroup);
             post('/api/payrollgroup/add', data);
         });
-        $("#updatepayrollgroup").click(function () {                 
-            var payrollgroup = {
-                id : $('#id').val(),
-                payrollgroup : $('#payrollgroup').val(),            
-            }
-            var data = JSON.stringify(payrollgroup);
-            put('/api/payrollgroup/update/', data);
-        });
-        $("#deletepayrollgroup").click(function () {                 
-            var payrollgroup = {
-                id : $('#id').val(),
-                payrollgroup : $('#payrollgroup').val(),            
-            }
-            var data = JSON.stringify(payrollgroup);
-            delete('/api/payrollgroup/delete/', data);
-        });
+        // $("#updatepayrollgroup").click(function () {                 
+        //     var payrollgroup = {
+        //         id : $('#id').val(),
+        //         payrollgroup : $('#payrollgroup').val(),            
+        //     }
+        //     var data = JSON.stringify(payrollgroup);
+        //     put('/api/payrollgroup/update/', data);
+        // });
+        // $("#deletepayrollgroup").click(function () {  
+        //     var x = 1;               
+        //      var id =x;
+
+        //    // var data = JSON.stringify(payrollgroup);
+        //     deleted('/api/payrollgroup/delete/', id);
+        // });
         
         
         $("#addpayrolltype").click(function () {                 
@@ -1693,22 +1692,22 @@
             var data = JSON.stringify(payrolltype);
             post('/api/payrolltype/add', data);
         });
-        $("#updatepayrolltype").click(function () {                 
-            var payrolltype = {
-                id : $('#id').val(),
-                payrolltype : $('#payrolltype').val(),            
-            }
-            var data = JSON.stringify(payrolltype);
-            put('/api/payrolltype/update/', data);
-        });
-        $("#deletepayrolltype").click(function () {                 
-            var payrolltype = {
-                id : $('#id').val(),
-                payrolltype : $('#payrolltype').val(),            
-            }
-            var data = JSON.stringify(payrolltype);
-            delete('/api/payrolltype/delete/', data);
-        });
+        // $("#updatepayrolltype").click(function () {                 
+        //     var payrolltype = {
+        //         id : $('#id').val(),
+        //         payrolltype : $('#payrolltype').val(),            
+        //     }
+        //     var data = JSON.stringify(payrolltype);
+        //     put('/api/payrolltype/update/', data);
+        // });
+        // $("#deletepayrolltype").click(function () {                 
+        //     var payrolltype = {
+        //         id : $('#id').val(),
+        //         payrolltype : $('#payrolltype').val(),            
+        //     }
+        //     var data = JSON.stringify(payrolltype);
+        //     delete('/api/payrolltype/delete/', data);
+        // });
         
         
         $("#adddepartment").click(function () {                 
@@ -1718,22 +1717,22 @@
             var data = JSON.stringify(department);
             post('/api/department/add', data);
         });
-        $("#updatedepartment").click(function () {                 
-            var department = {
-                id : $('#id').val(),
-                department : $('#department').val(),            
-            }
-            var data = JSON.stringify(department);
-            put('/api/department/update/', data);
-        });
-        $("#deletedepartment").click(function () {                 
-            var department = {
-                id : $('#id').val(),
-                department : $('#department').val(),            
-            }
-            var data = JSON.stringify(department);
-            delete('/api/department/delete/', data);
-        });
+        // $("#updatedepartment").click(function () {                 
+        //     var department = {
+        //         id : $('#id').val(),
+        //         department : $('#department').val(),            
+        //     }
+        //     var data = JSON.stringify(department);
+        //     put('/api/department/update/', data);
+        // });
+        // $("#deletedepartment").click(function () {                 
+        //     var department = {
+        //         id : $('#id').val(),
+        //         department : $('#department').val(),            
+        //     }
+        //     var data = JSON.stringify(department);
+        //     delete('/api/department/delete/', data);
+        // });
         
         
         $("#addposition").click(function () {                 
@@ -1743,22 +1742,22 @@
             var data = JSON.stringify(position);
             post('/api/position/add', data);
         });
-        $("#updateposition").click(function () {                 
-            var position = {
-                id : $('#id').val(),
-                position : $('#position').val(),            
-            }
-            var data = JSON.stringify(position);
-            put('/api/position/update/', data);
-        });
-        $("#deleteposition").click(function () {                 
-            var position = {
-                id : $('#id').val(),
-                position : $('#position').val(),            
-            }
-            var data = JSON.stringify(position);
-            delete('/api/position/delete/', data);
-        });
+        // $("#updateposition").click(function () {                 
+        //     var position = {
+        //         id : $('#id').val(),
+        //         position : $('#position').val(),            
+        //     }
+        //     var data = JSON.stringify(position);
+        //     put('/api/position/update/', data);
+        // });
+        // $("#deleteposition").click(function () {                 
+        //     var position = {
+        //         id : $('#id').val(),
+        //         position : $('#position').val(),            
+        //     }
+        //     var data = JSON.stringify(position);
+        //     delete('/api/position/delete/', data);
+        // });
         
         
         $("#addchartofaccount").click(function () {                 
@@ -1769,24 +1768,24 @@
             var data = JSON.stringify(chartofaccount);
             post('/api/account/add', data);
         });
-        $("#updatechartofaccount").click(function () {                 
-            var chartofaccount = {
-                id : $('#id').val(),
-                account : $('#account').val(),
-                accountcode : $('#accountcode').val(),            
-            }
-            var data = JSON.stringify(chartofaccount);
-            put('/api/account/update/', data);
-        });
-        $("#deletechartofaccount").click(function () {                 
-            var chartofaccount = {
-                id : $('#id').val(),
-                account : $('#account').val(),
-                accountcode : $('#accountcode').val(),            
-            }
-            var data = JSON.stringify(chartofaccount);
-            delete('/api/account/delete/', data);
-        });
+        // $("#updatechartofaccount").click(function () {                 
+        //     var chartofaccount = {
+        //         id : $('#id').val(),
+        //         account : $('#account').val(),
+        //         accountcode : $('#accountcode').val(),            
+        //     }
+        //     var data = JSON.stringify(chartofaccount);
+        //     put('/api/account/update/', data);
+        // });
+        // $("#deletechartofaccount").click(function () {                 
+        //     var chartofaccount = {
+        //         id : $('#id').val(),
+        //         account : $('#account').val(),
+        //         accountcode : $('#accountcode').val(),            
+        //     }
+        //     var data = JSON.stringify(chartofaccount);
+        //     delete('/api/account/delete/', data);
+        // });
         
         
         $("#addreligion").click(function () {                 
@@ -1796,22 +1795,22 @@
             var data = JSON.stringify(religion);
             post('/api/religion/add', data);
         });
-        $("#updatereligion").click(function () {                 
-            var religion = {
-                id : $('#id').val(),
-                religion : $('#religion').val(),           
-            }
-            var data = JSON.stringify(religion);
-            put('/api/religion/update/', data);
-        });
-        $("#deletereligion").click(function () {                 
-            var religion = {
-                id : $('#id').val(),
-                religion : $('#religion').val(),           
-            }
-            var data = JSON.stringify(religion);
-            delete('/api/religion/delete/', data);
-        });
+        // $("#updatereligion").click(function () {                 
+        //     var religion = {
+        //         id : $('#id').val(),
+        //         religion : $('#religion').val(),           
+        //     }
+        //     var data = JSON.stringify(religion);
+        //     put('/api/religion/update/', data);
+        // });
+        // $("#deletereligion").click(function () {                 
+        //     var religion = {
+        //         id : $('#id').val(),
+        //         religion : $('#religion').val(),           
+        //     }
+        //     var data = JSON.stringify(religion);
+        //     delete('/api/religion/delete/', data);
+        // });
         
         
         $("#addcitizenship").click(function () {                 
@@ -1821,22 +1820,22 @@
             var data = JSON.stringify(citizenship);
             post('/api/citizenship/add', data);
         });
-        $("#updatecitizenship").click(function () {                 
-            var citizenship = {
-                id : $('#id').val(),
-                citizenship : $('#citizenship').val(),           
-            }
-            var data = JSON.stringify(citizenship);
-            put('/api/citizenship/update/', data);
-        });
-        $("#deletecitizenship").click(function () {                 
-            var citizenship = {
-                id : $('#id').val(),
-                citizenship : $('#citizenship').val(),           
-            }
-            var data = JSON.stringify(citizenship);
-            delete('/api/citizenship/delete/', data);
-        });
+        // $("#updatecitizenship").click(function () {                 
+        //     var citizenship = {
+        //         id : $('#id').val(),
+        //         citizenship : $('#citizenship').val(),           
+        //     }
+        //     var data = JSON.stringify(citizenship);
+        //     put('/api/citizenship/update/', data);
+        // });
+        // $("#deletecitizenship").click(function () {                 
+        //     var citizenship = {
+        //         id : $('#id').val(),
+        //         citizenship : $('#citizenship').val(),           
+        //     }
+        //     var data = JSON.stringify(citizenship);
+        //     delete('/api/citizenship/delete/', data);
+        // });
         
         
         $("#addzipcode").click(function () {                 
@@ -1848,26 +1847,26 @@
             var data = JSON.stringify(zipcode);
             post('/api/zipcode/add', data);
         });
-        $("#updatezipcode").click(function () {                 
-            var zipcode = {
-                id : $('#id').val(),
-                zipcode : $('#zipcode').val(),
-                location : $('#location').val(),
-                area : $('#area').val(),           
-            }
-            var data = JSON.stringify(zipcode);
-            put('/api/zipcode/update/', data);
-        });
-        $("#deletezipcode").click(function () {                 
-            var zipcode = {
-                id : $('#id').val(),
-                zipcode : $('#zipcode').val(),
-                location : $('#location').val(),
-                area : $('#area').val(),           
-            }
-            var data = JSON.stringify(zipcode);
-            delete('/api/zipcode/delete/', data);
-        });
+        // $("#updatezipcode").click(function () {                 
+        //     var zipcode = {
+        //         id : $('#id').val(),
+        //         zipcode : $('#zipcode').val(),
+        //         location : $('#location').val(),
+        //         area : $('#area').val(),           
+        //     }
+        //     var data = JSON.stringify(zipcode);
+        //     put('/api/zipcode/update/', data);
+        // });
+        // $("#deletezipcode").click(function () {                 
+        //     var zipcode = {
+        //         id : $('#id').val(),
+        //         zipcode : $('#zipcode').val(),
+        //         location : $('#location').val(),
+        //         area : $('#area').val(),           
+        //     }
+        //     var data = JSON.stringify(zipcode);
+        //     delete('/api/zipcode/delete/', data);
+        // });
         
         
         $("#adddivision").click(function () {                 
@@ -1877,22 +1876,22 @@
             var data = JSON.stringify(division);
             post('/api/division/add', data);
         });
-        $("#updatedivision").click(function () {                 
-             var division = {
-                 id : $('#id').val(),
-                 division : $('#division').val(),           
-            }
-            var data = JSON.stringify(division);
-            put('/api/division/update/', data);
-        });
-        $("#deletedivision").click(function () {                 
-             var division = {
-                 id : $('#id').val(),
-                 division : $('#division').val(),           
-            }
-            var data = JSON.stringify(division);
-            delete('/api/division/delete/', data);
-        });
+        // $("#updatedivision").click(function () {                 
+        //      var division = {
+        //          id : $('#id').val(),
+        //          division : $('#division').val(),           
+        //     }
+        //     var data = JSON.stringify(division);
+        //     put('/api/division/update/', data);
+        // });
+        // $("#deletedivision").click(function () {                 
+        //      var division = {
+        //          id : $('#id').val(),
+        //          division : $('#division').val(),           
+        //     }
+        //     var data = JSON.stringify(division);
+        //     delete('/api/division/delete/', data);
+        // });
         
         
         function post(url, data){
@@ -1927,72 +1926,71 @@
                 }
             });
         }
-        function put(url, data){
-            $.ajax({
-                url: url + id,
-                type: 'PUT',
-                data: data,
-                dataType: 'json',
-                contentType: 'application/json; charset=utf-8',
-                statusCode : {
-                    200 : function(data) {
-                        console.log(data);
-                        alert("Record Updated");
-                        //$('#saveContactForm')[0].reset();
-                    },
-                    404 : function(data) {
-                        console.log(data);
-                        alert("Not Found");
-                    },
-                    400 : function(data) {
-                        console.log(data);
-                        alert("Internal Server Error");
-                    },
-                    415 : function(data){
-                        console.log(data);
-                        alert("Unsupported Data type");
-                    },
-                    500 : function(data){
-                        console.log(data);
-                        alert("BAD REQUEST");
-                    }
-                }
-            });
-        }
-        function delete(url, data){
+        // function put(url, data){
+        //     $.ajax({
+        //         url: url + id,
+        //         type: 'PUT',
+        //         data: data,
+        //         dataType: 'json',
+        //         contentType: 'application/json; charset=utf-8',
+        //         statusCode : {
+        //             200 : function(data) {
+        //                 console.log(data);
+        //                 alert("Record Updated");
+        //                 //$('#saveContactForm')[0].reset();
+        //             },
+        //             404 : function(data) {
+        //                 console.log(data);
+        //                 alert("Not Found");
+        //             },
+        //             400 : function(data) {
+        //                 console.log(data);
+        //                 alert("Internal Server Error");
+        //             },
+        //             415 : function(data){
+        //                 console.log(data);
+        //                 alert("Unsupported Data type");
+        //             },
+        //             500 : function(data){
+        //                 console.log(data);
+        //                 alert("BAD REQUEST");
+        //             }
+        //         }
+        //     });
+        // }
+        function deleted(url, id){
             $.ajax({
                 url: url + id,
                 type: 'DELETE',
-                data: data,
                 dataType: 'json',
                 contentType: 'application/json; charset=utf-8',
                 statusCode : {
-                    200 : function(data) {
-                        console.log(data);
+                    200 : function(id) {
+                        console.log(id);
                         alert("Record Deleted");
-                        //$('#saveContactForm')[0].reset();
+                        $('#saveContactForm')[0].reset();
                     },
-                    404 : function(data) {
-                        console.log(data);
+                    404 : function(id) {
+                        console.log(id);
                         alert("Not Found");
                     },
-                    400 : function(data) {
+                    400 : function(id) {
                         console.log(data);
                         alert("Internal Server Error");
                     },
-                    415 : function(data){
-                        console.log(data);
+                    415 : function(id){
+                        console.log(id);
                         alert("Unsupported Data type");
                     },
-                    500 : function(data){
-                        console.log(data);
+                    500 : function(id){
+                        console.log(id);
                         alert("BAD REQUEST");
                     }
                 }
             });
         }
     });
-        
+    
 </script>
       
       <!--main content end-->
