@@ -193,7 +193,7 @@
                                                             <div class="row">
                                                                 <div class="col-md-8 col-md-offset-2">
                                                                 <table id="PayrollGroupGrid" class="grid border-custom"></table>
-                                                                <a class="btn btn-danger pull-right"style="font-size: 15px;width:160px;background-color:#443557;border-color:#443557;"data-toggle="modal" data-target="#addPayrollGroupModal"><i class="fa fa-close"></i> Add New</a>
+                                                                <a class="btn btn-danger pull-right"style="font-size: 15px;width:160px;background-color:#443557;border-color:#443557;"data-toggle="modal" data-target="#PayrollGroupModal"><i class="fa fa-close"></i> Add New</a>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -445,11 +445,12 @@
 
         </section>
     </section>
-    <!-- Modal Payroll Group-->
-    <div class="modal fade" id="addPayrollGroupModal" role="dialog">
+    <!-- Modal -->
+    <div class="modal fade" id="PayrollGroupModal" role="dialog">
         <div class="modal-dialog modal-md">
         <div class="modal-content">
             <div class="modal-header">
+       
             <button type="button" class="close" data-dismiss="modal">&times;</button>
             <h4 class="modal-title">Add New Payroll Group</h4>
             </div>
@@ -461,9 +462,9 @@
                         <p class="help-block"></p>
                     </div>
                 </div>
+            
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                 <button type="button" id = "addpayrollgroup" class="btn btn-default" data-dismiss="modal">Add</button>
             </div>
         </div>
@@ -517,32 +518,7 @@
     </div>
     
     <!-- Payroll Type Modal -->
-    <div class="modal fade" id="addPayrollTypeModal" role="dialog">
-        <div class="modal-dialog modal-md">
-        <div class="modal-content">
-            <div class="modal-header">
-       
-            <button type="button" class="close" data-dismiss="modal">&times;</button>
-            <h4 class="modal-title">Add New Payroll Type</h4>
-            </div>
-            <div class="modal-body">
-                <div class="control-group">
-                <label for="firstname" class="control-label col-xs-4">Payroll Type</label>
-                    <div class="col-xs-8">
-                        <input id="payrolltype" type="text" class="form-control">
-                        <p class="help-block"></p>
-                    </div>
-                </div>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                <button type="button" id = "addpayrolltype" class="btn btn-default" data-dismiss="modal">Add</button>
-            
-            </div>
-        </div>
-        </div>
-    </div>
-    <div class="modal fade" id="editPayrollTypeModal" role="dialog">
+    <div class="modal fade" id="PayrollTypeModal" role="dialog">
         <div class="modal-dialog modal-md">
         <div class="modal-content">
             <div class="modal-header">
@@ -558,6 +534,7 @@
                         <p class="help-block"></p>
                     </div>
                 </div>
+            
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -586,7 +563,7 @@
         </div>
     </div>
     <!-- Department Modal -->
-    <div class="modal fade" id="addDepartmentModal" role="dialog">
+    <div class="modal fade" id="DepartmentModal" role="dialog">
         <div class="modal-dialog modal-md">
         <div class="modal-content">
             <div class="modal-header">
@@ -598,14 +575,10 @@
                 <div class="control-group">
                 <label for="firstname" class="control-label col-xs-4">Department</label>
                     <div class="col-xs-8">
-                        <input id="department" type="text" class="form-control">
+                        <input id="department" type="text" placeholder="Department" class="form-control">
                         <p class="help-block"></p>
                     </div>
                 </div>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                <button type="button" id ="adddepartment" class="btn btn-default" data-dismiss="modal">Add</button>
             
             </div>
         </div>
@@ -647,15 +620,14 @@
                 <!--content here-->
             </div>
             <div class="modal-footer">
-                
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                <button type="button" id = "deletedepartment" class="btn btn-default" data-dismiss="modal">Delete</button>
+                <button type="button" id ="adddepartment" class="btn btn-default" data-dismiss="modal">Add</button>
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
             </div>
         </div>
         </div>
     </div>
     <!-- Position Modal -->
-    <div class="modal fade" id="addPositionModal" role="dialog">
+    <div class="modal fade" id="PositionModal" role="dialog">
         <div class="modal-dialog modal-md">
         <div class="modal-content">
             <div class="modal-header">
@@ -723,7 +695,7 @@
         </div>
     </div>
     <!-- Chart of Accounts Modal -->
-    <div class="modal fade" id="addAccountModal" role="dialog">
+    <div class="modal fade" id="AccountModal" role="dialog">
         <div class="modal-dialog modal-md">
         <div class="modal-content">
             <div class="modal-header">
@@ -742,13 +714,12 @@
                 <div class="control-group">
                     <label for="firstname" class="control-label col-xs-4">Account</label>
                     <div class="col-xs-8">
-                        <input id="account" type="text" class="form-control">
+                        <input id="account" type="text" placeholder="Account" class="form-control">
                         <p class="help-block"></p>
                     </div>
                 </div>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                 <button type="button" id = "addchartofaccount" class="btn btn-default" data-dismiss="modal">Add</button>
             
             </div>
@@ -805,7 +776,7 @@
         </div>
     </div>
     <!-- Religion Modal -->
-    <div class="modal fade" id="addReligionModal" role="dialog">
+    <div class="modal fade" id="ReligionModal" role="dialog">
         <div class="modal-dialog modal-md">
         <div class="modal-content">
             <div class="modal-header">
@@ -873,7 +844,7 @@
         </div>
     </div>
     <!-- Citizenship Modal -->
-    <div class="modal fade" id="addCitizenshipModal" role="dialog">
+    <div class="modal fade" id="CitizenshipModal" role="dialog">
         <div class="modal-dialog modal-md">
         <div class="modal-content">
             <div class="modal-header">
@@ -885,7 +856,7 @@
                 <div class="control-group">
                 <label for="firstname" class="control-label col-xs-4">Citizenship</label>
                     <div class="col-xs-8">
-                        <input id="citizenship" type="text" class="form-control">
+                        <input id="citizenship" type="text" placeholder="Citizenship" class="form-control">
                         <p class="help-block"></p>
                     </div>
                 </div>
@@ -941,7 +912,7 @@
         </div>
     </div>
     <!-- Zip Code Modal -->
-    <div class="modal fade" id="addZipCodeModal" role="dialog">
+    <div class="modal fade" id="ZipCodeModal" role="dialog">
         <div class="modal-dialog modal-md">
         <div class="modal-content">
             <div class="modal-header">
@@ -1095,10 +1066,11 @@
             </div>
             <div class="modal-body">
                 <!--content here-->
+
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                <button type="button" id = "deletedivision" class="btn btn-default" data-dismiss="modal">Delete</button>
+                <button type="button" id = "adddivision" class="btn btn-default" data-dismiss="modal">Add</button>
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
             </div>
         </div>
         </div>
@@ -1131,7 +1103,9 @@
     var citizenshipList;
     var zipCodeList;
     var divisionList;
+
     
+
     var btnFirstPageGrid;
     var btnPreviousPageGrid;
     var btnNextPageGrid;
@@ -1275,6 +1249,7 @@
     // Get Payroll Group Data
     // =============================
     function getPayrollGroupList() {
+
         payrollGroupList = new wijmo.collections.ObservableArray();
             $.ajax({
                 url: '/api/payrollgroup/list',
@@ -1286,15 +1261,10 @@
                     if (results.length > 0) {
                         for (i = 0; i < results.length; i++) {
                             payrollGroupList.push({
-                                id: results[i]["id"],
-                                payrollGroup: results[i]["payrollGroup"],
-                                editId: "<button class='btn btn-info btn-xs btn-block' id='itemEditButton' onclick='editPayrollGroup(payrollGroupList["+i+"].id,payrollGroupList["+i+"].payrollGroup)'><i class='fa fa-trash'></i> Edit</button>",
-                                deleteId: "<button class='btn btn-danger btn-xs btn-block' id='itemDeleteButton' onclick='deletePayrollGroup(payrollGroupList["+i+"].id)'><i class='fa fa-trash'></i> Delete</button>",
+                                payrollType: results[i]["payrollType"],
+                                DeleteId: "<button class='btn btn-danger btn-xs btn-block' id='itemDeleteButton' onclick='cmdItemDeleteButton_OnClick()'><i class='fa fa-trash'></i> Delete</button>",
                             });
-                            //x = payrollGroupList[0].id;
-                            //alert(payrollGroupList[i].id);
                         }
-                        // alert(payrollGroupList[0].id);
                         payrollGroup = new wijmo.collections.CollectionView(payrollGroupList);
                         btnCurrentPageGrid.innerHTML = (payrollGroup.pageIndex + 1) + ' / ' + payrollGroup.pageCount;
                         payrollGroup.canFilter = true;
@@ -1304,6 +1274,99 @@
                         }   
                         //Flex Grid
                         payrollGroupGrid = new wijmo.grid.FlexGrid('#PayrollGroupGrid');
+ 
+                            
+                        
+                        payrollGroupGrid.initialize({
+                            
+                            columns: [
+                                {
+                                    "header": "payrollType",
+                                    "binding": "payrollType",
+                                    "align": "center",
+                                    "allowSorting": true,
+                                    "isContentHtml": true,
+                                    
+                                    "width": ".75*"
+                                },
+                                {
+                                    "header": "Delete",
+                                    "binding": "DeleteId",
+                                    "width": ".25*",
+                                    "align": "center",
+                                    "isContentHtml": true
+
+                                },
+                            ],
+                            
+                            autoGenerateColumns: false,
+                            itemsSource: payrollGroup,
+                            isReadOnly: true,
+                            autoSizeMode: wijmo.grid.AutoSizeMode.Both,
+                            allowDragging: wijmo.grid.AllowDragging.None,
+                            selectionMode: wijmo.grid.SelectionMode.Row
+                        });
+                                
+                        payrollGroupGrid.trackChanges = true;
+
+                        updateNavigateButtonsCollection();
+
+                        btnFirstPageGrid.addEventListener('click', function () {
+                            payrollGroup.moveToFirstPage();
+                            updateNavigateButtonsCollection();
+                        });
+                        btnPreviousPageGrid.addEventListener('click', function () {
+                            payrollGroup.moveToPreviousPage();
+                            updateNavigateButtonsCollection();
+                        });
+                        btnNextPageGrid.addEventListener('click', function () {
+                            payrollGroup.moveToNextPage();
+                            updateNavigateButtonsCollection();
+                        });
+                        btnLastPageGrid.addEventListener('click', function () {
+                            payrollGroup.moveToLastPage();
+                            updateNavigateButtonsCollection();
+                        });
+                        
+                    }
+                }
+            });  
+        
+        
+        //wijmo.Control.invalidateAll();
+    }
+
+    // =============================
+    // Get Payroll Group Data
+    // =============================
+    function getPayrollGroupList() {
+        payrollGroupList = new wijmo.collections.ObservableArray();
+            $.ajax({
+                url: '/api/payrollgroup/list',
+                cache: false,
+                type: 'GET',
+                contentType: 'application/json; charset=utf-8',
+                data: {},
+                success: function (results) {
+                    if (results.length > 0) {
+                        for (i = 0; i < results.length; i++) {
+                            payrollGroupList.push({
+                                payrollGroup: results[i]["payrollGroup"],
+                                DeleteId: "<button class='btn btn-danger btn-xs btn-block' id='itemDeleteButton' onclick='cmdItemDeleteButton_OnClick()'><i class='fa fa-trash'></i> Delete</button>",
+                            });
+                        }
+                        payrollGroup = new wijmo.collections.CollectionView(payrollGroupList);
+                        btnCurrentPageGrid.innerHTML = (payrollGroup.pageIndex + 1) + ' / ' + payrollGroup.pageCount;
+                        payrollGroup.canFilter = true;
+                        payrollGroup.pageSize = 15;
+                        if(payrollGroupGrid){
+                            payrollGroupGrid.dispose();
+                        }   
+                        //Flex Grid
+                        payrollGroupGrid = new wijmo.grid.FlexGrid('#PayrollGroupGrid');
+ 
+                            
+                        
                         payrollGroupGrid.initialize({
                             
                             columns: [
@@ -1318,16 +1381,7 @@
                                 },
                                 {
                                     "header": "Delete",
-                                    "binding": "editId",
-                                    "width": ".25*",
-                                    "align": "center",
-                                    "isContentHtml": true
-
-                                },
-                                
-                                {
-                                    "header": "Delete",
-                                    "binding": "deleteId",
+                                    "binding": "DeleteId",
                                     "width": ".25*",
                                     "align": "center",
                                     "isContentHtml": true
@@ -1383,13 +1437,9 @@
                     if (results.length > 0) {
                         for (i = 0; i < results.length; i++) {
                             payrollTypeList.push({
-                                id: results[i]["id"],
-                                payrollType: results[i]["payrollType"],
-                                editId: "<button class='btn btn-info btn-xs btn-block' id='itemEditButton' onclick='editPayrollType(payrollTypeList["+i+"].id,payrollTypeList["+i+"].payrollType)'><i class='fa fa-trash'></i> Edit</button>",
-                                deleteId: "<button class='btn btn-danger btn-xs btn-block' id='itemDeleteButton' onclick='deletePayrollType(payrollTypeList["+i+"].id)'><i class='fa fa-trash'></i> Delete</button>",
-                                
+                                payrollType: results[i]["PayrollType"],
+                                DeleteId: "<button class='btn btn-danger btn-xs btn-block' id='itemDeleteButton' onclick='cmdItemDeleteButton_OnClick()'><i class='fa fa-trash'></i> Delete</button>",
                             });
-                            //alert(payrollTypeList[i].payrollType);
                         }
                         payrollType = new wijmo.collections.CollectionView(payrollTypeList);
                         btnCurrentPageGrid.innerHTML = (payrollType.pageIndex + 1) + ' / ' + payrollType.pageCount;
@@ -1416,14 +1466,7 @@
                                 },
                                 {
                                     "header": "Delete",
-                                    "binding": "editId",
-                                    "width": ".25*",
-                                    "align": "center",
-                                    "isContentHtml": true
-                                },
-                                {
-                                    "header": "Delete",
-                                    "binding": "deleteId",
+                                    "binding": "DeleteId",
                                     "width": ".25*",
                                     "align": "center",
                                     "isContentHtml": true
@@ -1479,12 +1522,9 @@
                     if (results.length > 0) {
                         for (i = 0; i < results.length; i++) {
                             DepartmentList.push({
-                                id: results[i]["id"],
                                 department: results[i]["department"],
-                                editId: "<button class='btn btn-info btn-xs btn-block' id='itemEditButton' onclick='editDepartment(DepartmentList["+i+"].id,DepartmentList["+i+"].department)'><i class='fa fa-trash'></i> Edit</button>",
-                                deleteId: "<button class='btn btn-danger btn-xs btn-block' id='itemDeleteButton' onclick='deleteDepartment(DepartmentList["+i+"].id)'><i class='fa fa-trash'></i> Delete</button>",
+                                DeleteId: "<button class='btn btn-danger btn-xs btn-block' id='itemDeleteButton' onclick='cmdItemDeleteButton_OnClick()'><i class='fa fa-trash'></i> Delete</button>",
                             });
-                            //alert(DepartmentList[i].id);
                         }
                         department = new wijmo.collections.CollectionView(DepartmentList);
                         btnCurrentPageGrid.innerHTML = (department.pageIndex + 1) + ' / ' + department.pageCount;
@@ -1511,16 +1551,8 @@
                                     "width": ".75*"
                                 },
                                 {
-                                    "header": "Edit",
-                                    "binding": "editId",
-                                    "width": ".25*",
-                                    "align": "center",
-                                    "isContentHtml": true
-
-                                },
-                                {
                                     "header": "Delete",
-                                    "binding": "deleteId",
+                                    "binding": "DeleteId",
                                     "width": ".25*",
                                     "align": "center",
                                     "isContentHtml": true
@@ -1576,12 +1608,9 @@
                     if (results.length > 0) {
                         for (i = 0; i < results.length; i++) {
                             positionList.push({
-                                id: results[i]["id"],
                                 position: results[i]["position"],
-                                editId: "<button class='btn btn-info btn-xs btn-block' id='itemEditButton' onclick='editPosition(positionList["+i+"].id,positionList["+i+"].position)'><i class='fa fa-trash'></i> Edit</button>",
-                                deleteId: "<button class='btn btn-danger btn-xs btn-block' id='itemDeleteButton' onclick='deletePosition(positionList["+i+"].id)'><i class='fa fa-trash'></i> Delete</button>",
+                                DeleteId: "<button class='btn btn-danger btn-xs btn-block' id='itemDeleteButton' onclick='cmdItemDeleteButton_OnClick()'><i class='fa fa-trash'></i> Delete</button>",
                             });
-                            //alert(positionList[i].position);
                         }
                         position = new wijmo.collections.CollectionView(positionList);
                         btnCurrentPageGrid.innerHTML = (position.pageIndex + 1) + ' / ' + position.pageCount;
@@ -1607,18 +1636,9 @@
                                     
                                     "width": ".75*"
                                 },
-                                
-                                {
-                                    "header": "Edit",
-                                    "binding": "editId",
-                                    "width": ".25*",
-                                    "align": "center",
-                                    "isContentHtml": true
-
-                                },
                                 {
                                     "header": "Delete",
-                                    "binding": "deleteId",
+                                    "binding": "DeleteId",
                                     "width": ".25*",
                                     "align": "center",
                                     "isContentHtml": true
@@ -1674,13 +1694,10 @@
                     if (results.length > 0) {
                         for (i = 0; i < results.length; i++) {
                             accountList.push({
-                                id: results[i]["id"],
                                 accountcode: results[i]["accountcode"],
                                 account: results[i]["account"],
-                                editId: "<button class='btn btn-info btn-xs btn-block' id='itemEditButton' onclick='editAccount(accountList["+i+"].id,accountList["+i+"].account)'><i class='fa fa-trash'></i> Edit</button>",
-                                deleteId: "<button class='btn btn-danger btn-xs btn-block' id='itemDeleteButton' onclick='deleteAccount(accountList["+i+"].id)'><i class='fa fa-trash'></i> Delete</button>",
+                                DeleteId: "<button class='btn btn-danger btn-xs btn-block' id='itemDeleteButton' onclick='cmdItemDeleteButton_OnClick()'><i class='fa fa-trash'></i> Delete</button>",
                             });
-                            //alert(accountList[i].account);
                         }
                         account = new wijmo.collections.CollectionView(accountList);
                         btnCurrentPageGrid.innerHTML = (account.pageIndex + 1) + ' / ' + account.pageCount;
@@ -1691,6 +1708,9 @@
                         }   
                         //Flex Grid
                         accountGrid = new wijmo.grid.FlexGrid('#AccountGrid');
+ 
+                            
+                        
                         accountGrid.initialize({
                             
                             columns: [
@@ -1710,18 +1730,9 @@
                                     "isContentHtml": true,
                                     "width": ".75*"
                                 },
-                                
-                                {
-                                    "header": "Edit",
-                                    "binding": "editId",
-                                    "width": ".25*",
-                                    "align": "center",
-                                    "isContentHtml": true
-
-                                },
                                 {
                                     "header": "Delete",
-                                    "binding": "deleteId",
+                                    "binding": "DeleteId",
                                     "width": ".25*",
                                     "align": "center",
                                     "isContentHtml": true
@@ -1777,12 +1788,9 @@
                     if (results.length > 0) {
                         for (i = 0; i < results.length; i++) {
                             religionList.push({
-                                id: results[i]["id"],
                                 religion: results[i]["religion"],
-                                editId: "<button class='btn btn-info btn-xs btn-block' id='itemEditButton' onclick='editReligion(religionList["+i+"].id,religionList["+i+"].religion)'><i class='fa fa-trash'></i> Edit</button>",
-                                deleteId: "<button class='btn btn-danger btn-xs btn-block' id='itemDeleteButton' onclick='deleteReligion(religionList["+i+"].id)'><i class='fa fa-trash'></i> Delete</button>",
+                                DeleteId: "<button class='btn btn-danger btn-xs btn-block' id='itemDeleteButton' onclick='cmdItemDeleteButton_OnClick()'><i class='fa fa-trash'></i> Delete</button>",
                             });
-                            //alert(religionList[i].religion);
                         }
                         religion = new wijmo.collections.CollectionView(religionList);
                         btnCurrentPageGrid.innerHTML = (religion.pageIndex + 1) + ' / ' + religion.pageCount;
@@ -1808,18 +1816,9 @@
                                     
                                     "width": ".75*"
                                 },
-                                
-                                {
-                                    "header": "Edit",
-                                    "binding": "editId",
-                                    "width": ".25*",
-                                    "align": "center",
-                                    "isContentHtml": true
-
-                                },
                                 {
                                     "header": "Delete",
-                                    "binding": "deleteId",
+                                    "binding": "DeleteId",
                                     "width": ".25*",
                                     "align": "center",
                                     "isContentHtml": true
@@ -1875,10 +1874,8 @@
                     if (results.length > 0) {
                         for (i = 0; i < results.length; i++) {
                             citizenshipList.push({
-                                id: results[i]["id"],
                                 citizenship: results[i]["citizenship"],
-                                editId: "<button class='btn btn-info btn-xs btn-block' id='itemEditButton' onclick='editCitizenship(citizenshipList["+i+"].id,citizenshipList["+i+"].citizenship)'><i class='fa fa-trash'></i> Edit</button>",
-                                deleteId: "<button class='btn btn-danger btn-xs btn-block' id='itemDeleteButton' onclick='deleteCitizenship(citizenshipList["+i+"].id)'><i class='fa fa-trash'></i> Delete</button>",
+                                DeleteId: "<button class='btn btn-danger btn-xs btn-block' id='itemDeleteButton' onclick='cmdItemDeleteButton_OnClick()'><i class='fa fa-trash'></i> Delete</button>",
                             });
                         }
                         citizenship = new wijmo.collections.CollectionView(citizenshipList);
@@ -1906,16 +1903,8 @@
                                     "width": ".75*"
                                 },
                                 {
-                                    "header": "Edit",
-                                    "binding": "editId",
-                                    "width": ".25*",
-                                    "align": "center",
-                                    "isContentHtml": true
-
-                                },
-                                {
                                     "header": "Delete",
-                                    "binding": "deleteId",
+                                    "binding": "DeleteId",
                                     "width": ".25*",
                                     "align": "center",
                                     "isContentHtml": true
@@ -1971,10 +1960,8 @@
                     if (results.length > 0) {
                         for (i = 0; i < results.length; i++) {
                             zipCodeList.push({
-                                id: results[i]["id"],
                                 zipCode: results[i]["zipCode"],
-                                editId: "<button class='btn btn-info btn-xs btn-block' id='itemEditButton' onclick='editZipCode(zipCodeList["+i+"].id,zipCodeList["+i+"].zipCode)'><i class='fa fa-trash'></i> Edit</button>",
-                                deleteId: "<button class='btn btn-danger btn-xs btn-block' id='itemDeleteButton' onclick='deleteZipCode(zipCodeList["+i+"].id)'><i class='fa fa-trash'></i> Delete</button>",
+                                DeleteId: "<button class='btn btn-danger btn-xs btn-block' id='itemDeleteButton' onclick='cmdItemDeleteButton_OnClick()'><i class='fa fa-trash'></i> Delete</button>",
                             });
                         }
                         zipCode = new wijmo.collections.CollectionView(zipCodeList);
@@ -1986,6 +1973,9 @@
                         }   
                         //Flex Grid
                         zipCodeGrid = new wijmo.grid.FlexGrid('#ZipCodeGrid');
+ 
+                            
+                        
                         zipCodeGrid.initialize({
                             
                             columns: [
@@ -1999,16 +1989,8 @@
                                     "width": ".75*"
                                 },
                                 {
-                                    "header": "Edit",
-                                    "binding": "editId",
-                                    "width": ".25*",
-                                    "align": "center",
-                                    "isContentHtml": true
-
-                                },
-                                {
                                     "header": "Delete",
-                                    "binding": "deleteId",
+                                    "binding": "DeleteId",
                                     "width": ".25*",
                                     "align": "center",
                                     "isContentHtml": true
@@ -2065,10 +2047,8 @@
                     if (results.length > 0) {
                         for (i = 0; i < results.length; i++) {
                             divisionList.push({
-                                id: results[i]["id"],
                                 division: results[i]["division"],
-                                editId: "<button class='btn btn-info btn-xs btn-block' id='itemEditButton' onclick='editDivision(divisionList["+i+"].id,divisionList["+i+"].division)'><i class='fa fa-trash'></i> Edit</button>",
-                                deleteId: "<button class='btn btn-danger btn-xs btn-block' id='itemDeleteButton' onclick='deleteDivision(divisionList["+i+"].id)'><i class='fa fa-trash'></i> Delete</button>",
+                                DeleteId: "<button class='btn btn-danger btn-xs btn-block' id='itemDeleteButton' onclick='cmdItemDeleteButton_OnClick()'><i class='fa fa-trash'></i> Delete</button>",
                             });
                         }
                         division = new wijmo.collections.CollectionView(divisionList);
@@ -2092,22 +2072,16 @@
                                     "align": "center",
                                     "allowSorting": true,
                                     "isContentHtml": true,
+                                    
                                     "width": ".75*"
-                                },
-                                
-                                {
-                                    "header": "Edit",
-                                    "binding": "editId",
-                                    "width": ".25*",
-                                    "align": "center",
-                                    "isContentHtml": true
                                 },
                                 {
                                     "header": "Delete",
-                                    "binding": "deleteId",
+                                    "binding": "DeleteId",
                                     "width": ".25*",
                                     "align": "center",
                                     "isContentHtml": true
+
                                 },
                             ],
                             
@@ -2144,6 +2118,9 @@
                 }
             });  
     }
+    
+    
+    
     // ==================
     // Navigation Buttons
     // ==================
@@ -2194,7 +2171,7 @@
         getCitizenshipList();
         getZipCodeList();
         getDivisionList();
-        
+
         $("#addpayrollgroup").click(function () {                 
             var payrollgroup = {
                 payrollgroup : $('#payrollgroup').val(),            
@@ -2202,6 +2179,7 @@
             var data = JSON.stringify(payrollgroup);
             post('/api/payrollgroup/add', data);
         });
+
         $("#updatepayrollgroup").click(function () {   
              alert(payrollgroupid);              
             var payrollgroup = {
@@ -2377,6 +2355,7 @@
             var data = JSON.stringify(division);
             post('/api/division/add', data);
         });
+
         $("#btneditdivision").click(function () {                 
              var division = {
                  id : divisionid,
@@ -2423,6 +2402,7 @@
                 }
             });
         }
+
         function put(url, data){
             $.ajax({
                 url: url + data.id,
@@ -2455,6 +2435,7 @@
                 }
             });
         }
+
         function deleted(url, id){
             $.ajax({
                 url: url + id,
@@ -2466,6 +2447,7 @@
                         console.log(id);
                         alert("Record Deleted");
                         //$('#saveContactForm')[0].reset();
+
                     },
                     404 : function(id) {
                         console.log(id);
