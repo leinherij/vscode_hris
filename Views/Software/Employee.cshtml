@@ -291,14 +291,11 @@
                 success: function (results) {
                     if (results.length > 0) {
                         for (i = 0; i < results.length; i++) {
-<<<<<<< HEAD
-                            ItemList.push({
-                                id: results[i]["idNumber"],
-=======
+
                             employeeList.push({
                                 id: results[i]["id"],
                                 idNumber: results[i]["idNumber"],
->>>>>>> 14a0c1843313a250949a5ad975e70735c7310991
+
                                 fullName: results[i]["fullName"],
                                 positionId: results[i]["positionId"],
                                 isLocked: results[i]["isLocked"],
