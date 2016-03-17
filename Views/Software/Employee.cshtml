@@ -262,7 +262,7 @@
                         for (i = 0; i < results.length; i++) {
                             ItemList.push({
                                 id: results[i]["idNumber"],
-                                firstName: results[i]["firstName"],
+                                fullName: results[i]["fullName"],
                                 positionId: results[i]["positionId"],
                                 isLocked: results[i]["isLocked"],
                                 EditId: "<button class='btn btn-primary btn-xs btn-block' id='itemEditButton' onclick='cmdItemEditButton_OnClick()'><i class='fa fa-pencil'></i> Edit</button>",
@@ -281,7 +281,7 @@
                         itemGrid.itemSource = itemCollections;
                         var filter = '';
                         itemCollections.filter = function(item) {
-                            return !filter || item.firstName.toLowerCase().indexOf(filter) > -1;
+                            return !filter || item.fullName.toLowerCase().indexOf(filter) > -1;
                         }
                         var dvFilter = document.getElementById('filter');
                         dvFilter.addEventListener('input', function() {
@@ -304,8 +304,8 @@
                                     "width": ".25*"
                                 },
                                 {
-                                    "header": "FirstName",
-                                    "binding": "firstName",
+                                    "header": "Full Name",
+                                    "binding": "fullName",
                                     "align": "center",
                                     "allowSorting": true,
                                     "width": ".50*"
