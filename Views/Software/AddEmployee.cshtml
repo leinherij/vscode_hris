@@ -655,6 +655,23 @@
     
     
     <script type="text/javascript">
+    // ===================
+    //  Global Variables
+    // ===================
+    var cboCitizenship;
+    var cboReligion;
+    var cboHdmfType;
+    var cboTaxCode;
+    var cboTaxTable;
+    var cboCompany;
+    var cboBranch;
+    var cboDepartment;
+    var cboPosition;
+    var cboDivision;
+    var cboPayrollGroup;
+    var cboPayrollType;
+    var cboGlAccount;
+    var cboShiftCode;
     
     
         // =======================
@@ -677,7 +694,7 @@
                                 citizenship: results[i]["citizenship"],
                             });
                         }
-                        var ac = new wijmo.input.AutoComplete('#citizenship', {
+                        cboCitizenship = new wijmo.input.AutoComplete('#citizenship', {
                             itemsSource: citizenshipList,
                             displayMemberPath: "citizenship",
                             selectedValuePath: "id",
@@ -707,7 +724,7 @@
                                 religion: results[i]["religion"],
                             });
                         }
-                        var ac = new wijmo.input.AutoComplete('#religion', {
+                        cboReligion = new wijmo.input.AutoComplete('#religion', {
                             itemsSource: religionList,
                             displayMemberPath: "religion",
                             selectedValuePath: "id",
@@ -721,7 +738,7 @@
             });
         }
         function getHdmfType(){
-        var ac = new wijmo.input.AutoComplete('#hdmftype', {
+        cboHdmfType = new wijmo.input.AutoComplete('#hdmftype', {
                 itemsSource: ['Percentage','Value'],
 
             });
@@ -743,7 +760,7 @@
                                 taxCode: results[i]["taxCode"],
                             });
                         }
-                        var ac = new wijmo.input.AutoComplete('#taxcode', {
+                        cboTaxCode = new wijmo.input.AutoComplete('#taxcode', {
                             itemsSource: taxCodeList,
                             displayMemberPath: "taxCode",
                             selectedValuePath: "id",
@@ -757,7 +774,7 @@
             });
         }
         function getTaxTable(){
-        var ac = new wijmo.input.AutoComplete('#taxtable', {
+        cboTaxTable = new wijmo.input.AutoComplete('#taxtable', {
                 itemsSource: ['Semi-Monthly','Monthly'],
 
             });
@@ -779,7 +796,7 @@
                                 company: results[i]["company"],
                             });
                         }
-                        var ac = new wijmo.input.AutoComplete('#company', {
+                        cboCompany = new wijmo.input.AutoComplete('#company', {
                             itemsSource: companyList,
                             displayMemberPath: "company",
                             selectedValuePath: "id",
@@ -809,7 +826,7 @@
                                 branch: results[i]["branch"],
                             });
                         }
-                        var ac = new wijmo.input.AutoComplete('#branch', {
+                        cboBranch = new wijmo.input.AutoComplete('#branch', {
                             itemsSource: branchList,
                             displayMemberPath: "branch",
                             selectedValuePath: "id",
@@ -839,7 +856,7 @@
                                 department: results[i]["department"],
                             });
                         }
-                        var ac = new wijmo.input.AutoComplete('#department', {
+                        cboDepartment = new wijmo.input.AutoComplete('#department', {
                             itemsSource: departmentList,
                             displayMemberPath: "department",
                             selectedValuePath: "id",
@@ -869,7 +886,7 @@
                                 position: results[i]["position"],
                             });
                         }
-                        var ac = new wijmo.input.AutoComplete('#position', {
+                        cboPosition = new wijmo.input.AutoComplete('#position', {
                             itemsSource: positionList,
                             displayMemberPath: "position",
                             selectedValuePath: "id",
@@ -899,7 +916,7 @@
                                 division: results[i]["division"],
                             });
                         }
-                        var ac = new wijmo.input.AutoComplete('#division', {
+                        cboDivision = new wijmo.input.AutoComplete('#division', {
                             itemsSource: divisionList,
                             displayMemberPath: "division",
                             selectedValuePath: "id",
@@ -929,7 +946,7 @@
                                 payrollgroup: results[i]["payrollGroup"],
                             });
                         }
-                        var ac = new wijmo.input.AutoComplete('#payrollgroup', {
+                        cboPayrollGroup = new wijmo.input.AutoComplete('#payrollgroup', {
                             itemsSource: payrollgroupList,
                             displayMemberPath: "payrollgroup",
                             selectedValuePath: "id",
@@ -959,7 +976,7 @@
                                 payrolltype: results[i]["payrollType"],
                             });
                         }
-                        var ac = new wijmo.input.AutoComplete('#payrolltype', {
+                        cboPayrollType = new wijmo.input.AutoComplete('#payrolltype', {
                             itemsSource: payrolltypeList,
                             displayMemberPath: "payrolltype",
                             selectedValuePath: "id",
@@ -973,7 +990,7 @@
             });
         }
         function getGlAccount(){
-            var ac = new wijmo.input.AutoComplete('#glaccount', {
+            cboGlAccount = new wijmo.input.AutoComplete('#glaccount', {
                 itemsSource: ['Other Deduction','Other Income','Salaries and wages'],
 
             });
@@ -995,7 +1012,7 @@
                                 shiftcode: results[i]["shiftCode"],
                             });
                         }
-                        var ac = new wijmo.input.AutoComplete('#shiftcode', {
+                        cboShiftCode = new wijmo.input.AutoComplete('#shiftcode', {
                             itemsSource: shiftcodeList,
                             displayMemberPath: "shiftcode",
                             selectedValuePath: "id",
