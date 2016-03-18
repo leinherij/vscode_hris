@@ -203,7 +203,7 @@
                                         <div class="control-group">
                                             <label class="control-label col-sm-4">Date Hired</label>
                                             <div class="col-sm-8">
-                                                <input id="address-line1" type="text" placeholder="Date Hired" class="form-control">
+                                                <div id="dateHired"></div>
                                                 <p class="help-block"></p>
                                             </div>
                                         </div>
@@ -211,7 +211,7 @@
                                         <div class="control-group">
                                             <label class="control-label col-sm-4">Date Resigned</label>
                                             <div class="col-sm-8">
-                                                <input id="dateResigned" type="text" class="form-control">
+                                                <div id="dateResigned"></div>
                                                 <p class="help-block"></p>
                                             </div>
                                         </div>
@@ -299,7 +299,7 @@
                                                             <div class="control-group">
                                                                 <label class="control-label col-sm-4">Date Of Birth</label>
                                                                 <div class="col-sm-8">
-                                                                    <input id="adddateOfBirth" type="text" placeholder="Date Of Birth" class="form-control">
+                                                                    <div id="dateOfBirth"></div>
                                                                     <p class="help-block"></p>
                                                                 </div>
                                                             </div>
@@ -673,6 +673,36 @@
     var cboGlAccount;
     var cboShiftCode;
     
+    var dateHired;
+    var dateResigned;
+    var dateOfBirth;
+        // =======================
+        // Get Date Input
+        // =======================
+        function getDate(){
+            // the date/time being edited
+            var theDate = new Date();
+            
+            // create InputDate control
+            var dateHired = new wijmo.input.InputDate('#dateHired', {
+                min: new Date(2014, 8, 1),
+                format: 'M/d/yyyy',
+                value: theDate
+            });
+            //inputDate.valueChanged.addHandler(valueChanged);
+            
+            var dateResigned = new wijmo.input.InputDate('#dateResigned', {
+                min: new Date(2014, 8, 1),
+                format: 'M/d/yyyy',
+                value: theDate
+            });
+            var dateOfBirth = new wijmo.input.InputDate('#dateOfBirth', {
+                min: new Date(2014, 8, 1),
+                format: 'M/d/yyyy',
+                value: theDate
+            });
+        }
+    
     
         // =======================
         // wijmo combobox get data
@@ -1025,12 +1055,15 @@
                 }
             });
         }
+        
     
     
     
     
     
         $(document).ready(function () {
+            getDate();
+            // wjmo cbo's
             getCitizenship();
             getReligion();
             getHdmfType();
@@ -1045,6 +1078,7 @@
             getPayrollType();
             getGlAccount();
             getShiftCode();
+            
             
             $("#addemployee").click(function () {                 
                 var employee = {

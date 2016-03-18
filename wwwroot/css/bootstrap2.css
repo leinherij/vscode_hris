@@ -2356,7 +2356,7 @@ output {
   width: 100%;
   height: 25px;
   padding: 6px 12px;
-  font-size: 14px;
+  /*font-size: 14px;*/
   line-height: 1.42857143;
   color: #555;
   background-color: #fff;
@@ -5008,7 +5008,7 @@ a.list-group-item-danger.active:focus {
  
   margin-bottom: 20px;
   /*background-color: #ddf5e9;*/
-  background-color: #c9f4de;
+  background-color: #e5e5e5;
   border: 1px solid transparent;
   border-radius: 4px;
   -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
