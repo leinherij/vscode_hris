@@ -32,7 +32,7 @@ namespace HRISVSC.Repository
             return (IEnumerable<MstEmployee>)list;
         }
         
-        public void Post(MstEmployee mstemployee )
+        public void Post(MstEmployee mstemployee)
         {
              
              _context.MstEmployees.Add(mstemployee);

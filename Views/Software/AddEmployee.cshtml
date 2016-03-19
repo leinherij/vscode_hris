@@ -672,7 +672,6 @@
     var cboPayrollType;
     var cboGlAccount;
     var cboShiftCode;
-    
     var dateHired;
     var dateResigned;
     var dateOfBirth;
@@ -684,19 +683,19 @@
             var theDate = new Date();
             
             // create InputDate control
-            var dateHired = new wijmo.input.InputDate('#dateHired', {
+            dateHired = new wijmo.input.InputDate('#dateHired', {
                 min: new Date(2014, 8, 1),
                 format: 'M/d/yyyy',
                 value: theDate
             });
             //inputDate.valueChanged.addHandler(valueChanged);
             
-            var dateResigned = new wijmo.input.InputDate('#dateResigned', {
+             dateResigned = new wijmo.input.InputDate('#dateResigned', {
                 min: new Date(2014, 8, 1),
                 format: 'M/d/yyyy',
                 value: theDate
             });
-            var dateOfBirth = new wijmo.input.InputDate('#dateOfBirth', {
+             dateOfBirth = new wijmo.input.InputDate('#dateOfBirth', {
                 min: new Date(2014, 8, 1),
                 format: 'M/d/yyyy',
                 value: theDate
@@ -1079,68 +1078,72 @@
             getGlAccount();
             getShiftCode();
 
-            $("#btnAddEmployee").click(function () {   
+            $("#btnAddEmployee").click(function () {  
+                var x = 70; 
                 var employee = {
-                    idNumber : $('#idNumber').val(),
-                    biometricIdNumber : $('#biometricIdNumber').val(),
-                    lastName : $('#lastName').val(),
-                    firstName : $('#firstName').val(),
-                    middleName : $('#middleName').val(),
-                    extensionName : $('#extensionName').val(),
-                    fullName : $('#fullName').val(),
-                    address : $('#address').val(),
-                    zipCodeId : $('#zipCodeId').val(),
-                    phoneNumber : $('#phoneNumber').val(),
-                    cellphoneNumber : $('#cellphoneNumber').val(),
-                    emailAddress : $('#emailAddress').val(),
-                    dateOfBirth : $('#dateOfBirth').val(),
-                    placeOfBirth : $('#placeOfBirth').val(),
-                    placeOfBirthZipCodeId : $('#placeOfBirthZipCodeId').val(),
-                    dateHired : $('#dateHired').val(),
-                    dateResigned : $('#dateResigned').val(),
-                    sex : $('#sex').val(),
-                    civilStatus : $('#civilStatus').val(),
-                    citizenshipId : cboCitizenship.selectedValue,
-                    religionId : cboReligion.selectedValue,
-                    height : $('#height').val(),
-                    weight : $('#weight').val(),
-                    gsisNumber : $('#gsisNumber').val(),
-                    sssNumber : $('#sssNumber').val(),
-                    hdmfNumber : $('#hdmfNumber').val(),
-                    phicNumber : $('#phicNumber').val(),
-                    tin : $('#tin').val(),
-                    taxCodeId : cboTaxCode.selectedValue,
-                    atmAccountNumber : $('#atmAccountNumber').val(),
-                    companyId : cboCompany.selectedValue,
-                    branchId : cboBranch.selectedValue,
-                    departmentId : cboDepartment.selectedValue,
-                    divisionId : cboDivision.selectedValue,
-                    positionId : cboPosition.selectedValue,
-                    payrollGroupId : cboPayrollGroup.selectedValue,
-                    accountId : $('#accountId').val(),
-                    payrollTypeId : cboPayrollType.selectedValue,
-                    shiftCodeId : cboShiftCode.selectedValue,
-                    fixNumberOfDays : $('#fixNumberOfDays').val(),   
-                    fixNumberOfHours : $('#fixNumberOfHours').val(),
-                    monthlyRate : $('#monthlyRate').val(),
-                    payrollRate : $('#payrollRate').val(),
-                    dailyRate : $('#dailyRate').val(),
-                    absentDailyRate : $('#absentDailyRate').val(),
-                    hourlyRate : $('#hourlyRate').val(),
-                    nightHourlyRate : $('#nightHourlyRate').val(),
-                    overtimeHourlyRate : $('#overtimeHourlyRate').val(),
-                    overtimeNightHourlyRate : $('#overtimeNightHourlyRate').val(),
-                    tardyHourlyRate : $('#tardyHourlyRate').val(),
-                    entryUserId : $('#entryUserId').val(),
-                    entryDateTime : $('#entryDateTime').val(),
-                    updateUserId : $('#updateUserId').val(),
-                    updateDateTime : $('#updateDateTime').val(),
-                    isLocked : $('#isLocked').val(),
-                    taxTable : $('#taxTable').val(),
-                    hdmfAddOn : $('#hdmfAddOn').val(),
-                    sssAddOn : $('#sssAddOn').val(),
-                    hdmfType : $('#hdmfType').val(),
-                    sssIsGrossAmount : $('#sssIsGrossAmount').val(),
+                    // alert(dateHired.value);
+                    // alert(dateResigned.value);
+                    // alert(dateOfBirth.value);
+                    // idNumber : $('#idNumber').val(),
+                    // biometricIdNumber : $('#biometricIdNumber').val(),
+                    // lastName : $('#lastName').val(),
+                    // firstName : $('#firstName').val(),
+                    // middleName : $('#middleName').val(),
+                    // extensionName : $('#extensionName').val(),
+                    // fullName : $('#fullName').val(),
+                    // address : $('#address').val(),
+                    // zipCodeId : $('#zipCodeId').val(),
+                    // phoneNumber : $('#phoneNumber').val(),
+                    // cellphoneNumber : $('#cellphoneNumber').val(),
+                    // emailAddress : $('#emailAddress').val(),
+                    // dateOfBirth : $('#dateOfBirth').val(),
+                    // placeOfBirth : $('#placeOfBirth').val(),
+                    // placeOfBirthZipCodeId : $('#placeOfBirthZipCodeId').val(),
+                    // dateHired : $('#dateHired').val(),
+                    // dateResigned : $('#dateResigned').val(),
+                    // sex : $('#sex').val(),
+                    // civilStatus : $('#civilStatus').val(),
+                    // citizenshipId : cboCitizenship.selectedValue,
+                    // religionId : cboReligion.selectedValue,
+                    // height : $('#height').val(),
+                    // weight : $('#weight').val(),
+                    // gsisNumber : $('#gsisNumber').val(),
+                    // sssNumber : $('#sssNumber').val(),
+                    // hdmfNumber : $('#hdmfNumber').val(),
+                    // phicNumber : $('#phicNumber').val(),
+                    // tin : $('#tin').val(),
+                    // taxCodeId : cboTaxCode.selectedValue,
+                    // atmAccountNumber : $('#atmAccountNumber').val(),
+                    // companyId : cboCompany.selectedValue,
+                    // branchId : cboBranch.selectedValue,
+                    // departmentId : cboDepartment.selectedValue,
+                    // divisionId : cboDivision.selectedValue,
+                    // positionId : cboPosition.selectedValue,
+                    // payrollGroupId : cboPayrollGroup.selectedValue,
+                    // accountId : $('#accountId').val(),
+                    // payrollTypeId : cboPayrollType.selectedValue,
+                    // shiftCodeId : cboShiftCode.selectedValue,
+                    // fixNumberOfDays : $('#fixNumberOfDays').val(),   
+                    // fixNumberOfHours : $('#fixNumberOfHours').val(),
+                    // monthlyRate : $('#monthlyRate').val(),
+                    // payrollRate : $('#payrollRate').val(),
+                    // dailyRate : $('#dailyRate').val(),
+                    // absentDailyRate : $('#absentDailyRate').val(),
+                    // hourlyRate : $('#hourlyRate').val(),
+                    // nightHourlyRate : $('#nightHourlyRate').val(),
+                    // overtimeHourlyRate : $('#overtimeHourlyRate').val(),
+                    // overtimeNightHourlyRate : $('#overtimeNightHourlyRate').val(),
+                    // tardyHourlyRate : $('#tardyHourlyRate').val(),
+                    // entryUserId : $('#entryUserId').val(),
+                    // entryDateTime : $('#entryDateTime').val(),
+                    // updateUserId : $('#updateUserId').val(),
+                    // updateDateTime : $('#updateDateTime').val(),
+                    // isLocked : $('#isLocked').val(),
+                    // taxTable : $('#taxTable').val(),
+                    // hdmfAddOn : $('#hdmfAddOn').val(),
+                    // sssAddOn : $('#sssAddOn').val(),
+                    // hdmfType : $('#hdmfType').val(),
+                    // sssIsGrossAmount : $('#sssIsGrossAmount').val(),
                 }
                 var data = JSON.stringify(employee);
                 post('/api/employee/add', data);
@@ -1260,38 +1263,6 @@
             //             200 : function(data) {
             //                 console.log(data);
             //                 alert("Record Updated");
-            //                 //$('#saveContactForm')[0].reset();
-            //             },
-            //             404 : function(data) {
-            //                 console.log(data);
-            //                 alert("Not Found");
-            //             },
-            //             400 : function(data) {
-            //                 console.log(data);
-            //                 alert("Internal Server Error");
-            //             },
-            //             415 : function(data){
-            //                 console.log(data);
-            //                 alert("Unsupported Data type");
-            //             },
-            //             500 : function(data){
-            //                 console.log(data);
-            //                 alert("BAD REQUEST");
-            //             }
-            //         }
-            //     });
-            // }
-            // function delete(url, data){
-            //     $.ajax({
-            //         url: url + id,
-            //         type: 'DELETE',
-            //         data: data,
-            //         dataType: 'json',
-            //         contentType: 'application/json; charset=utf-8',
-            //         statusCode : {
-            //             200 : function(data) {
-            //                 console.log(data);
-            //                 alert("Record Deleted");
             //                 //$('#saveContactForm')[0].reset();
             //             },
             //             404 : function(data) {

@@ -29,13 +29,13 @@ namespace HRISVSC.Controllers
                  
         [Route("api/employee/add")]  
         public void Post([FromBody]MstEmployee mstemployeeadd)
-        {          
+        {   
             _mstemployeeR.Post(mstemployeeadd);
         }
         
         [Route("api/employee/update/{id}")]
         public void Put(Int32 id, [FromBody]MstEmployee mstemployeeupdate)
-        {         
+        {   
             _mstemployeeR.Put(id, mstemployeeupdate);
         }
         

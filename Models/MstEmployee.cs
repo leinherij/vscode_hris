@@ -21,7 +21,7 @@ namespace HRISVSC.Models
         public String placeOfBirth { get; set; }
         public Int32 placeOfBirthZipCodeId { get; set; }
         public DateTime dateHired { get; set; }
-        //public DateTime dateResigned { get; set; }
+       // public DateTime dateResigned { get; set; }
         public String sex { get; set; }
         public String civilStatus { get; set; }
         public Int32 citizenshipId { get; set; }
